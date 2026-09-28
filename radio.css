@@ -71,7 +71,7 @@ h2{font-size:clamp(1.6rem,4vw,2.6rem);margin-bottom:14px;}
 .sec-ads{background:linear-gradient(180deg,var(--night),#150a2c 50%,var(--night));}
 
 /* STATIONS */
-.st-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px;margin-top:40px;}
+.st-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:40px;}
 .st{position:relative;display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s;}
 .st:hover{transform:translateY(-4px);border-color:var(--c);box-shadow:0 0 30px color-mix(in srgb,var(--c) 30%,transparent);}
 .st.playing{border-color:var(--c);box-shadow:0 0 36px color-mix(in srgb,var(--c) 45%,transparent);}
@@ -120,15 +120,15 @@ h2{font-size:clamp(1.6rem,4vw,2.6rem);margin-bottom:14px;}
 
 /* VILLE */
 .city{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;}
-.q{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);min-height:380px;display:flex;flex-direction:column;justify-content:flex-end;}
-.q img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s;}
-.q:hover img{transform:scale(1.05);}
-.q::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(11,10,30,.95));}
-.q-in{position:relative;z-index:1;padding:22px;}
-.q-in h3{font-family:'Orbitron',sans-serif;color:#fff;font-size:1.05rem;letter-spacing:.1em;margin-bottom:6px;}
-.q-in p{font-size:.88rem;color:var(--muted);margin-bottom:10px;}
-.q-shops{display:flex;flex-wrap:wrap;gap:6px;}
-.q-shops button{font-family:'Space Mono',monospace;font-size:.62rem;border-radius:10px;padding:3px 8px;border:1px solid var(--qc);color:var(--qc);background:rgba(11,10,30,.6);cursor:pointer;}
+.q{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:var(--card);display:flex;flex-direction:column;}
+.q img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .8s;}
+.q:hover img{transform:scale(1.04);}
+.q-in{position:relative;z-index:1;padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;}
+.q-in h3{font-family:'Orbitron',sans-serif;color:#fff;font-size:1.05rem;letter-spacing:.1em;}
+.q-in p{font-size:.9rem;line-height:1.55;color:var(--muted);}
+.q-shops{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;}
+.q-shops button{font-family:'Space Mono',monospace;font-size:.62rem;border-radius:10px;padding:3px 8px;border:1px solid var(--qc);color:var(--qc);background:transparent;cursor:pointer;}
+.q-shops button:hover{background:var(--qc);color:var(--night);}
 .q-bar{position:absolute;top:0;left:0;right:0;height:4px;background:var(--qc);z-index:1;box-shadow:0 0 14px var(--qc);}
 
 /* LIENS */
@@ -168,6 +168,7 @@ h2{font-size:clamp(1.6rem,4vw,2.6rem);margin-bottom:14px;}
   .hero-in{grid-template-columns:1fr;gap:26px;}
   .hero-logo{max-width:280px;}
   .city,.links{grid-template-columns:1fr 1fr;}
+  .st-grid{grid-template-columns:repeat(3,1fr);}
   .nav{display:none;}
   .top-right{margin-left:auto;}
 }
