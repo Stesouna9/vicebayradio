@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Vice Bay Radio · 5 stations FM, Vice Bay 1986</title>
+<meta name="description" content="Vice Bay Radio : les cinq stations FM de Vice Bay, ville fictive de 1986. Animateurs, jingles, fausses pubs des commerces de la ville. Par OKALAM Studio."/>
+<meta name="theme-color" content="#0B0A1E"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Vice Bay Radio · 5 stations FM, toute la nuit"/>
+<meta property="og:description" content="TROPICANA 88.5 · EMOTION 98.3 · SUNSET DRIVE 102.7 · NEON 103.5 · VOLT 107.3. Les radios de Vice Bay, 1986."/>
+<meta property="og:image" content="https://vicebayradio.com/img/og.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="img/icon.png"/>
+<link rel="apple-touch-icon" href="img/icon.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="radio.css"/>
+</head>
+<body>
+
+<header class="top" id="top">
+  <a class="brand" href="#accueil" aria-label="Vice Bay Radio">
+    <span class="brand-dot"></span>VICE BAY <b>RADIO</b>
+  </a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#stations" data-i18n="nav_stations">Stations</a>
+    <a href="#pubs" data-i18n="nav_ads">Pubs</a>
+    <a href="#ville" data-i18n="nav_city">La ville</a>
+    <a href="#liens" data-i18n="nav_links">Liens</a>
+  </nav>
+  <div class="top-right">
+    <span class="clock" id="clock" aria-hidden="true">VICE BAY · 1986</span>
+    <button class="lang" id="lang" type="button" aria-label="Language">EN</button>
+    <a class="btn btn-sm" href="https://okalamstudio.com/vicebreak.html?utm_source=vicebayradio&utm_medium=referral&utm_campaign=vb_launch" data-i18n="cta_game_short">Le jeu</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ACCUEIL -->
+<section class="hero" id="accueil">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-in">
+    <img class="hero-logo" src="img/vicebay_radio.webp" alt="Vice Bay Radio" width="720" height="624"/>
+    <div class="hero-txt">
+      <p class="kicker" data-i18n="hero_kicker">Vice Bay · 1986 · FM stéréo</p>
+      <h1 data-i18n-html="hero_title">Cinq stations.<br/><em>Toute la nuit.</em></h1>
+      <p class="lead" data-i18n="hero_lead">Les radios d'une ville qui n'existe pas. Des animateurs qui parlent trop, des jingles, et les pubs de tous les commerces du front de mer. Tourne le bouton.</p>
+      <div class="cta">
+        <button class="btn" type="button" data-tune="tropicana" data-i18n="cta_listen">▶ Allumer la radio</button>
+        <a class="btn btn-ghost" href="#pubs" data-i18n="cta_ads">📺 Les fausses pubs</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CADRAN -->
+  <div class="dial" id="dial" style="--acc:#F5E3C3">
+    <div class="dial-read">
+      <div class="dial-freq"><span id="d-freq">—</span><small>FM</small></div>
+      <div class="dial-meta">
+        <b id="d-name" data-i18n="pick">Choisis une station</b>
+        <small id="d-genre" data-i18n="pick_hint">ou glisse l'aiguille sur le cadran</small>
+      </div>
+      <span class="onair" id="d-onair" data-i18n="off">RADIO COUPÉE</span>
+    </div>
+    <div class="scale" id="scale" role="slider" aria-label="Fréquence" aria-valuemin="87.5" aria-valuemax="108" aria-valuenow="87.5" tabindex="0">
+      <div class="ticks"></div>
+      <div class="marks" id="marks"></div>
+      <div class="needle" id="needle"></div>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+</section>
+
+<!-- STATIONS -->
+<section class="sec" id="stations">
+  <div class="wrap">
+    <p class="label" data-i18n="st_label">Le cadran</p>
+    <h2 data-i18n-html="st_title">Cinq animateurs, <em>cinq nuits différentes</em></h2>
+    <p class="sub" data-i18n="st_sub">Chaque station a sa couleur, son quartier, son animateur et ses annonceurs. Musique 100 % libre, voix originales écrites pour Vice Bay.</p>
+    <div class="st-grid" id="st-grid"></div>
+  </div>
+</section>
+
+<!-- PUBS -->
+<section class="sec sec-ads" id="pubs">
+  <div class="wrap">
+    <p class="label" data-i18n="ads_label">Pages de pub</p>
+    <h2 data-i18n-html="ads_title">Les 25 commerces <em>qui paient l'antenne</em></h2>
+    <p class="sub" data-i18n="ads_sub">Garages des marais, fleuristes de nuit, motels d'autoroute : chaque commerce de Vice Bay a sa pub, lue par l'animateur de sa station. Aucun n'existe. Tous sont ouverts tard.</p>
+    <div class="filters" id="filters" role="toolbar" aria-label="Filtrer"></div>
+    <div class="ad-grid" id="ad-grid"></div>
+  </div>
+</section>
+
+<!-- VILLE -->
+<section class="sec" id="ville">
+  <div class="wrap">
+    <p class="label" data-i18n="city_label">La ville</p>
+    <h2 data-i18n-html="city_title">Bienvenue à <em>Vice Bay</em></h2>
+    <p class="sub" data-i18n="city_sub">Une ville côtière de 1986, entre l'océan et les marais. Cinq quartiers, cinq couleurs, et une radio allumée dans chaque voiture.</p>
+    <div class="city" id="city"></div>
+  </div>
+</section>
+
+<!-- LIENS -->
+<section class="sec sec-links" id="liens">
+  <div class="wrap">
+    <p class="label" data-i18n="links_label">Vice Bay Radio, partout</p>
+    <h2 data-i18n-html="links_title">Le jeu, la communauté, <em>le studio</em></h2>
+    <div class="links">
+      <a class="lk lk-game" href="https://okalamstudio.com/vicebreak.html?utm_source=vicebayradio&utm_medium=referral&utm_campaign=vb_launch">
+        <span class="lk-ico">🕹️</span>
+        <b>VICE BREAK</b>
+        <span data-i18n="lk_game">Le casse-briques néon de Vice Bay. 500 silhouettes, les cinq radios en fond. iPhone et Android.</span>
+        <em class="lk-date" id="countdown" data-i18n="lk_game_date">Sortie le 19 novembre 2026</em>
+      </a>
+      <a class="lk lk-discord" href="https://discord.gg/TSaxEnt2dG" target="_blank" rel="noopener">
+        <span class="lk-ico">💬</span>
+        <b data-i18n="lk_discord_t">Le Discord</b>
+        <span data-i18n="lk_discord">Bugs, suggestions, bêta iOS/Android, coulisses de Vice Bay Radio. La radio y arrive bientôt en salon vocal.</span>
+        <em data-i18n="lk_discord_cta">Rejoindre le Discord →</em>
+      </a>
+      <a class="lk lk-studio" href="https://okalamstudio.com/?utm_source=vicebayradio&utm_medium=referral&utm_campaign=vb_launch">
+        <span class="lk-ico"><img src="https://okalamstudio.com/okalam_logo.png" alt="" width="28" height="28"/></span>
+        <b>OKALAM Studio</b>
+        <span data-i18n="lk_studio">Le studio indépendant derrière Vice Bay. Jeux, apps, et d'autres projets qui passeront par cette radio.</span>
+        <em>okalamstudio.com →</em>
+      </a>
+      <a class="lk" href="https://okalamstudio.com/projets.html?utm_source=vicebayradio&utm_medium=referral&utm_campaign=vb_launch">
+        <span class="lk-ico">🧪</span>
+        <b data-i18n="lk_projects_t">Les autres projets</b>
+        <span data-i18n="lk_projects">Kotoba, VoteDay et ce qui arrive ensuite. Chaque projet du studio aura bientôt sa pub à l'antenne.</span>
+        <em data-i18n="lk_projects_cta">Voir les projets →</em>
+      </a>
+      <a class="lk" href="https://www.instagram.com/okalamstudio.com" target="_blank" rel="noopener">
+        <span class="lk-ico">📸</span>
+        <b>Instagram</b>
+        <span data-i18n="lk_insta">Artworks, enseignes et extraits d'antenne.</span>
+        <em>@okalamstudio.com →</em>
+      </a>
+      <a class="lk" href="https://okalamstudio.com/contact.html?utm_source=vicebayradio&utm_medium=referral&utm_campaign=vb_launch">
+        <span class="lk-ico">📮</span>
+        <b data-i18n="lk_contact_t">Presse & partenariats</b>
+        <span data-i18n="lk_contact">Un commerce, une marque ou un projet qui veut passer sur Vice Bay Radio ? Écrivez-nous.</span>
+        <em data-i18n="lk_contact_cta">Nous contacter →</em>
+      </a>
+    </div>
+    <div class="soon">
+      <p><b data-i18n="soon_t">Bientôt à l'antenne</b></p>
+      <ul>
+        <li data-i18n="soon_1">Les pubs en audio, avec les voix des animateurs</li>
+        <li data-i18n="soon_2">Le bot Vice Bay Radio dans le Discord, une station par salon</li>
+        <li data-i18n="soon_3">L'appli gratuite Vice Bay Radio</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="credits" data-i18n="credits">Musique : Kevin MacLeod (incompetech.com), CC BY 4.0 ; titres additionnels sous CC BY 2.5 / 3.0 via ccMixter et OpenGameArt. Voix et textes originaux, écrits pour Vice Bay.</p>
+    <p class="fiction" data-i18n="fiction">Vice Bay est une ville imaginaire. Ses stations, ses animateurs et ses commerces sont fictifs ; toute ressemblance avec une entreprise réelle serait une coïncidence.</p>
+    <p class="copy">© 2026 <a href="https://okalamstudio.com/">OKALAM Studio</a> · <a href="https://okalamstudio.com/privacy-vicebreak.html" data-i18n="privacy">Confidentialité</a> · <a href="https://discord.gg/TSaxEnt2dG" target="_blank" rel="noopener">Discord</a></p>
+  </div>
+</footer>
+
+<!-- LECTEUR -->
+<aside class="dock" id="dock" aria-label="Lecteur Vice Bay Radio" style="--acc:#F5E3C3">
+  <button class="dock-play" id="dock-play" type="button" aria-label="Lecture / pause">▶</button>
+  <div class="dock-now"><b id="dock-name">📻 VICE BAY RADIO</b><span id="dock-title" data-i18n="pick">Choisis une station</span></div>
+  <div class="dock-prog"><i id="dock-prog"></i></div>
+  <button class="dock-btn" id="dock-skip" type="button" aria-label="Morceau suivant">⏭</button>
+  <label class="dock-vol"><span aria-hidden="true">🔉</span><input type="range" id="dock-vol" min="0" max="100" value="60" aria-label="Volume"/></label>
+</aside>
+
+<!-- FICHE PUB -->
+<dialog class="modal" id="modal">
+  <form method="dialog"><button class="modal-x" aria-label="Fermer">✕</button></form>
+  <div id="modal-body"></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="radio.js"></script>
+</body>
+</html>
