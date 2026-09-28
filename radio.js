@@ -61,7 +61,7 @@ const Q={
   everglades:{fr:'Marais',en:'Everglades',c:'#3E7C4F'},
   skyline:{fr:'Skyline',en:'Skyline',c:'#FF2E88'}};
 const CITY=[
-  {img:'art_beach',qs:['beach'],fr:['La plage','Le Coconut Palace face à l'océan, le soleil qui tombe, les décapotables blanches garées sous les palmiers. Tropicana à fond.'],en:['The beach','The Coconut Palace on the ocean, the sun going down, white convertibles parked under the palms. Tropicana blasting.']},
+  {img:'art_beach',qs:['beach'],fr:['La plage','Le Coconut Palace face à l\'océan, le soleil qui tombe, les décapotables blanches garées sous les palmiers. Tropicana à fond.'],en:['The beach','The Coconut Palace on the ocean, the sun going down, white convertibles parked under the palms. Tropicana blasting.']},
   {img:'art_downtown',qs:['downtown','skyline'],fr:['Centre-ville & Skyline','Le Laser Lounge, les Silver Cab sur le bitume mouillé, les tours sous la lune. EMOTION à trois heures du matin, NEON dans les salles d\'arcade.'],en:['Downtown & Skyline','The Laser Lounge, Silver Cabs on wet asphalt, towers under the moon. EMOTION at 3 a.m., NEON in the arcades.']},
   {img:'art_highway',qs:['highway','everglades'],fr:['Autoroute & Marais','Le Last Stop Motel au bord des marais, les hérons, les breaks en bois garés devant le diner. Sunset Drive au volant, VOLT dans les clubs des Everglades.'],en:['Highway & Everglades','The Last Stop Motel by the swamp, herons, wood-panel wagons parked outside the diner. Sunset Drive behind the wheel, VOLT in the Everglades clubs.']}];
 
