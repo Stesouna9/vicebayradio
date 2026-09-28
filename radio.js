@@ -12,7 +12,7 @@ hero_lead:"Les radios d'une ville qui n'existe pas. Des animateurs qui parlent t
 cta_listen:'▶ Allumer la radio',cta_ads:'📺 Les fausses pubs',pick:'Choisis une station',pick_hint:"ou glisse l'aiguille sur le cadran",
 off:'RADIO COUPÉE',onair:"À L'ANTENNE",pause:'EN PAUSE',soon_badge:'BIENTÔT',soon_prog:'Nouvelle programmation · bientôt à l\'antenne',jingle:'🎙 Jingle Vice Bay',
 st_label:'Le cadran',st_title:'Cinq animateurs, <em>cinq nuits différentes</em>',st_sub:'Chaque station a sa couleur, son quartier, son animateur et ses annonceurs. Musique 100 % libre, voix originales écrites pour Vice Bay.',
-st_listen:'▶ ÉCOUTER',st_playing:'❚❚ EN COURS',st_tracks:'titres au programme',st_host:'Animé par',
+st_listen:'▶ ÉCOUTER',st_playing:'❚❚ PAUSE',st_tracks:'titres au programme',st_host:'Animé par',
 ads_label:'Pages de pub',ads_title:"Les 25 commerces <em>qui paient l'antenne</em>",
 ads_sub:"Garages des marais, fleuristes de nuit, motels d'autoroute : chaque commerce de Vice Bay a sa pub, lue par l'animateur de sa station. Aucun n'existe. Tous sont ouverts tard.",
 all:'Tout',ad_on:'Sur',ad_note:"Texte de l'antenne, version originale. La pub audio arrive bientôt, avec la voix de l'animateur.",ad_listen:'▶ Écouter la station',ad_share:'🔗 Copier le lien',ad_copied:'✓ Lien copié',
@@ -34,7 +34,7 @@ hero_lead:"The radio of a city that doesn't exist. Hosts who talk too much, jing
 cta_listen:'▶ Turn the radio on',cta_ads:'📺 The fake ads',pick:'Pick a station',pick_hint:'or drag the needle along the dial',
 off:'RADIO OFF',onair:'ON AIR',pause:'PAUSED',soon_badge:'SOON',soon_prog:'New programming · on air soon',jingle:'🎙 Vice Bay jingle',
 st_label:'The dial',st_title:'Five hosts, <em>five different nights</em>',st_sub:'Every station has its own colour, neighbourhood, host and advertisers. 100 % free music, original voices written for Vice Bay.',
-st_listen:'▶ LISTEN',st_playing:'❚❚ PLAYING',st_tracks:'tracks in rotation',st_host:'Hosted by',
+st_listen:'▶ LISTEN',st_playing:'❚❚ PAUSE',st_tracks:'tracks in rotation',st_host:'Hosted by',
 ads_label:'Commercial break',ads_title:'The 25 businesses <em>paying for airtime</em>',
 ads_sub:'Swamp garages, late-night florists, highway motels: every business in Vice Bay has its ad, read by the host of its station. None of them exist. All of them are open late.',
 all:'All',ad_on:'On',ad_note:'On-air script, original French broadcast. The audio ad is coming soon, voiced by the host.',ad_listen:'▶ Listen to the station',ad_share:'🔗 Copy link',ad_copied:'✓ Link copied',
@@ -88,34 +88,45 @@ S.forEach(s=>{
   const b=document.createElement('button'); b.type='button'; b.dataset.id=s.id; b.style.setProperty('--c',s.c); b.innerHTML='<i></i>'+esc(s.name); b.addEventListener('click',()=>tune(s.id)); chips.appendChild(b);
 });
 
-/* grésillement entre deux stations */
+/* grésillement court, uniquement quand on change de station pendant l'écoute */
 let actx=null;
 function hiss(){
   try{
     actx=actx||new (window.AudioContext||window.webkitAudioContext)();
-    const len=actx.sampleRate*.35, buf=actx.createBuffer(1,len,actx.sampleRate), ch=buf.getChannelData(0);
+    if(actx.state==='suspended') actx.resume();
+    const len=Math.floor(actx.sampleRate*.25), buf=actx.createBuffer(1,len,actx.sampleRate), ch=buf.getChannelData(0);
     for(let i=0;i<len;i++) ch[i]=(Math.random()*2-1)*(1-i/len);
     const src=actx.createBufferSource(), g=actx.createGain(), bp=actx.createBiquadFilter();
-    bp.type='bandpass'; bp.frequency.value=2200; bp.Q.value=.6; g.gain.value=.12*(volume/100);
+    bp.type='bandpass'; bp.frequency.value=2200; bp.Q.value=.6; g.gain.value=.06*(volume/100);
     src.buffer=buf; src.connect(bp).connect(g).connect(actx.destination); src.start();
   }catch(e){}
 }
 
-function load(id,i){ cur=id; const L=st().live;
-  if(!L.length){ idx=0; audio.pause(); audio.removeAttribute('src'); return; }
-  idx=((i%L.length)+L.length)%L.length; audio.src=L[idx].src; }
-function playSoft(){ const s=st(); if(!s||!s.live.length){ ui(); return; }
-  clearInterval(fade); const target=volume/100; audio.volume=0; audio.play().catch(()=>{});
-  let k=0; fade=setInterval(()=>{ k++; audio.volume=Math.min(target,target*k/15); if(k>=15) clearInterval(fade); },90); }
+/* on démarre toujours sur un morceau, jamais au milieu d'une annonce du DJ */
+function firstTrack(L){ const t=L.map((v,i)=>v.type==='link'?-1:i).filter(i=>i>=0); return t.length?t[Math.floor(Math.random()*t.length)]:0; }
+let pendingSeek=0, errors=0, want=false;
+function load(id,i,t){ cur=id; const L=st().live; clearInterval(fade);
+  if(!L.length){ idx=0; want=false; audio.pause(); audio.removeAttribute('src'); audio.load(); return; }
+  idx=((i%L.length)+L.length)%L.length; pendingSeek=t||0; audio.src=L[idx].src; }
+audio.addEventListener('loadedmetadata',()=>{ if(pendingSeek&&pendingSeek<audio.duration-2){ try{audio.currentTime=pendingSeek;}catch(e){} } pendingSeek=0; });
+function play(){ const s=st(); if(!s||!s.live.length){ ui(); return; }
+  clearInterval(fade); const target=volume/100; audio.volume=0;
+  want=true; const p=audio.play();
+  /* Chrome peut interrompre le démarrage quand l'onglet est en arrière-plan : on relance dès que le son est prêt, sauf si on a coupé entre-temps */
+  if(p) p.catch(e=>{ if(e&&e.name==='AbortError') audio.addEventListener('canplay',()=>{ if(want&&audio.paused) audio.play().catch(()=>ui()); },{once:true}); ui(); });
+  let k=0; fade=setInterval(()=>{ k++; audio.volume=Math.min(target,target*k/12); if(k>=12) clearInterval(fade); },80); }
+function stop(){ want=false; clearInterval(fade); audio.pause(); if(cur) offsets[cur]={i:idx,t:audio.currentTime}; ui(); }
 function tune(id){
-  if(cur===id){ if(audio.paused) playSoft(); ui(); return; }
+  if(cur===id){ if(audio.paused) play(); else stop(); return; }
+  const wasOn=cur&&!audio.paused;
   if(cur) offsets[cur]={i:idx,t:audio.currentTime};
-  hiss();
+  audio.pause(); if(wasOn) hiss();
   const s=S.find(v=>v.id===id), o=offsets[id];
-  load(id,o?o.i:Math.floor(Math.random()*Math.max(1,s.live.length)));
-  if(o) audio.currentTime=o.t;
-  playSoft(); ui();
+  errors=0; load(id,o?o.i:firstTrack(s.live),o?o.t:0);
+  play(); ui(); meta();
 }
+function next(){ if(!cur||!st().live.length) return; errors=0; load(cur,idx+1); play(); ui(); meta(); }
+function togglePlay(){ if(!cur) tune('tropicana'); else if(audio.paused) play(); else stop(); }
 function ui(){
   const s=st(), on=!!(s&&!audio.paused), acc=s?s.c:'#F5E3C3';
   dial.style.setProperty('--acc',acc); dock.style.setProperty('--acc',acc); dial.classList.toggle('on',on);
@@ -128,30 +139,44 @@ function ui(){
   $('dock-name').textContent=s?'📻 '+s.name+' · '+s.f.toFixed(1)+' FM':'📻 VICE BAY RADIO';
   $('dock-title').textContent=title;
   $('dock-play').textContent=on?'❚❚':'▶';
+  $('dock-play').setAttribute('aria-label',on?'Pause':'Lecture');
   needle.style.left=x(s?s.f:LOW);
   scale.setAttribute('aria-valuenow',s?s.f:LOW);
   marks.querySelectorAll('div').forEach(d=>d.classList.toggle('on',d.dataset.id===cur));
-  chips.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===cur));
+  chips.querySelectorAll('button').forEach(b=>{ b.classList.toggle('on',b.dataset.id===cur); b.setAttribute('aria-pressed',on&&b.dataset.id===cur); });
   document.querySelectorAll('.st').forEach(c=>{ const p=on&&c.dataset.id===cur; c.classList.toggle('playing',p); const b=c.querySelector('.st-play'); if(b) b.textContent=p?tr('st_playing'):tr('st_listen'); });
   document.title=(on?'▶ '+s.name+' '+s.f.toFixed(1)+' · ':'')+'Vice Bay Radio · 5 stations FM, Vice Bay 1986';
+  if('mediaSession' in navigator) navigator.mediaSession.playbackState=on?'playing':(s?'paused':'none');
+}
+/* écran verrouillé, casque, clavier multimédia */
+function meta(){
+  if(!('mediaSession' in navigator)||!st()) return;
+  const s=st(), it=s.live[idx];
+  try{ navigator.mediaSession.metadata=new MediaMetadata({title:it?(it.type==='link'?tr('jingle'):it.title):s.name,artist:s.name+' '+s.f.toFixed(1)+' FM',album:'Vice Bay Radio',artwork:[{src:new URL(s.logo,location.href).href,sizes:'360x360',type:'image/webp'}]}); }catch(e){}
+}
+if('mediaSession' in navigator){
+  const h={play:()=>togglePlay(),pause:()=>stop(),stop:()=>stop(),nexttrack:()=>next()};
+  for(const k in h){ try{ navigator.mediaSession.setActionHandler(k,h[k]); }catch(e){} }
 }
 function nearest(clientX){ const r=scale.getBoundingClientRect(); const f=LOW+Math.min(1,Math.max(0,(clientX-r.left)/r.width))*(HIGH-LOW); return S.reduce((a,b)=>Math.abs(b.f-f)<Math.abs(a.f-f)?b:a); }
 let drag=false;
 const follow=e=>{ const r=scale.getBoundingClientRect(); needle.style.left=Math.min(100,Math.max(0,(e.clientX-r.left)/r.width*100))+'%'; };
 scale.addEventListener('pointerdown',e=>{ drag=true; scale.setPointerCapture(e.pointerId); needle.style.transition='none'; follow(e); });
 scale.addEventListener('pointermove',e=>{ if(drag) follow(e); });
-scale.addEventListener('pointerup',e=>{ if(!drag) return; drag=false; needle.style.transition=''; tune(nearest(e.clientX).id); });
+scale.addEventListener('pointerup',e=>{ if(!drag) return; drag=false; needle.style.transition=''; const id=nearest(e.clientX).id; if(id===cur&&!audio.paused) ui(); else tune(id); });
+scale.addEventListener('pointercancel',()=>{ drag=false; needle.style.transition=''; ui(); });
 scale.addEventListener('keydown',e=>{ const i=S.findIndex(s=>s.id===cur);
   if(e.key==='ArrowRight'||e.key==='ArrowUp'){ e.preventDefault(); tune(S[Math.min(S.length-1,i+1)].id); }
   if(e.key==='ArrowLeft'||e.key==='ArrowDown'){ e.preventDefault(); tune(S[Math.max(0,i<0?0:i-1)].id); }
   if(e.key===' '||e.key==='Enter'){ e.preventDefault(); togglePlay(); } });
-function togglePlay(){ if(!cur) tune('tropicana'); else if(audio.paused) playSoft(); else audio.pause(); ui(); }
 $('dock-play').addEventListener('click',togglePlay);
-$('dock-skip').addEventListener('click',()=>{ if(cur&&st().live.length){ load(cur,idx+1); playSoft(); ui(); } });
+$('dock-skip').addEventListener('click',next);
 $('dock-vol').addEventListener('input',e=>{ volume=+e.target.value; clearInterval(fade); audio.volume=volume/100; });
-audio.addEventListener('ended',()=>{ if(!st().live.length) return; load(cur,idx+1); audio.play().catch(()=>{}); ui(); });
+audio.addEventListener('ended',()=>{ if(!cur||!st().live.length) return; load(cur,idx+1); play(); ui(); meta(); });
+/* un fichier qui ne charge pas : on passe au suivant, sans boucler à l'infini */
+audio.addEventListener('error',()=>{ if(!cur||!audio.getAttribute('src')) return; if(++errors>=st().live.length){ stop(); return; } load(cur,idx+1); play(); ui(); meta(); });
 audio.addEventListener('timeupdate',()=>{ $('dock-prog').style.width=(audio.duration?audio.currentTime/audio.duration*100:0)+'%'; });
-audio.addEventListener('play',ui); audio.addEventListener('pause',ui);
+audio.addEventListener('play',ui); audio.addEventListener('pause',ui); audio.addEventListener('playing',()=>{ errors=0; });
 document.addEventListener('click',e=>{ const b=e.target.closest('[data-tune]'); if(b){ e.preventDefault(); tune(b.dataset.tune); } });
 
 /* ---------- STATIONS ---------- */
