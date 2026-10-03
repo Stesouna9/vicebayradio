@@ -7,18 +7,18 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 /* ---------- LANGUES ---------- */
 const T={
 fr:{nav_stations:'Stations',nav_ads:'Pubs',nav_city:'La ville',nav_links:'Liens',cta_game_short:'Le jeu',
-hero_kicker:'Vice Bay · 1986 · FM stéréo',hero_title:'Cinq stations.<br/><em>Toute la nuit.</em>',
+hero_kicker:'Vice Bay · 1986 · FM stéréo',hero_title:'Six stations.<br/><em>Toute la nuit.</em>',
 hero_lead:"Les radios d'une ville qui n'existe pas. Des animateurs qui parlent trop, des jingles, et les pubs de tous les commerces du front de mer. Tourne le bouton.",
 cta_listen:'▶ Allumer la radio',cta_ads:'📺 Les fausses pubs',pick:'Choisis une station',pick_hint:"ou glisse l'aiguille sur le cadran",
 off:'RADIO COUPÉE',onair:"À L'ANTENNE",pause:'EN PAUSE',soon_badge:'BIENTÔT',soon_prog:'Nouvelle programmation · bientôt à l\'antenne',jingle:'🎙 Jingle Vice Bay',
-st_label:'Le cadran',st_title:'Cinq animateurs, <em>cinq nuits différentes</em>',st_sub:'Chaque station a sa couleur, son quartier, son animateur et ses annonceurs. Musique 100 % libre, voix originales écrites pour Vice Bay.',
+st_label:'Le cadran',st_title:'Six stations, <em>six nuits différentes</em>',st_sub:'Chaque station a sa couleur, son quartier, son animateur et ses annonceurs. Musique 100 % libre, voix originales écrites pour Vice Bay.',
 st_listen:'▶ ÉCOUTER',st_playing:'❚❚ PAUSE',st_tracks:'titres au programme',st_host:'Animé par',
 ads_label:'Pages de pub',ads_title:"Les 25 commerces <em>qui paient l'antenne</em>",
 ads_sub:"Garages des marais, fleuristes de nuit, motels d'autoroute : chaque commerce de Vice Bay a sa pub, lue par l'animateur de sa station. Aucun n'existe. Tous sont ouverts tard.",
 all:'Tout',ad_on:'Sur',ad_note:"Texte de l'antenne, version originale. La pub audio arrive bientôt, avec la voix de l'animateur.",ad_listen:'▶ Écouter la station',ad_share:'🔗 Copier le lien',ad_copied:'✓ Lien copié',
 city_label:'La ville',city_title:'Bienvenue à <em>Vice Bay</em>',city_sub:"Une ville côtière de 1986, entre l'océan et les marais. Cinq quartiers, cinq couleurs, et une radio allumée dans chaque voiture.",
 links_label:'Vice Bay Radio, partout',links_title:'Le jeu, la communauté, <em>le studio</em>',
-lk_game:'Le casse-briques néon de Vice Bay. 500 silhouettes, les cinq radios en fond. iPhone et Android.',lk_game_date:'Sortie le 19 novembre 2026',
+lk_game:'Le casse-briques néon de Vice Bay. 500 silhouettes, les six radios en fond. iPhone et Android.',lk_game_date:'Sortie le 19 novembre 2026',
 lk_discord_t:'Le Discord',lk_discord:'Bugs, suggestions, bêta iOS/Android, coulisses de Vice Bay Radio. La radio y arrive bientôt en salon vocal.',lk_discord_cta:'Rejoindre le Discord →',
 lk_studio:"Le studio indépendant derrière Vice Bay. Jeux, apps, et d'autres projets qui passeront par cette radio.",
 lk_projects_t:'Les autres projets',lk_projects:"Kotoba, VoteDay et ce qui arrive ensuite. Chaque projet du studio aura bientôt sa pub à l'antenne.",lk_projects_cta:'Voir les projets →',
@@ -29,18 +29,18 @@ fiction:'Vice Bay est une ville imaginaire. Ses stations, ses animateurs et ses 
 privacy:'Confidentialité',days:'J-',release_today:"C'est aujourd'hui.",released:'Disponible maintenant',shops:'annonceurs',
 weather:['27 °C · humide','24 °C · pluie fine','29 °C · ciel rose','22 °C · brume sur les marais','26 °C · vent de mer']},
 en:{nav_stations:'Stations',nav_ads:'Ads',nav_city:'The city',nav_links:'Links',cta_game_short:'The game',
-hero_kicker:'Vice Bay · 1986 · FM stereo',hero_title:'Five stations.<br/><em>All night long.</em>',
+hero_kicker:'Vice Bay · 1986 · FM stereo',hero_title:'Six stations.<br/><em>All night long.</em>',
 hero_lead:"The radio of a city that doesn't exist. Hosts who talk too much, jingles, and ads for every business on the waterfront. Turn the dial.",
 cta_listen:'▶ Turn the radio on',cta_ads:'📺 The fake ads',pick:'Pick a station',pick_hint:'or drag the needle along the dial',
 off:'RADIO OFF',onair:'ON AIR',pause:'PAUSED',soon_badge:'SOON',soon_prog:'New programming · on air soon',jingle:'🎙 Vice Bay jingle',
-st_label:'The dial',st_title:'Five hosts, <em>five different nights</em>',st_sub:'Every station has its own colour, neighbourhood, host and advertisers. 100 % free music, original voices written for Vice Bay.',
+st_label:'The dial',st_title:'Six stations, <em>six different nights</em>',st_sub:'Every station has its own colour, neighbourhood, host and advertisers. 100 % free music, original voices written for Vice Bay.',
 st_listen:'▶ LISTEN',st_playing:'❚❚ PAUSE',st_tracks:'tracks in rotation',st_host:'Hosted by',
 ads_label:'Commercial break',ads_title:'The 25 businesses <em>paying for airtime</em>',
 ads_sub:'Swamp garages, late-night florists, highway motels: every business in Vice Bay has its ad, read by the host of its station. None of them exist. All of them are open late.',
 all:'All',ad_on:'On',ad_note:'On-air script, original French broadcast. The audio ad is coming soon, voiced by the host.',ad_listen:'▶ Listen to the station',ad_share:'🔗 Copy link',ad_copied:'✓ Link copied',
 city_label:'The city',city_title:'Welcome to <em>Vice Bay</em>',city_sub:'A 1986 coastal city between the ocean and the swamps. Five neighbourhoods, five colours, and a radio on in every car.',
 links_label:'Vice Bay Radio, everywhere',links_title:'The game, the community, <em>the studio</em>',
-lk_game:'The neon brick-breaker set in Vice Bay. 500 silhouettes, the five stations playing in the background. iPhone and Android.',lk_game_date:'Out November 19, 2026',
+lk_game:'The neon brick-breaker set in Vice Bay. 500 silhouettes, the six stations playing in the background. iPhone and Android.',lk_game_date:'Out November 19, 2026',
 lk_discord_t:'Discord',lk_discord:'Bugs, suggestions, iOS/Android beta, behind the scenes of Vice Bay Radio. The radio is coming to a voice channel soon.',lk_discord_cta:'Join the Discord →',
 lk_studio:'The independent studio behind Vice Bay. Games, apps, and more projects that will come through this radio.',
 lk_projects_t:'Other projects',lk_projects:"Kotoba, VoteDay and what comes next. Every studio project will soon get its own ad on air.",lk_projects_cta:'See the projects →',
@@ -145,7 +145,7 @@ function ui(){
   marks.querySelectorAll('div').forEach(d=>d.classList.toggle('on',d.dataset.id===cur));
   chips.querySelectorAll('button').forEach(b=>{ b.classList.toggle('on',b.dataset.id===cur); b.setAttribute('aria-pressed',on&&b.dataset.id===cur); });
   document.querySelectorAll('.st').forEach(c=>{ const p=on&&c.dataset.id===cur; c.classList.toggle('playing',p); const b=c.querySelector('.st-play'); if(b) b.textContent=p?tr('st_playing'):tr('st_listen'); });
-  document.title=(on?'▶ '+s.name+' '+s.f.toFixed(1)+' · ':'')+'Vice Bay Radio · 5 stations FM, Vice Bay 1986';
+  document.title=(on?'▶ '+s.name+' '+s.f.toFixed(1)+' · ':'')+'Vice Bay Radio · 6 stations FM, Vice Bay 1986';
   if('mediaSession' in navigator) navigator.mediaSession.playbackState=on?'playing':(s?'paused':'none');
 }
 /* écran verrouillé, casque, clavier multimédia */
@@ -187,7 +187,7 @@ function renderStations(){
       '<img src="'+s.logo+'" alt="'+esc(s.name)+' '+s.f+' FM" loading="lazy" width="360" height="360"/>'+
       '<div class="st-body"><span class="st-f">'+s.f.toFixed(1)+' FM · '+esc(lang==='fr'?s.genre:s.genre_en)+'</span>'+
       '<h3>'+esc(s.name)+'</h3><p class="st-slogan">« '+esc(lang==='fr'?s.slogan:s.slogan_en)+' »</p>'+
-      '<p class="st-host">'+tr('st_host')+' <b>'+esc(s.host)+'</b>. '+esc(lang==='fr'?s.bio:s.bio_en)+'</p>'+
+      '<p class="st-host">'+(s.host?tr('st_host')+' <b>'+esc(s.host)+'</b>. ':'')+esc(lang==='fr'?s.bio:s.bio_en)+'</p>'+
       (s.jingles[0]?'<p class="st-jingle">'+esc(s.jingles[0])+'</p>':'')+
       '<div class="st-foot"><button class="st-play" type="button" data-tune="'+s.id+'">'+tr('st_listen')+'</button>'+
       '<span class="st-count">'+n+' '+tr('st_tracks')+'</span></div></div></article>';
