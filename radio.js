@@ -9,7 +9,7 @@ const T={
 fr:{nav_stations:'Stations',nav_ads:'Pubs',nav_city:'La ville',nav_links:'Liens',cta_game_short:'Le jeu',
 hero_kicker:'Vice Bay · 1986 · FM stéréo',hero_title:'Six stations.<br/><em>Toute la nuit.</em>',
 hero_lead:"Les radios d'une ville qui n'existe pas. Des animateurs qui parlent trop, des jingles, et les pubs de tous les commerces du front de mer. Tourne le bouton.",
-cta_listen:'▶ Allumer la radio',cta_ads:'📺 Les fausses pubs',pick:'Choisis une station',pick_hint:"ou glisse l'aiguille sur le cadran",
+cta_listen:'▶ Allumer la radio',cta_ads:'📺 Les fausses pubs',pick:'Choisis une station',pick_hint:"tourne le bouton ou appuie sur une touche",
 off:'RADIO COUPÉE',onair:"À L'ANTENNE",pause:'EN PAUSE',soon_badge:'BIENTÔT',soon_prog:'Nouvelle programmation · bientôt à l\'antenne',jingle:'🎙 Jingle Vice Bay',
 st_label:'Le cadran',st_title:'Six stations, <em>six nuits différentes</em>',st_sub:'Chaque station a sa couleur, son quartier, son animateur et ses annonceurs. Musique 100 % libre, voix originales écrites pour Vice Bay.',
 st_listen:'▶ ÉCOUTER',st_playing:'❚❚ PAUSE',st_tracks:'titres au programme',st_host:'Animé par',
@@ -31,7 +31,7 @@ weather:['27 °C · humide','24 °C · pluie fine','29 °C · ciel rose','22 °C
 en:{nav_stations:'Stations',nav_ads:'Ads',nav_city:'The city',nav_links:'Links',cta_game_short:'The game',
 hero_kicker:'Vice Bay · 1986 · FM stereo',hero_title:'Six stations.<br/><em>All night long.</em>',
 hero_lead:"The radio of a city that doesn't exist. Hosts who talk too much, jingles, and ads for every business on the waterfront. Turn the dial.",
-cta_listen:'▶ Turn the radio on',cta_ads:'📺 The fake ads',pick:'Pick a station',pick_hint:'or drag the needle along the dial',
+cta_listen:'▶ Turn the radio on',cta_ads:'📺 The fake ads',pick:'Pick a station',pick_hint:'turn the knob or press a preset',
 off:'RADIO OFF',onair:'ON AIR',pause:'PAUSED',soon_badge:'SOON',soon_prog:'New programming · on air soon',jingle:'🎙 Vice Bay jingle',
 st_label:'The dial',st_title:'Six stations, <em>six different nights</em>',st_sub:'Every station has its own colour, neighbourhood, host and advertisers. 100 % free music, original voices written for Vice Bay.',
 st_listen:'▶ LISTEN',st_playing:'❚❚ PAUSE',st_tracks:'tracks in rotation',st_host:'Hosted by',
@@ -120,7 +120,7 @@ function tune(id){
   if(cur===id){ if(audio.paused) play(); else stop(); return; }
   const wasOn=cur&&!audio.paused;
   if(cur) offsets[cur]={i:idx,t:audio.currentTime};
-  audio.pause(); if(wasOn) hiss();
+  audio.pause(); if(typeof RX!=='undefined') RX.burst(); else if(wasOn) hiss();
   const s=S.find(v=>v.id===id), o=offsets[id];
   errors=0; load(id,o?o.i:firstTrack(s.live),o?o.t:0);
   play(); ui(); meta();
@@ -147,6 +147,7 @@ function ui(){
   document.querySelectorAll('.st').forEach(c=>{ const p=on&&c.dataset.id===cur; c.classList.toggle('playing',p); const b=c.querySelector('.st-play'); if(b) b.textContent=p?tr('st_playing'):tr('st_listen'); });
   document.title=(on?'▶ '+s.name+' '+s.f.toFixed(1)+' · ':'')+'Vice Bay Radio · 6 stations FM, Vice Bay 1986';
   if('mediaSession' in navigator) navigator.mediaSession.playbackState=on?'playing':(s?'paused':'none');
+  if(typeof RX!=='undefined') RX.update(on,s);
 }
 /* écran verrouillé, casque, clavier multimédia */
 function meta(){
@@ -160,11 +161,11 @@ if('mediaSession' in navigator){
 }
 function nearest(clientX){ const r=scale.getBoundingClientRect(); const f=LOW+Math.min(1,Math.max(0,(clientX-r.left)/r.width))*(HIGH-LOW); return S.reduce((a,b)=>Math.abs(b.f-f)<Math.abs(a.f-f)?b:a); }
 let drag=false;
-const follow=e=>{ const r=scale.getBoundingClientRect(); needle.style.left=Math.min(100,Math.max(0,(e.clientX-r.left)/r.width*100))+'%'; };
-scale.addEventListener('pointerdown',e=>{ drag=true; scale.setPointerCapture(e.pointerId); needle.style.transition='none'; follow(e); });
+const follow=e=>{ const r=scale.getBoundingClientRect(), p=Math.min(100,Math.max(0,(e.clientX-r.left)/r.width*100)); needle.style.left=p+'%'; if(typeof RX!=='undefined') RX.drag(LOW+p/100*(HIGH-LOW)); };
+scale.addEventListener('pointerdown',e=>{ drag=true; scale.setPointerCapture(e.pointerId); needle.style.transition='none'; if(typeof RX!=='undefined') RX.dragStart(); follow(e); });
 scale.addEventListener('pointermove',e=>{ if(drag) follow(e); });
-scale.addEventListener('pointerup',e=>{ if(!drag) return; drag=false; needle.style.transition=''; const id=nearest(e.clientX).id; if(id===cur&&!audio.paused) ui(); else tune(id); });
-scale.addEventListener('pointercancel',()=>{ drag=false; needle.style.transition=''; ui(); });
+scale.addEventListener('pointerup',e=>{ if(!drag) return; drag=false; needle.style.transition=''; if(typeof RX!=='undefined') RX.dragEnd(); const id=nearest(e.clientX).id; if(id===cur&&!audio.paused) ui(); else tune(id); });
+scale.addEventListener('pointercancel',()=>{ drag=false; needle.style.transition=''; if(typeof RX!=='undefined') RX.dragEnd(); ui(); });
 scale.addEventListener('keydown',e=>{ const i=S.findIndex(s=>s.id===cur);
   if(e.key==='ArrowRight'||e.key==='ArrowUp'){ e.preventDefault(); tune(S[Math.min(S.length-1,i+1)].id); }
   if(e.key==='ArrowLeft'||e.key==='ArrowDown'){ e.preventDefault(); tune(S[Math.max(0,i<0?0:i-1)].id); }
@@ -259,6 +260,123 @@ function countdown(){
   const days=Math.ceil((new Date(2026,10,19)-new Date())/86400000);
   el.textContent=days>0?tr('lk_game_date')+' · '+tr('days')+days:(days===0?tr('release_today'):tr('released'));
 }
+
+/* Autoradio : bruit de syntonisation, boutons rotatifs, égaliseur. S'appuie sur radio.js (tune, S, audio, volume, LOW, HIGH). */
+const RX=(()=>{
+  const rx=document.getElementById('dial'), eq=document.getElementById('rx-eq');
+  const kT=document.getElementById('knob-tune'), kV=document.getElementById('knob-vol');
+  let ctx=null, noiseBuf=null, loop=null, loopGain=null, dragging=false, curOn=false;
+  const A0=-135, A1=135;
+  const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+  const freqAngle=f=>A0+(f-LOW)/(HIGH-LOW)*(A1-A0);
+  const angleFreq=a=>LOW+(clamp(a,A0,A1)-A0)/(A1-A0)*(HIGH-LOW);
+
+  /* ---- son ---- */
+  function ac(){
+    try{
+      ctx=ctx||new (window.AudioContext||window.webkitAudioContext)();
+      if(ctx.state==='suspended') ctx.resume();
+      if(!noiseBuf){
+        const n=ctx.sampleRate*2; noiseBuf=ctx.createBuffer(1,n,ctx.sampleRate); const d=noiseBuf.getChannelData(0);
+        let b=0; for(let i=0;i<n;i++){ const w=Math.random()*2-1; b=.7*b+.3*w; d[i]=w*.7+b*.6; }   // souffle + grave de parasite
+      }
+    }catch(e){ ctx=null; }
+    return ctx;
+  }
+  const vol=()=>(typeof volume==='number'?volume:60)/100;
+
+  /* entre deux stations : souffle, sifflement qui glisse, quelques craquements */
+  function burst(){
+    const c=ac(); if(!c) return;
+    const t=c.currentTime, dur=.62, g=c.createGain(), bp=c.createBiquadFilter(), src=c.createBufferSource();
+    src.buffer=noiseBuf; src.loop=true; bp.type='bandpass'; bp.Q.value=.9;
+    bp.frequency.setValueAtTime(700,t); bp.frequency.exponentialRampToValueAtTime(3800,t+dur*.45); bp.frequency.exponentialRampToValueAtTime(1300,t+dur);
+    const v=.16*vol()+.02;
+    g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(v,t+.04);
+    g.gain.setValueAtTime(v,t+dur*.6); g.gain.exponentialRampToValueAtTime(.0008,t+dur);
+    src.connect(bp).connect(g).connect(c.destination); src.start(t,Math.random()); src.stop(t+dur+.05);
+    const o=c.createOscillator(), og=c.createGain(); o.type='sine';
+    o.frequency.setValueAtTime(2600,t); o.frequency.exponentialRampToValueAtTime(380,t+dur*.8);
+    og.gain.setValueAtTime(.0001,t); og.gain.linearRampToValueAtTime(.025*vol()+.004,t+.05); og.gain.exponentialRampToValueAtTime(.0001,t+dur*.8);
+    o.connect(og).connect(c.destination); o.start(t); o.stop(t+dur);
+    for(let k=0;k<4;k++){                                            // craquements
+      const pt=t+Math.random()*dur*.9, ps=c.createBufferSource(), pg=c.createGain();
+      ps.buffer=noiseBuf; pg.gain.setValueAtTime(.3*vol()+.03,pt); pg.gain.exponentialRampToValueAtTime(.0005,pt+.02+Math.random()*.03);
+      ps.connect(pg).connect(c.destination); ps.start(pt,Math.random()*1.5); ps.stop(pt+.07);
+    }
+    rx.classList.add('tuning'); setTimeout(()=>rx.classList.remove('tuning'),dur*1000);
+  }
+
+  /* pendant qu'on tourne le bouton : le souffle monte quand on s'éloigne d'une station */
+  function dragStart(){
+    dragging=true; const c=ac(); if(!c) return;
+    loop=c.createBufferSource(); loopGain=c.createGain(); const bp=c.createBiquadFilter();
+    loop.buffer=noiseBuf; loop.loop=true; bp.type='bandpass'; bp.frequency.value=1800; bp.Q.value=.5;
+    loopGain.gain.value=0; loop.connect(bp).connect(loopGain).connect(c.destination); loop.start();
+    rx.classList.add('tuning');
+  }
+  function drag(f){
+    if(!dragging) return;
+    const d=S.reduce((m,s)=>Math.min(m,Math.abs(s.f-f)),9), close=clamp(1-d/1.4,0,1);
+    if(loopGain&&ctx) loopGain.gain.setTargetAtTime((1-close)*.12*vol()+.01,ctx.currentTime,.03);
+    if(cur&&!audio.paused) audio.volume=vol()*(.12+.88*close);
+    const fr=document.getElementById('d-freq'); if(fr) fr.textContent=f.toFixed(1);
+    kT.style.transition='none'; kT.style.transform='rotate('+freqAngle(f)+'deg)';
+  }
+  function dragEnd(){
+    dragging=false; rx.classList.remove('tuning');
+    if(loop&&ctx){ try{ loopGain.gain.setTargetAtTime(0,ctx.currentTime,.05); loop.stop(ctx.currentTime+.3); }catch(e){} }
+    loop=null; loopGain=null; kT.style.transition='';
+    if(cur&&!audio.paused) audio.volume=vol();
+  }
+
+  /* ---- boutons rotatifs ---- */
+  function angleOf(el,e){ const r=el.getBoundingClientRect(); return Math.atan2(e.clientY-(r.top+r.height/2),e.clientX-(r.left+r.width/2))*180/Math.PI+90; }
+  function rotary(el,onMove,onEnd){
+    let on=false, last=0, acc=0;
+    el.addEventListener('pointerdown',e=>{ on=true; el.setPointerCapture(e.pointerId); last=angleOf(el,e); acc=el._a||0; ac(); onMove(acc,true); });
+    el.addEventListener('pointermove',e=>{ if(!on) return; let a=angleOf(el,e), d=a-last; if(d>180) d-=360; if(d<-180) d+=360; last=a; acc=clamp(acc+d,A0,A1); el._a=acc; onMove(acc,false); });
+    const up=()=>{ if(!on) return; on=false; onEnd(el._a); };
+    el.addEventListener('pointerup',up); el.addEventListener('pointercancel',up);
+  }
+  rotary(kT,(a,first)=>{ if(first){ dragStart(); const f=cur&&st()?st().f:LOW; kT._a=freqAngle(first&&cur?f:LOW); } const f=angleFreq(kT._a); needle.style.transition='none'; needle.style.left=((f-LOW)/(HIGH-LOW)*100)+'%'; drag(f); },
+         ()=>{ const f=angleFreq(kT._a), s=S.reduce((a,b)=>Math.abs(b.f-f)<Math.abs(a.f-f)?b:a); needle.style.transition=''; dragEnd(); if(s.id===cur&&!audio.paused) ui(); else tune(s.id); });
+  kT.addEventListener('keydown',e=>{ const i=S.findIndex(s=>s.id===cur);
+    if(e.key==='ArrowRight'||e.key==='ArrowUp'){ e.preventDefault(); tune(S[Math.min(S.length-1,i+1)].id); }
+    if(e.key==='ArrowLeft'||e.key==='ArrowDown'){ e.preventDefault(); tune(S[Math.max(0,i<0?0:i-1)].id); } });
+  /* départ du bouton à la position de la station courante */
+  kT.addEventListener('pointerdown',()=>{ kT._a=freqAngle(cur&&st()?st().f:LOW); },true);
+
+  const volAngle=v=>A0+v/100*(A1-A0);
+  function setVol(v){ volume=clamp(Math.round(v),0,100); const r=document.getElementById('dock-vol'); if(r) r.value=volume; if(cur&&!audio.paused) audio.volume=volume/100; kV.style.transform='rotate('+volAngle(volume)+'deg)'; kV.setAttribute('aria-valuenow',volume); }
+  rotary(kV,(a,first)=>{ if(first) kV._a=volAngle(volume); setVol((kV._a-A0)/(A1-A0)*100); },()=>{});
+  kV.addEventListener('pointerdown',()=>{ kV._a=volAngle(volume); },true);
+  kV.addEventListener('keydown',e=>{ if(e.key==='ArrowRight'||e.key==='ArrowUp'){ e.preventDefault(); setVol(volume+8); } if(e.key==='ArrowLeft'||e.key==='ArrowDown'){ e.preventDefault(); setVol(volume-8); } });
+  document.getElementById('dock-vol').addEventListener('input',()=>setVol(+document.getElementById('dock-vol').value));
+  setVol(typeof volume==='number'?volume:60);
+
+  /* ---- égaliseur ---- */
+  const bars=[]; for(let i=0;i<20;i++){ const b=document.createElement('i'); eq.appendChild(b); bars.push(b); }
+  let phase=0; const lvl=bars.map(()=>.05);
+  (function tick(){
+    phase+=.07;
+    bars.forEach((b,i)=>{
+      const beat=.5+.5*Math.sin(phase*1.6+i*.5), wob=.5+.5*Math.sin(phase*3.1+i*1.7), rnd=Math.random();
+      const target=curOn?clamp(.12+.45*beat*(.6+.4*wob)+.4*rnd*(1-i/bars.length*.5),0,1):.04;
+      lvl[i]+=(target-lvl[i])*.35; b.style.transform='scaleY('+lvl[i].toFixed(3)+')';
+    });
+    requestAnimationFrame(tick);
+  })();
+
+  function update(on,s){
+    curOn=on; rx.classList.toggle('on',on);
+    if(!dragging){ kT._a=freqAngle(s?s.f:LOW); kT.style.transform='rotate('+kT._a+'deg)'; }
+    document.getElementById('led-st').textContent=on?'STEREO':'STEREO';
+  }
+  return {burst,dragStart,drag,dragEnd,update};
+})();
+
+
 
 applyLang();
 const fromHash=()=>{ if(location.hash.startsWith('#pub-')) openAd(location.hash.slice(5)); };

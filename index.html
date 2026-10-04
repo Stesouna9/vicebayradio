@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="radio.css?v=20260928c"/>
+<link rel="stylesheet" href="receiver.css?v=20261004c"/>
 </head>
 <body>
 
@@ -55,22 +56,35 @@
     </div>
   </div>
 
-  <!-- CADRAN -->
-  <div class="dial" id="dial" style="--acc:#F5E3C3">
-    <div class="dial-read">
-      <div class="dial-freq"><span id="d-freq">—</span><small>FM</small></div>
-      <div class="dial-meta">
-        <b id="d-name" data-i18n="pick">Choisis une station</b>
-        <small id="d-genre" data-i18n="pick_hint">ou glisse l'aiguille sur le cadran</small>
+  <!-- AUTORADIO -->
+  <div class="rx" id="dial" style="--acc:#F5E3C3">
+    <div class="rx-screw s1"></div><div class="rx-screw s2"></div><div class="rx-screw s3"></div><div class="rx-screw s4"></div>
+    <div class="rx-top">
+      <span class="rx-brand">VICE BAY <i>◆</i> <small>FM STEREO RECEIVER</small></span>
+      <span class="rx-leds"><em class="led" id="led-st">STEREO</em><span class="onair" id="d-onair" data-i18n="off">RADIO COUPÉE</span></span>
+    </div>
+    <div class="rx-body">
+      <div class="rx-knobbox"><div class="rx-knob" id="knob-tune" role="slider" aria-label="Syntonisation" tabindex="0"><i></i></div><small>TUNING</small></div>
+      <div class="rx-center">
+        <div class="rx-lcd">
+          <div class="dial-freq"><span id="d-freq">—</span><small>FM</small></div>
+          <div class="dial-meta">
+            <b id="d-name" data-i18n="pick">Choisis une station</b>
+            <small id="d-genre" data-i18n="pick_hint">ou tourne le bouton</small>
+          </div>
+          <div class="rx-eq" id="rx-eq" aria-hidden="true"></div>
+        </div>
+        <div class="rx-glass">
+          <div class="scale" id="scale" role="slider" aria-label="Fréquence" aria-valuemin="87.5" aria-valuemax="108" aria-valuenow="87.5" tabindex="0">
+            <div class="ticks"></div>
+            <div class="marks" id="marks"></div>
+            <div class="needle" id="needle"></div>
+          </div>
+        </div>
       </div>
-      <span class="onair" id="d-onair" data-i18n="off">RADIO COUPÉE</span>
+      <div class="rx-knobbox"><div class="rx-knob" id="knob-vol" role="slider" aria-label="Volume" tabindex="0"><i></i></div><small>VOLUME</small></div>
     </div>
-    <div class="scale" id="scale" role="slider" aria-label="Fréquence" aria-valuemin="87.5" aria-valuemax="108" aria-valuenow="87.5" tabindex="0">
-      <div class="ticks"></div>
-      <div class="marks" id="marks"></div>
-      <div class="needle" id="needle"></div>
-    </div>
-    <div class="chips" id="chips"></div>
+    <div class="rx-presets"><div class="chips" id="chips"></div></div>
   </div>
 </section>
 
@@ -185,6 +199,6 @@
 </dialog>
 
 <script src="data.js"></script>
-<script src="radio.js"></script>
+<script src="radio.js?v=20261004c"></script>
 </body>
 </html>
