@@ -114,3 +114,21 @@
 .cr li em{font-style:normal;font-family:'Space Mono',monospace;font-size:.72rem;background:none;color:var(--c);-webkit-text-fill-color:var(--c)}
 .cr a{text-decoration:underline;text-decoration-color:rgba(255,255,255,.25);text-underline-offset:3px}
 @media (max-width:640px){.cr li{grid-template-columns:1fr;gap:2px}}
+
+/* participer */
+.pa-grid{margin-top:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(176px,1fr));gap:14px}
+.pa{display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:14px;text-decoration:none;color:var(--sand);
+  background:linear-gradient(160deg,rgba(255,46,136,.10),rgba(34,229,255,.06));border:1px solid var(--line);transition:transform .15s,border-color .15s,box-shadow .15s}
+.pa:hover{transform:translateY(-3px);border-color:var(--pink);box-shadow:0 10px 30px rgba(255,46,136,.18)}
+.pa-ic{font-size:1.7rem}
+.pa b{font-family:'Orbitron',sans-serif;font-size:.86rem;letter-spacing:.08em;color:#fff}
+.pa span:last-child{color:var(--muted);font-size:.88rem;line-height:1.5}
+.pa-cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.pa-note{max-width:560px;font-size:.8rem;color:var(--muted)}
+/* iPhone installée sur l'écran d'accueil : sous l'encoche et la barre d'accueil */
+.top{padding-top:calc(12px + env(safe-area-inset-top))}
+.dock{padding-bottom:calc(10px + env(safe-area-inset-bottom))}
+body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+
+.top nav a{white-space:nowrap}
+@media (max-width:1180px){.clock{display:none}}

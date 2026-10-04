@@ -26,6 +26,7 @@ lk_insta:"Artworks, enseignes et extraits d'antenne.",lk_contact_t:'Presse & par
 soon_t:"Bientôt à l'antenne",soon_1:'Les pubs en audio, avec les voix des animateurs',soon_2:'Le bot Vice Bay Radio dans le Discord, une station par salon',soon_3:"L'appli gratuite Vice Bay Radio",
 credits:'Musique : Kevin MacLeod (incompetech.com), CC BY 4.0 ; titres additionnels sous CC BY 2.5 / 3.0 via ccMixter et OpenGameArt. Voix et textes originaux, écrits pour Vice Bay.',
 cr_label:'Crédits',cr_title:'Toute la musique, <em>créditée</em>',cr_sub:"Chaque morceau diffusé sur Vice Bay Radio (et dans le jeu VICE BREAK) est sous licence libre, créditée ici avec son auteur et sa licence. Les morceaux ont été ré-encodés en AAC pour le poids ; aucune autre modification. Les titres sous CC BY-SA gardent cette licence. Œuvres classiques : domaine public ; enregistrements par leurs interprètes, sous les licences indiquées (Musopen, Kimiko Ishizaka, Wikimedia Commons, Kevin MacLeod / incompetech.com, ccMixter, OpenGameArt).",cr_tracks:'titres',
+nav_part:'Participer',pa_label:'Communauté',pa_title:"Cette radio, <em>c'est la vôtre</em>",pa_sub:"Vice Bay Radio grandit avec ceux qui l'écoutent. Proposez des morceaux, inventez des pubs, envoyez des dédicaces, votez : tout se passe sur le Discord, et les meilleures idées passent à l'antenne, avec votre nom.",pa_join:'Rejoindre le Discord Vice Bay',pa_note:"Rien ne passe à l'antenne sans validation. Vous gardez vos droits et nous autorisez la diffusion sur Vice Bay Radio. Musique libre uniquement (CC0, CC BY).",pa_1t:'Propose ton morceau',pa_1d:"Artiste indépendant ? Ton titre libre peut passer sur une station, avec ton nom à l'antenne et dans les crédits.",pa_2t:'Invente une pub',pa_2d:"Un commerce imaginaire de Vice Bay ? Écris sa pub : les meilleures sont enregistrées par un animateur.",pa_3t:'Envoie une dédicace',pa_3d:"Un message ou un titre pour quelqu'un que tu aimes, lu à l'antenne.",pa_4t:'Vote, top de la baie',pa_4d:"Vote pour tes titres préférés : le classement de la semaine passe plus souvent.",pa_5t:'Prête ta voix',pa_5d:"Tu veux animer une station ? Les voix de la radio viennent aussi de la communauté.",
 fiction:'Vice Bay est une ville imaginaire. Ses stations, ses animateurs et ses commerces sont fictifs ; toute ressemblance avec une entreprise réelle serait une coïncidence.',
 privacy:'Confidentialité',days:'J-',release_today:"C'est aujourd'hui.",released:'Disponible maintenant',shops:'annonceurs',
 weather:['27 °C · humide','24 °C · pluie fine','29 °C · ciel rose','22 °C · brume sur les marais','26 °C · vent de mer']},
@@ -49,6 +50,7 @@ lk_insta:'Artworks, neon signs and on-air clips.',lk_contact_t:'Press & partners
 soon_t:'Coming on air',soon_1:'Audio ads, voiced by the hosts',soon_2:'The Vice Bay Radio bot on Discord, one station per channel',soon_3:'The free Vice Bay Radio app',
 credits:'Music: Kevin MacLeod (incompetech.com), CC BY 4.0; additional tracks under CC BY 2.5 / 3.0 via ccMixter and OpenGameArt. Original voices and scripts, written for Vice Bay.',
 cr_label:'Credits',cr_title:'All the music, <em>credited</em>',cr_sub:"Every track played on Vice Bay Radio (and in the VICE BREAK game) is under a free licence, credited here with its author and licence. Tracks were re-encoded to AAC for size; no other changes. Tracks under CC BY-SA keep that licence. Classical works are public domain; recordings are under their performers' licences as shown (Musopen, Kimiko Ishizaka, Wikimedia Commons, Kevin MacLeod / incompetech.com, ccMixter, OpenGameArt).",cr_tracks:'tracks',
+nav_part:'Join in',pa_label:'Community',pa_title:"This radio is <em>yours</em>",pa_sub:"Vice Bay Radio grows with the people who listen. Suggest tracks, invent ads, send dedications, vote: it all happens on Discord, and the best ideas go on air with your name.",pa_join:'Join the Vice Bay Discord',pa_note:"Nothing goes on air without review. You keep your rights and let us broadcast on Vice Bay Radio. Free music only (CC0, CC BY).",pa_1t:'Suggest your track',pa_1d:"Independent artist? Your free-licensed track can play on a station, with your name on air and in the credits.",pa_2t:'Invent an ad',pa_2d:"An imaginary Vice Bay business? Write its ad: the best ones are recorded by a host.",pa_3t:'Send a dedication',pa_3d:"A message or a song for someone you love, read on air.",pa_4t:'Vote, top of the bay',pa_4d:"Vote for your favourite tracks: the weekly chart plays more often.",pa_5t:'Lend your voice',pa_5d:"Want to host a station? The radio's voices come from the community too.",
 fiction:'Vice Bay is an imaginary city. Its stations, hosts and businesses are fictional; any resemblance to a real company is a coincidence.',
 privacy:'Privacy',days:'D-',release_today:"It's today.",released:'Out now',shops:'advertisers',
 weather:['81 °F · humid','75 °F · light rain','84 °F · pink sky','72 °F · mist over the swamp','79 °F · sea breeze']}};
@@ -72,7 +74,7 @@ function applyLang(){
   document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=tr(el.dataset.i18n);});
   document.querySelectorAll('[data-i18n-html]').forEach(el=>{el.innerHTML=tr(el.dataset.i18nHtml);});
   $('lang').textContent=lang==='fr'?'EN':'FR';
-  renderStations(); renderCredits(); renderFilters(); renderAds(); renderCity(); countdown(); clock(); ui();
+  renderStations(); renderParticipate(); renderCredits(); renderFilters(); renderAds(); renderCity(); countdown(); clock(); ui();
 }
 $('lang').addEventListener('click',()=>{ lang=lang==='fr'?'en':'fr'; try{localStorage.setItem('vbr_lang',lang);}catch(e){} applyLang(); });
 
@@ -182,6 +184,14 @@ audio.addEventListener('timeupdate',()=>{ $('dock-prog').style.width=(audio.dura
 audio.addEventListener('play',ui); audio.addEventListener('pause',ui); audio.addEventListener('playing',()=>{ errors=0; });
 document.addEventListener('click',e=>{ const b=e.target.closest('[data-tune]'); if(b){ e.preventDefault(); tune(b.dataset.tune); } });
 
+
+
+/* ---------- PARTICIPE ---------- */
+function renderParticipate(){
+  const el=$('pa-grid'); if(!el) return;
+  const I=['🎵','📺','💌','🏆','🎙'];
+  el.innerHTML=I.map((ic,i)=>'<a class="pa" href="https://discord.gg/TSaxEnt2dG" target="_blank" rel="noopener"><span class="pa-ic" aria-hidden="true">'+ic+'</span><b>'+tr('pa_'+(i+1)+'t')+'</b><span>'+tr('pa_'+(i+1)+'d')+'</span></a>').join('');
+}
 
 /* ---------- CRÉDITS ---------- */
 function renderCredits(){
@@ -396,6 +406,7 @@ const RX=(()=>{
 
 
 applyLang();
+try{ const q=new URLSearchParams(location.search).get('tune'); if(q&&S.some(s=>s.id===q)){ const s0=S.find(s=>s.id===q); load(q,firstTrack(s0.live),0); ui(); meta(); } }catch(e){}
 const fromHash=()=>{ if(location.hash.startsWith('#pub-')) openAd(location.hash.slice(5)); };
 window.addEventListener('hashchange',fromHash); fromHash();
 })();

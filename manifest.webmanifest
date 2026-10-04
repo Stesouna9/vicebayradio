@@ -1,0 +1,44 @@
+{
+ "name": "Vice Bay Radio",
+ "short_name": "Vice Bay",
+ "description": "Six stations FM, Vice Bay 1986. La radio d'une ville qui n'existe pas.",
+ "lang": "fr",
+ "start_url": "./?source=pwa",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#0B0A1E",
+ "theme_color": "#0B0A1E",
+ "icons": [
+  {
+   "src": "img/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "img/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "img/icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "Tropicana 88.5",
+   "url": "./?tune=tropicana"
+  },
+  {
+   "name": "Déjà Vu 90.9",
+   "url": "./?tune=dejavu"
+  },
+  {
+   "name": "Neon 103.5",
+   "url": "./?tune=neon"
+  }
+ ]
+}

@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
 <title>Vice Bay Radio · 6 stations FM, Vice Bay 1986</title>
 <meta name="description" content="Vice Bay Radio : les six stations FM de Vice Bay, ville fictive de 1986. Animateurs, jingles, fausses pubs des commerces de la ville. Par OKALAM Studio."/>
 <meta name="theme-color" content="#0B0A1E"/>
@@ -12,12 +12,17 @@
 <meta property="og:image" content="https://vicebayradio.com/img/og.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <link rel="icon" href="img/icon.png"/>
-<link rel="apple-touch-icon" href="img/icon.png"/>
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+<link rel="manifest" href="manifest.webmanifest"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content="Vice Bay"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="radio.css?v=20260928c"/>
-<link rel="stylesheet" href="receiver.css?v=20261004d"/>
+<link rel="stylesheet" href="receiver.css?v=20261004f"/>
 </head>
 <body>
 
@@ -29,6 +34,7 @@
     <a href="#stations" data-i18n="nav_stations">Stations</a>
     <a href="#pubs" data-i18n="nav_ads">Pubs</a>
     <a href="#ville" data-i18n="nav_city">La ville</a>
+    <a href="#participe" data-i18n="nav_part">Participer</a>
     <a href="#liens" data-i18n="nav_links">Liens</a>
   </nav>
   <div class="top-right">
@@ -173,6 +179,17 @@
   </div>
 </section>
 
+<!-- PARTICIPE -->
+<section class="sec" id="participe">
+  <div class="wrap">
+    <p class="label" data-i18n="pa_label">Communauté</p>
+    <h2 data-i18n-html="pa_title">Cette radio, <em>c'est la vôtre</em></h2>
+    <p class="sub" data-i18n="pa_sub"></p>
+    <div class="pa-grid" id="pa-grid"></div>
+    <div class="pa-cta"><a class="btn" href="https://discord.gg/TSaxEnt2dG" target="_blank" rel="noopener" data-i18n="pa_join">Rejoindre le Discord Vice Bay</a><p class="pa-note" data-i18n="pa_note"></p></div>
+  </div>
+</section>
+
 <!-- CRÉDITS -->
 <section class="sec" id="credits-sec">
   <div class="wrap">
@@ -209,6 +226,7 @@
 </dialog>
 
 <script src="data.js"></script>
-<script src="radio.js?v=20261004d"></script>
+<script src="radio.js?v=20261004e"></script>
+<script>if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{})); }</script>
 </body>
 </html>
