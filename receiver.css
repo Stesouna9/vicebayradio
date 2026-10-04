@@ -97,3 +97,20 @@
 
 .rx .marks div:nth-child(5) span{position:relative;top:-34px}
 .rx .marks div:nth-child(5) i{height:46px}
+
+/* crédits */
+.cr-list{margin-top:26px;display:grid;gap:10px;max-width:900px}
+.cr{border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.03);overflow:hidden}
+.cr summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:14px 16px;font-family:'Orbitron',sans-serif;font-weight:700;letter-spacing:.14em;font-size:.82rem;color:#fff}
+.cr summary::-webkit-details-marker{display:none}
+.cr summary i{width:10px;height:10px;border-radius:50%;background:var(--c);box-shadow:0 0 10px var(--c)}
+.cr summary small{margin-left:auto;font-family:'Space Mono',monospace;font-weight:400;letter-spacing:.06em;color:var(--muted);font-size:.7rem}
+.cr[open] summary{border-bottom:1px solid var(--line)}
+.cr ul{list-style:none;padding:6px 16px 12px}
+.cr li{display:grid;grid-template-columns:1.4fr 1fr auto;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:.84rem;align-items:baseline}
+.cr li:last-child{border-bottom:0}
+.cr li b{font-weight:500;color:var(--sand)}
+.cr li span{color:var(--muted)}
+.cr li em{font-style:normal;font-family:'Space Mono',monospace;font-size:.72rem;background:none;color:var(--c);-webkit-text-fill-color:var(--c)}
+.cr a{text-decoration:underline;text-decoration-color:rgba(255,255,255,.25);text-underline-offset:3px}
+@media (max-width:640px){.cr li{grid-template-columns:1fr;gap:2px}}

@@ -25,6 +25,7 @@ lk_projects_t:'Les autres projets',lk_projects:"Kotoba, VoteDay et ce qui arrive
 lk_insta:"Artworks, enseignes et extraits d'antenne.",lk_contact_t:'Presse & partenariats',lk_contact:'Un commerce, une marque ou un projet qui veut passer sur Vice Bay Radio ? Écrivez-nous.',lk_contact_cta:'Nous contacter →',
 soon_t:"Bientôt à l'antenne",soon_1:'Les pubs en audio, avec les voix des animateurs',soon_2:'Le bot Vice Bay Radio dans le Discord, une station par salon',soon_3:"L'appli gratuite Vice Bay Radio",
 credits:'Musique : Kevin MacLeod (incompetech.com), CC BY 4.0 ; titres additionnels sous CC BY 2.5 / 3.0 via ccMixter et OpenGameArt. Voix et textes originaux, écrits pour Vice Bay.',
+cr_label:'Crédits',cr_title:'Toute la musique, <em>créditée</em>',cr_sub:"Chaque morceau diffusé sur Vice Bay Radio (et dans le jeu VICE BREAK) est sous licence libre, créditée ici avec son auteur et sa licence. Les morceaux ont été ré-encodés en AAC pour le poids ; aucune autre modification. Les titres sous CC BY-SA gardent cette licence. Œuvres classiques : domaine public ; enregistrements par leurs interprètes, sous les licences indiquées (Musopen, Kimiko Ishizaka, Wikimedia Commons, Kevin MacLeod / incompetech.com, ccMixter, OpenGameArt).",cr_tracks:'titres',
 fiction:'Vice Bay est une ville imaginaire. Ses stations, ses animateurs et ses commerces sont fictifs ; toute ressemblance avec une entreprise réelle serait une coïncidence.',
 privacy:'Confidentialité',days:'J-',release_today:"C'est aujourd'hui.",released:'Disponible maintenant',shops:'annonceurs',
 weather:['27 °C · humide','24 °C · pluie fine','29 °C · ciel rose','22 °C · brume sur les marais','26 °C · vent de mer']},
@@ -47,6 +48,7 @@ lk_projects_t:'Other projects',lk_projects:"Kotoba, VoteDay and what comes next.
 lk_insta:'Artworks, neon signs and on-air clips.',lk_contact_t:'Press & partnerships',lk_contact:'A business, a brand or a project that wants to be on Vice Bay Radio? Write to us.',lk_contact_cta:'Contact us →',
 soon_t:'Coming on air',soon_1:'Audio ads, voiced by the hosts',soon_2:'The Vice Bay Radio bot on Discord, one station per channel',soon_3:'The free Vice Bay Radio app',
 credits:'Music: Kevin MacLeod (incompetech.com), CC BY 4.0; additional tracks under CC BY 2.5 / 3.0 via ccMixter and OpenGameArt. Original voices and scripts, written for Vice Bay.',
+cr_label:'Credits',cr_title:'All the music, <em>credited</em>',cr_sub:"Every track played on Vice Bay Radio (and in the VICE BREAK game) is under a free licence, credited here with its author and licence. Tracks were re-encoded to AAC for size; no other changes. Tracks under CC BY-SA keep that licence. Classical works are public domain; recordings are under their performers' licences as shown (Musopen, Kimiko Ishizaka, Wikimedia Commons, Kevin MacLeod / incompetech.com, ccMixter, OpenGameArt).",cr_tracks:'tracks',
 fiction:'Vice Bay is an imaginary city. Its stations, hosts and businesses are fictional; any resemblance to a real company is a coincidence.',
 privacy:'Privacy',days:'D-',release_today:"It's today.",released:'Out now',shops:'advertisers',
 weather:['81 °F · humid','75 °F · light rain','84 °F · pink sky','72 °F · mist over the swamp','79 °F · sea breeze']}};
@@ -70,7 +72,7 @@ function applyLang(){
   document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=tr(el.dataset.i18n);});
   document.querySelectorAll('[data-i18n-html]').forEach(el=>{el.innerHTML=tr(el.dataset.i18nHtml);});
   $('lang').textContent=lang==='fr'?'EN':'FR';
-  renderStations(); renderFilters(); renderAds(); renderCity(); countdown(); clock(); ui();
+  renderStations(); renderCredits(); renderFilters(); renderAds(); renderCity(); countdown(); clock(); ui();
 }
 $('lang').addEventListener('click',()=>{ lang=lang==='fr'?'en':'fr'; try{localStorage.setItem('vbr_lang',lang);}catch(e){} applyLang(); });
 
@@ -179,6 +181,21 @@ audio.addEventListener('error',()=>{ if(!cur||!audio.getAttribute('src')) return
 audio.addEventListener('timeupdate',()=>{ $('dock-prog').style.width=(audio.duration?audio.currentTime/audio.duration*100:0)+'%'; });
 audio.addEventListener('play',ui); audio.addEventListener('pause',ui); audio.addEventListener('playing',()=>{ errors=0; });
 document.addEventListener('click',e=>{ const b=e.target.closest('[data-tune]'); if(b){ e.preventDefault(); tune(b.dataset.tune); } });
+
+
+/* ---------- CRÉDITS ---------- */
+function renderCredits(){
+  const el=$('cr-list'); if(!el) return;
+  const C=D.credits||{}, L=D.licenses||{};
+  el.innerHTML=S.map(s=>{
+    const rows=(C[s.id]||[]).map(r=>{
+      const lu=L[r.l], lic=lu?'<a href="'+lu+'" target="_blank" rel="noopener">'+esc(r.l)+'</a>':esc(r.l);
+      const t=r.u?'<a href="'+esc(r.u)+'" target="_blank" rel="noopener">'+esc(r.t)+'</a>':esc(r.t);
+      return '<li><b>'+t+'</b><span>'+esc(r.a)+'</span><em>'+lic+'</em></li>';
+    }).join('');
+    return '<details class="cr" style="--c:'+s.c+'"><summary><i></i>'+esc(s.name)+' <small>'+s.f.toFixed(1)+' FM · '+(C[s.id]||[]).length+' '+tr('cr_tracks')+'</small></summary><ul>'+rows+'</ul></details>';
+  }).join('');
+}
 
 /* ---------- STATIONS ---------- */
 function renderStations(){
