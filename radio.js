@@ -407,6 +407,16 @@ const RX=(()=>{
 
 applyLang();
 try{ const q=new URLSearchParams(location.search).get('tune'); if(q&&S.some(s=>s.id===q)){ const s0=S.find(s=>s.id===q); load(q,firstTrack(s0.live),0); ui(); meta(); } }catch(e){}
+/* Arrivée sur la page : la radio s'allume seule. Si le navigateur bloque le son sans geste, elle démarre au premier clic ou touche */
+(function autostart(){
+  const go=()=>{ try{ if(!cur) tune('tropicana'); else if(audio.paused) play(); }catch(e){} };
+  const evs=['click','keydown','touchend'];
+  const off=()=>evs.forEach(t=>document.removeEventListener(t,once));
+  const once=()=>{ off(); setTimeout(()=>{ if(audio.paused) go(); },0); };
+  evs.forEach(t=>document.addEventListener(t,once));
+  audio.addEventListener('playing',off,{once:true});
+  go();
+})();
 const fromHash=()=>{ if(location.hash.startsWith('#pub-')) openAd(location.hash.slice(5)); };
 window.addEventListener('hashchange',fromHash); fromHash();
 })();
