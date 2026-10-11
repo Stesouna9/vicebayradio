@@ -113,12 +113,15 @@ function load(id,i,t){ cur=id; const L=st().live; clearInterval(fade);
   if(!L.length){ idx=0; want=false; audio.pause(); audio.removeAttribute('src'); audio.load(); return; }
   idx=((i%L.length)+L.length)%L.length; pendingSeek=t||0; audio.src=L[idx].src; }
 audio.addEventListener('loadedmetadata',()=>{ if(pendingSeek&&pendingSeek<audio.duration-2){ try{audio.currentTime=pendingSeek;}catch(e){} } pendingSeek=0; });
+let slowStart=false;
 function play(){ const s=st(); if(!s||!s.live.length){ ui(); return; }
   clearInterval(fade); const target=volume/100; audio.volume=0;
   want=true; const p=audio.play();
   /* Chrome peut interrompre le démarrage quand l'onglet est en arrière-plan : on relance dès que le son est prêt, sauf si on a coupé entre-temps */
   if(p) p.catch(e=>{ if(e&&e.name==='AbortError') audio.addEventListener('canplay',()=>{ if(want&&audio.paused) audio.play().catch(()=>ui()); },{once:true}); ui(); });
-  let k=0; fade=setInterval(()=>{ k++; audio.volume=Math.min(target,target*k/12); if(k>=12) clearInterval(fade); },80); }
+  /* Arrivée sur la page : montée très douce sur 8 s (courbe lente au début), sinon fondu court */
+  const n=slowStart?100:12; slowStart=false;
+  let k=0; fade=setInterval(()=>{ k++; const x=k/n; audio.volume=Math.min(target,target*(n>12?x*x*x:x)); if(k>=n) clearInterval(fade); },80); }
 function stop(){ want=false; clearInterval(fade); audio.pause(); if(cur) offsets[cur]={i:idx,t:audio.currentTime}; ui(); }
 function tune(id){
   if(cur===id){ if(audio.paused) play(); else stop(); return; }
@@ -412,10 +415,10 @@ try{ const q=new URLSearchParams(location.search).get('tune'); if(q&&S.some(s=>s
   const go=()=>{ try{ if(!cur) tune('tropicana'); else if(audio.paused) play(); }catch(e){} };
   const evs=['click','keydown','touchend'];
   const off=()=>evs.forEach(t=>document.removeEventListener(t,once));
-  const once=()=>{ off(); setTimeout(()=>{ if(audio.paused) go(); },0); };
+  const once=()=>{ off(); setTimeout(()=>{ if(audio.paused){ slowStart=true; go(); } },0); };
   evs.forEach(t=>document.addEventListener(t,once));
   audio.addEventListener('playing',off,{once:true});
-  go();
+  slowStart=true; go();
 })();
 const fromHash=()=>{ if(location.hash.startsWith('#pub-')) openAd(location.hash.slice(5)); };
 window.addEventListener('hashchange',fromHash); fromHash();
