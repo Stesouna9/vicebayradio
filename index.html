@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="radio.css?v=20260928c"/>
+<link rel="stylesheet" href="radio.css?v=mv10141903"/>
 <link rel="stylesheet" href="receiver.css?v=20261004f"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"RadioStation","name":"Vice Bay Radio","url":"https://vicebayradio.com/","logo":"https://vicebayradio.com/img/icon-192.png","sameAs":["https://www.instagram.com/vicebayradio/","https://discord.gg/TSaxEnt2dG"]}</script>
 </head>
@@ -36,6 +36,7 @@
     <a href="#pubs" data-i18n="nav_ads">Pubs</a>
     <a href="#ville" data-i18n="nav_city">La ville</a>
     <a href="#participe" data-i18n="nav_part">Participer</a>
+    <a href="#multivers" data-i18n="nav_mv">Multivers</a>
     <a href="#liens" data-i18n="nav_links">Liens</a>
   </nav>
   <div class="top-right">
@@ -124,6 +125,45 @@
     <h2 data-i18n-html="city_title">Bienvenue à <em>Vice Bay</em></h2>
     <p class="sub" data-i18n="city_sub">Une ville côtière de 1986, entre l'océan et les marais. Cinq quartiers, cinq couleurs, et une radio allumée dans chaque voiture.</p>
     <div class="city" id="city"></div>
+  </div>
+</section>
+
+<!-- MULTIVERS -->
+<section class="sec sec-mv" id="multivers">
+  <div class="wrap">
+    <p class="label" data-i18n="mv_label">Le multivers OKALAM</p>
+    <h2 data-i18n-html="mv_title">Vice Bay n'est <em>qu'un début</em></h2>
+    <p class="sub" data-i18n="mv_sub">Une radio, un jeu, des applis, un site GTA VI : tout est relié. Pubs maison, rien d'autre.</p>
+    <div class="mv">
+      <a class="mv-card mv-gta" href="https://gtavifrance.com/?utm_source=vicebayradio&amp;utm_medium=referral&amp;utm_campaign=multivers" target="_blank" rel="noopener">
+        <span class="mv-tag" data-i18n="mv_tag">PUB</span>
+        <span class="mv-ico"><img src="https://gtavifrance.com/assets/icon-192.png" alt="" width="44" height="44"/></span>
+        <b>GTA VI France</b>
+        <span data-i18n="mv_gta">Le compte à rebours, les actus deux fois par jour, la boutique et la radio de Vice Bay en direct.</span>
+        <em data-i18n="mv_gta_cta">Voir le compte à rebours →</em>
+      </a>
+      <a class="mv-card mv-game" href="https://okalamstudio.com/vicebreak.html?utm_source=vicebayradio&amp;utm_medium=referral&amp;utm_campaign=multivers" target="_blank" rel="noopener">
+        <span class="mv-tag" data-i18n="mv_tag">PUB</span>
+        <span class="mv-ico">🕹️</span>
+        <b>VICE BREAK</b>
+        <span data-i18n="mv_game">Le casse-briques néon de Vice Bay. 500 silhouettes, les six stations en fond. Sortie le 19 novembre 2026.</span>
+        <em data-i18n="mv_game_cta">Découvrir le jeu →</em>
+      </a>
+      <a class="mv-card mv-kotoba" href="https://okalamstudio.com/kotoba.html?utm_source=vicebayradio&amp;utm_medium=referral&amp;utm_campaign=multivers" target="_blank" rel="noopener">
+        <span class="mv-tag" data-i18n="mv_tag">PUB</span>
+        <span class="mv-ico"><img src="https://okalamstudio.com/imgs/kotoba_icon.png" alt="" width="44" height="44"/></span>
+        <b>KOTOBA</b>
+        <span data-i18n="mv_kot">Devine le mot caché en six essais, en français et en japonais. Gratuit sur iPhone et Android.</span>
+        <em data-i18n="mv_kot_cta">Jouer au mot du jour →</em>
+      </a>
+      <a class="mv-card mv-voteday" href="https://okalamstudio.com/voteday.html?utm_source=vicebayradio&amp;utm_medium=referral&amp;utm_campaign=multivers" target="_blank" rel="noopener">
+        <span class="mv-tag" data-i18n="mv_tag">PUB</span>
+        <span class="mv-ico"><img src="https://okalamstudio.com/imgs/voteday_icon.png" alt="" width="44" height="44"/></span>
+        <b>VOTEDAY</b>
+        <span data-i18n="mv_vd">Chaque jour une question A ou B. Vote, compare avec tes amis et avec le monde. Gratuit sur iPhone.</span>
+        <em data-i18n="mv_vd_cta">Voter aujourd'hui →</em>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -240,7 +280,7 @@
 </dialog>
 
 <script src="data.js"></script>
-<script src="radio.js?v=flux10141840"></script>
+<script src="radio.js?v=mv10141903"></script>
 <script>if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{})); }</script>
 </body>
 </html>

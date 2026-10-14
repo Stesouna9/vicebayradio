@@ -202,3 +202,17 @@ h2{font-size:clamp(1.6rem,4vw,2.6rem);margin-bottom:14px;}
 .lk-insta{border-color:rgba(255,46,136,.5);background:linear-gradient(135deg,rgba(255,46,136,.16),rgba(255,154,60,.08),transparent)}
 .lk-insta em{background:none;color:#ff7ab8}
 .lk-insta .lk-ico svg{color:#ff7ab8}
+
+/* multivers : pubs maison */
+.sec-mv .sub{color:var(--muted);max-width:60ch;margin:6px 0 22px;}
+.mv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;}
+.mv-card{position:relative;display:flex;flex-direction:column;gap:8px;padding:24px 20px 20px;border-radius:20px;border:1px solid var(--line);background:var(--card);text-decoration:none;transition:transform .2s,border-color .2s;}
+.mv-card:hover{transform:translateY(-3px);border-color:rgba(245,227,195,.4);}
+.mv-card b{font-family:'Orbitron',sans-serif;color:#fff;letter-spacing:.08em;font-size:1rem;}
+.mv-card>span:not(.mv-tag):not(.mv-ico){font-size:.88rem;color:var(--muted);}
+.mv-card em{margin-top:auto;padding-top:6px;font-family:'Space Mono',monospace;font-size:.76rem;color:var(--cream,#F5E3C3);font-style:normal;}
+.mv-ico{font-size:2rem;line-height:1;height:44px;display:flex;align-items:center;}
+.mv-ico img{width:44px;height:44px;border-radius:10px;}
+.mv-tag{position:absolute;top:12px;right:14px;font:700 .6rem 'Space Mono',monospace;letter-spacing:.14em;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:2px 6px;}
+.mv-gta{border-color:rgba(255,166,48,.45);background:linear-gradient(135deg,rgba(255,166,48,.14),rgba(255,46,136,.06));}
+.mv-game{border-color:rgba(255,46,136,.45);background:linear-gradient(135deg,rgba(255,46,136,.14),rgba(255,166,48,.06));}
