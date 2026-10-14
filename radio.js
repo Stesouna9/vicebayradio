@@ -109,9 +109,11 @@ function hiss(){
 /* on démarre toujours sur un morceau, jamais au milieu d'une annonce du DJ */
 function firstTrack(L){ const t=L.map((v,i)=>v.type==='link'?-1:i).filter(i=>i>=0); return t.length?t[Math.floor(Math.random()*t.length)]:0; }
 let pendingSeek=0, errors=0, want=false;
+/* flux en direct du serveur (jingles, voix des animateurs, pubs) */
+const FLUX='https://live.2-29-41-109.sslip.io/';
 function load(id,i,t){ cur=id; const L=st().live; clearInterval(fade);
   if(!L.length){ idx=0; want=false; audio.pause(); audio.removeAttribute('src'); audio.load(); return; }
-  idx=((i%L.length)+L.length)%L.length; pendingSeek=t||0; audio.src=L[idx].src; }
+  idx=((i%L.length)+L.length)%L.length; pendingSeek=0; audio.src=FLUX+id+'?t='+Date.now(); }
 audio.addEventListener('loadedmetadata',()=>{ if(pendingSeek&&pendingSeek<audio.duration-2){ try{audio.currentTime=pendingSeek;}catch(e){} } pendingSeek=0; });
 let slowStart=false;
 function play(){ const s=st(); if(!s||!s.live.length){ ui(); return; }
@@ -132,7 +134,7 @@ function tune(id){
   errors=0; load(id,o?o.i:firstTrack(s.live),o?o.t:0);
   play(); ui(); meta();
 }
-function next(){ if(!cur||!st().live.length) return; errors=0; load(cur,idx+1); play(); ui(); meta(); }
+function next(){ if(!cur||!st().live.length) return; errors=0; load(cur,0); play(); ui(); meta(); }
 function togglePlay(){ if(!cur) tune('tropicana'); else if(audio.paused) play(); else stop(); }
 function ui(){
   const s=st(), on=!!(s&&!audio.paused), acc=s?s.c:'#F5E3C3';
@@ -140,8 +142,8 @@ function ui(){
   $('d-freq').textContent=s?s.f.toFixed(1):'—';
   $('d-name').textContent=s?s.name:tr('pick');
   $('d-genre').textContent=s?(lang==='fr'?s.genre:s.genre_en)+' · '+(lang==='fr'?s.slogan:s.slogan_en):tr('pick_hint');
-  const it=s&&s.live.length?s.live[idx]:null;
-  const title=it?(it.type==='link'?tr('jingle'):it.title+' · '+it.artist):(s?tr('soon_prog'):tr('pick'));
+  const it=null;
+  const title=s&&s.live.length?(on?(lang==='fr'?'EN DIRECT':'LIVE'):s.name):(s?tr('soon_prog'):tr('pick'));
   $('d-onair').textContent=s&&!s.live.length?tr('soon_badge'):(on?tr('onair'):(s?tr('pause'):tr('off')));
   $('dock-name').textContent=s?'📻 '+s.name+' · '+s.f.toFixed(1)+' FM':'📻 VICE BAY RADIO';
   $('dock-title').textContent=title;
@@ -159,7 +161,7 @@ function ui(){
 /* écran verrouillé, casque, clavier multimédia */
 function meta(){
   if(!('mediaSession' in navigator)||!st()) return;
-  const s=st(), it=s.live[idx];
+  const s=st(), it=null;
   try{ navigator.mediaSession.metadata=new MediaMetadata({title:it?(it.type==='link'?tr('jingle'):it.title):s.name,artist:s.name+' '+s.f.toFixed(1)+' FM',album:'Vice Bay Radio',artwork:[{src:new URL(s.logo,location.href).href,sizes:'360x360',type:'image/webp'}]}); }catch(e){}
 }
 if('mediaSession' in navigator){
@@ -180,9 +182,9 @@ scale.addEventListener('keydown',e=>{ const i=S.findIndex(s=>s.id===cur);
 $('dock-play').addEventListener('click',togglePlay);
 $('dock-skip').addEventListener('click',next);
 $('dock-vol').addEventListener('input',e=>{ volume=+e.target.value; clearInterval(fade); audio.volume=volume/100; });
-audio.addEventListener('ended',()=>{ if(!cur||!st().live.length) return; load(cur,idx+1); play(); ui(); meta(); });
+audio.addEventListener('ended',()=>{ if(!cur||!st().live.length) return; load(cur,0); play(); ui(); meta(); });
 /* un fichier qui ne charge pas : on passe au suivant, sans boucler à l'infini */
-audio.addEventListener('error',()=>{ if(!cur||!audio.getAttribute('src')) return; if(++errors>=st().live.length){ stop(); return; } load(cur,idx+1); play(); ui(); meta(); });
+audio.addEventListener('error',()=>{ if(!cur||!audio.getAttribute('src')) return; if(++errors>=3){ stop(); return; } load(cur,0); play(); ui(); meta(); });
 audio.addEventListener('timeupdate',()=>{ $('dock-prog').style.width=(audio.duration?audio.currentTime/audio.duration*100:0)+'%'; });
 audio.addEventListener('play',ui); audio.addEventListener('pause',ui); audio.addEventListener('playing',()=>{ errors=0; });
 document.addEventListener('click',e=>{ const b=e.target.closest('[data-tune]'); if(b){ e.preventDefault(); tune(b.dataset.tune); } });
