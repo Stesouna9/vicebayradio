@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="radio.css?v=mv10141907"/>
+<link rel="stylesheet" href="radio.css?v=mv10150544"/>
 <link rel="stylesheet" href="receiver.css?v=20261004f"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"RadioStation","name":"Vice Bay Radio","url":"https://vicebayradio.com/","logo":"https://vicebayradio.com/img/icon-192.png","sameAs":["https://www.instagram.com/vicebayradio/","https://discord.gg/TSaxEnt2dG"]}</script>
 </head>
@@ -36,7 +36,7 @@
     <a href="#pubs" data-i18n="nav_ads">Pubs</a>
     <a href="#ville" data-i18n="nav_city">La ville</a>
     <a href="#participe" data-i18n="nav_part">Participer</a>
-    <a href="#multivers" data-i18n="nav_mv">Multivers</a>
+    <a href="#multivers" data-i18n="nav_mv">Nos sites</a>
     <a href="#liens" data-i18n="nav_links">Liens</a>
   </nav>
   <div class="top-right">
@@ -97,37 +97,6 @@
   </div>
 </section>
 
-<!-- STATIONS -->
-<section class="sec" id="stations">
-  <div class="wrap">
-    <p class="label" data-i18n="st_label">Le cadran</p>
-    <h2 data-i18n-html="st_title">Six stations, <em>six nuits différentes</em></h2>
-    <p class="sub" data-i18n="st_sub">Chaque station a sa couleur, son quartier, son animateur et ses annonceurs. Musique 100 % libre, voix originales écrites pour Vice Bay.</p>
-    <div class="st-grid" id="st-grid"></div>
-  </div>
-</section>
-
-<!-- PUBS -->
-<section class="sec sec-ads" id="pubs">
-  <div class="wrap">
-    <p class="label" data-i18n="ads_label">Pages de pub</p>
-    <h2 data-i18n-html="ads_title">Les 25 commerces <em>qui paient l'antenne</em></h2>
-    <p class="sub" data-i18n="ads_sub">Garages des marais, fleuristes de nuit, motels d'autoroute : chaque commerce de Vice Bay a sa pub, lue par l'animateur de sa station. Aucun n'existe. Tous sont ouverts tard.</p>
-    <div class="filters" id="filters" role="toolbar" aria-label="Filtrer"></div>
-    <div class="ad-grid" id="ad-grid"></div>
-  </div>
-</section>
-
-<!-- VILLE -->
-<section class="sec" id="ville">
-  <div class="wrap">
-    <p class="label" data-i18n="city_label">La ville</p>
-    <h2 data-i18n-html="city_title">Bienvenue à <em>Vice Bay</em></h2>
-    <p class="sub" data-i18n="city_sub">Une ville côtière de 1986, entre l'océan et les marais. Cinq quartiers, cinq couleurs, et une radio allumée dans chaque voiture.</p>
-    <div class="city" id="city"></div>
-  </div>
-</section>
-
 <!-- MULTIVERS -->
 <section class="sec sec-mv" id="multivers">
   <div class="wrap">
@@ -164,6 +133,37 @@
         <em data-i18n="mv_vd_cta">Voter aujourd'hui →</em>
       </a>
     </div>
+  </div>
+</section>
+
+<!-- STATIONS -->
+<section class="sec" id="stations">
+  <div class="wrap">
+    <p class="label" data-i18n="st_label">Le cadran</p>
+    <h2 data-i18n-html="st_title">Six stations, <em>six nuits différentes</em></h2>
+    <p class="sub" data-i18n="st_sub">Chaque station a sa couleur, son quartier, son animateur et ses annonceurs. Musique 100 % libre, voix originales écrites pour Vice Bay.</p>
+    <div class="st-grid" id="st-grid"></div>
+  </div>
+</section>
+
+<!-- PUBS -->
+<section class="sec sec-ads" id="pubs">
+  <div class="wrap">
+    <p class="label" data-i18n="ads_label">Pages de pub</p>
+    <h2 data-i18n-html="ads_title">Les 25 commerces <em>qui paient l'antenne</em></h2>
+    <p class="sub" data-i18n="ads_sub">Garages des marais, fleuristes de nuit, motels d'autoroute : chaque commerce de Vice Bay a sa pub, lue par l'animateur de sa station. Aucun n'existe. Tous sont ouverts tard.</p>
+    <div class="filters" id="filters" role="toolbar" aria-label="Filtrer"></div>
+    <div class="ad-grid" id="ad-grid"></div>
+  </div>
+</section>
+
+<!-- VILLE -->
+<section class="sec" id="ville">
+  <div class="wrap">
+    <p class="label" data-i18n="city_label">La ville</p>
+    <h2 data-i18n-html="city_title">Bienvenue à <em>Vice Bay</em></h2>
+    <p class="sub" data-i18n="city_sub">Une ville côtière de 1986, entre l'océan et les marais. Cinq quartiers, cinq couleurs, et une radio allumée dans chaque voiture.</p>
+    <div class="city" id="city"></div>
   </div>
 </section>
 
@@ -280,7 +280,8 @@
 </dialog>
 
 <script src="data.js"></script>
-<script src="radio.js?v=mv10141907"></script>
+<script src="radio.js?v=mv10150544"></script>
 <script>if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{})); }</script>
+<script src="multivers.js?v=1" defer></script>
 </body>
 </html>
