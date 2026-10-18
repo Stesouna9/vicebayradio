@@ -16,7 +16,7 @@
     ['Kotoba · le mot du jour, gratuit sur iPhone et Android','https://okalamstudio.com/kotoba.html'],
     ['VoteDay · une question A ou B chaque jour','https://okalamstudio.com/voteday.html'],
     ['Vice Break · le casse-briques néon, sortie le 19 novembre','https://okalamstudio.com/vicebreak.html'],
-    ['Vice Bay Radio · six stations FM, toute la nuit','https://vicebayradio.com/'],
+    ['Vice Bay Radio · sept stations FM, toute la nuit','https://vicebayradio.com/'],
     ['GTA VI France · le compte à rebours, les actus, la boutique','https://gtavifrance.com/']
   ].filter(function(p){return !(me==='gta'&&/gtavifrance/.test(p[1])||me==='vbr'&&/vicebayradio/.test(p[1]));});
   var css='#mvbar{position:relative;z-index:200;display:flex;align-items:center;gap:6px;min-height:38px;padding:0 14px;background:#0d0912;border-bottom:1px solid rgba(255,255,255,.14);font:600 12px/1.2 "DM Sans",system-ui,sans-serif;color:#f2e8d5;letter-spacing:.02em}'+

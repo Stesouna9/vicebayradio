@@ -65,7 +65,7 @@
 .rx .needle::before{content:"";position:absolute;left:-4px;top:-2px;width:10px;height:10px;border-radius:50%;background:#ff3a2e;box-shadow:0 0 12px #ff3a2e}
 
 .rx-presets{margin-top:16px}
-.rx .chips{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.rx .chips{display:grid;grid-template-columns:repeat(var(--n,7),minmax(0,1fr));gap:10px}
 .rx .chips button{display:flex;flex-direction:column;align-items:center;gap:7px;padding:10px 6px 9px;border-radius:7px;cursor:pointer;
   font-family:'Orbitron',sans-serif;font-weight:700;font-size:.62rem;letter-spacing:.12em;color:#c8ccd8;
   background:linear-gradient(180deg,#4a4d58,#2a2c33 55%,#1c1d22);border:1px solid #0a0a0d;
@@ -90,13 +90,15 @@
   .rx-eq{height:26px}.rx-eq i{width:4px}
   .rx-brand{letter-spacing:.2em;font-size:.7rem}.rx-brand small{display:none}
   .rx .onair{display:inline-block}
-  .rx .chips{grid-template-columns:repeat(3,1fr)}
   .rx .marks span{font-size:.5rem}
   .rx .scale{height:58px}
 }
 
-.rx .marks div:nth-child(5) span{position:relative;top:-34px}
-.rx .marks div:nth-child(5) i{height:46px}
+/* repère décalé (class .up, posée par radio.js) quand deux stations sont à moins de 1,2 MHz */
+.rx .marks div.up span{position:relative;top:-34px}
+.rx .marks div.up i{height:46px}
+@media (max-width:1000px){.rx .chips{grid-template-columns:repeat(var(--m,4),minmax(0,1fr))}}
+@media (max-width:560px){.rx .chips{grid-template-columns:repeat(3,minmax(0,1fr))}.rx .chips button:last-child:nth-child(3n+1){grid-column:1/-1}}
 
 /* crédits */
 .cr-list{margin-top:26px;display:grid;gap:10px;max-width:900px}

@@ -1,5 +1,5 @@
 /* Vice Bay Radio : le shell est mis en cache pour l'ouverture instantanée ; jamais les audios (lecture en continu, requêtes Range). */
-const V='vbr-20261015a', SHELL=['./','index.html','radio.css','receiver.css','radio.js','data.js','manifest.webmanifest','img/icon-192.png','img/icon-512.png','img/vicebay_radio.webp'];
+const V='vbr-20261018-7st', SHELL=['./','index.html','radio.css','receiver.css','radio.js','data.js','manifest.webmanifest','img/icon-192.png','img/icon-512.png','img/vicebay_radio.webp'];
 self.addEventListener('install',e=>{ e.waitUntil(caches.open(V).then(c=>c.addAll(SHELL)).then(()=>self.skipWaiting())); });
 self.addEventListener('activate',e=>{ e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==V).map(x=>caches.delete(x)))).then(()=>self.clients.claim())); });
 self.addEventListener('fetch',e=>{

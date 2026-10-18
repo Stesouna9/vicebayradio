@@ -7,7 +7,7 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 /* ---------- LANGUES ---------- */
 const T={
 fr:{mv_label:'Vice Bay, ce n\'est pas que la radio',mv_title:"Tous nos sites, <em>au même endroit</em>",mv_sub:"Vice Bay Radio est la radio de la ville. Le point de départ de tout : GTA VI France, avec nos applis.",mv_tag:'PUB',nav_mv:'Nos sites',mv_gta:'Le compte à rebours, les actus deux fois par jour, la boutique et la radio de Vice Bay en direct.',mv_gta_cta:'Voir le compte à rebours →',mv_game:'Le casse-briques néon de Vice Bay. 500 silhouettes, les six stations en fond. Sortie le 19 novembre 2026.',mv_game_cta:'Découvrir le jeu →',mv_kot:'Devine le mot caché en six essais, en français et en japonais. Gratuit sur iPhone et Android.',mv_kot_cta:'Jouer au mot du jour →',mv_vd:'Chaque jour une question A ou B. Vote, compare avec tes amis et avec le monde. Gratuit sur iPhone.',mv_vd_cta:"Voter aujourd'hui →",nav_stations:'Stations',nav_ads:'Pubs',nav_city:'La ville',nav_links:'Liens',cta_game_short:'Le jeu',
-hero_kicker:'Vice Bay · 1986 · FM stéréo',hero_title:'Six stations.<br/><em>Toute la nuit.</em>',
+hero_kicker:'Vice Bay · 1986 · FM stéréo',hero_title:'Sept stations.<br/><em>Toute la nuit.</em>',
 hero_lead:"Les radios d'une ville qui n'existe pas. Des animateurs qui parlent trop, des jingles, et les pubs de tous les commerces du front de mer. Tourne le bouton.",
 cta_listen:'▶ Allumer la radio',cta_ads:'📺 Les fausses pubs',pick:'Choisis une station',pick_hint:"tourne le bouton ou appuie sur une touche",
 off:'RADIO COUPÉE',onair:"À L'ANTENNE",pause:'EN PAUSE',soon_badge:'BIENTÔT',soon_prog:'Nouvelle programmation · bientôt à l\'antenne',jingle:'🎙 Jingle Vice Bay',
@@ -31,7 +31,7 @@ fiction:'Vice Bay est une ville imaginaire. Ses stations, ses animateurs et ses 
 privacy:'Confidentialité',days:'J-',release_today:"C'est aujourd'hui.",released:'Disponible maintenant',shops:'annonceurs',
 weather:['27 °C · humide','24 °C · pluie fine','29 °C · ciel rose','22 °C · brume sur les marais','26 °C · vent de mer']},
 en:{mv_label:'Vice Bay is more than a radio',mv_title:"All our sites, <em>in one place</em>",mv_sub:'Vice Bay Radio is the radio of the city. The hub of it all: GTA VI France, with our apps.',mv_tag:'AD',nav_mv:'Our sites',mv_gta:'The countdown, news twice a day, the shop and the Vice Bay radio live.',mv_gta_cta:'See the countdown →',mv_game:'The neon brick-breaker set in Vice Bay. 500 silhouettes, the six stations in the background. Out November 19, 2026.',mv_game_cta:'Discover the game →',mv_kot:'Guess the hidden word in six tries, in French and Japanese. Free on iPhone and Android.',mv_kot_cta:'Play the word of the day →',mv_vd:'Every day an A or B question. Vote, compare with friends and the world. Free on iPhone.',mv_vd_cta:'Vote today →',nav_stations:'Stations',nav_ads:'Ads',nav_city:'The city',nav_links:'Links',cta_game_short:'The game',
-hero_kicker:'Vice Bay · 1986 · FM stereo',hero_title:'Six stations.<br/><em>All night long.</em>',
+hero_kicker:'Vice Bay · 1986 · FM stereo',hero_title:'Seven stations.<br/><em>All night long.</em>',
 hero_lead:"The radio of a city that doesn't exist. Hosts who talk too much, jingles, and ads for every business on the waterfront. Turn the dial.",
 cta_listen:'▶ Turn the radio on',cta_ads:'📺 The fake ads',pick:'Pick a station',pick_hint:'turn the knob or press a preset',
 off:'RADIO OFF',onair:'ON AIR',pause:'PAUSED',soon_badge:'SOON',soon_prog:'New programming · on air soon',jingle:'🎙 Vice Bay jingle',
@@ -87,10 +87,11 @@ const x=f=>((f-LOW)/(HIGH-LOW)*100)+'%';
 const st=()=>S.find(s=>s.id===cur);
 const needle=$('needle'), scale=$('scale'), marks=$('marks'), chips=$('chips'), dial=$('dial'), dock=$('dock');
 
-S.forEach(s=>{
-  const d=document.createElement('div'); d.style.left=x(s.f); d.style.setProperty('--c',s.c); d.dataset.id=s.id; d.innerHTML='<i></i><span>'+s.f.toFixed(1)+'</span>'; marks.appendChild(d);
+S.forEach((s,i)=>{
+  const d=document.createElement('div'); d.style.left=x(s.f); d.style.setProperty('--c',s.c); d.dataset.id=s.id; d.innerHTML='<i></i><span>'+s.f.toFixed(1)+'</span>'; marks.appendChild(d); if(i&&s.f-S[i-1].f<1.2) d.classList.add('up');
   const b=document.createElement('button'); b.type='button'; b.dataset.id=s.id; b.style.setProperty('--c',s.c); b.innerHTML='<i></i>'+esc(s.name); b.addEventListener('click',()=>tune(s.id)); chips.appendChild(b);
 });
+chips.style.setProperty('--n',S.length); chips.style.setProperty('--m',Math.ceil(S.length/2));
 
 /* grésillement court, uniquement quand on change de station pendant l'écoute */
 let actx=null;
