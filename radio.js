@@ -11,7 +11,7 @@ hero_kicker:'Vice Bay · 1986 · FM stéréo',hero_title:'Six stations.<br/><em>
 hero_lead:"Les radios d'une ville qui n'existe pas. Des animateurs qui parlent trop, des jingles, et les pubs de tous les commerces du front de mer. Tourne le bouton.",
 cta_listen:'▶ Allumer la radio',cta_ads:'📺 Les fausses pubs',pick:'Choisis une station',pick_hint:"tourne le bouton ou appuie sur une touche",
 off:'RADIO COUPÉE',onair:"À L'ANTENNE",pause:'EN PAUSE',soon_badge:'BIENTÔT',soon_prog:'Nouvelle programmation · bientôt à l\'antenne',jingle:'🎙 Jingle Vice Bay',
-st_label:'Le cadran',st_title:'Six stations, <em>six nuits différentes</em>',st_sub:'Chaque station a sa couleur, son quartier, son animateur et ses annonceurs. Musique 100 % libre, voix originales écrites pour Vice Bay.',
+st_label:'Le cadran',st_title:'Sept stations, <em>sept nuits différentes</em>',st_sub:'Chaque station a sa couleur, son quartier, son animateur et ses annonceurs. Musique 100 % libre, voix originales écrites pour Vice Bay.',
 st_listen:'▶ ÉCOUTER',st_playing:'❚❚ PAUSE',st_tracks:'titres au programme',st_host:'Animé par',
 ads_label:'Pages de pub',ads_title:"Les 25 commerces <em>qui paient l'antenne</em>",
 ads_sub:"Garages des marais, fleuristes de nuit, motels d'autoroute : chaque commerce de Vice Bay a sa pub, lue par l'animateur de sa station. Aucun n'existe. Tous sont ouverts tard.",
@@ -35,7 +35,7 @@ hero_kicker:'Vice Bay · 1986 · FM stereo',hero_title:'Six stations.<br/><em>Al
 hero_lead:"The radio of a city that doesn't exist. Hosts who talk too much, jingles, and ads for every business on the waterfront. Turn the dial.",
 cta_listen:'▶ Turn the radio on',cta_ads:'📺 The fake ads',pick:'Pick a station',pick_hint:'turn the knob or press a preset',
 off:'RADIO OFF',onair:'ON AIR',pause:'PAUSED',soon_badge:'SOON',soon_prog:'New programming · on air soon',jingle:'🎙 Vice Bay jingle',
-st_label:'The dial',st_title:'Six stations, <em>six different nights</em>',st_sub:'Every station has its own colour, neighbourhood, host and advertisers. 100 % free music, original voices written for Vice Bay.',
+st_label:'The dial',st_title:'Seven stations, <em>seven different nights</em>',st_sub:'Every station has its own colour, neighbourhood, host and advertisers. 100 % free music, original voices written for Vice Bay.',
 st_listen:'▶ LISTEN',st_playing:'❚❚ PAUSE',st_tracks:'tracks in rotation',st_host:'Hosted by',
 ads_label:'Commercial break',ads_title:'The 25 businesses <em>paying for airtime</em>',
 ads_sub:'Swamp garages, late-night florists, highway motels: every business in Vice Bay has its ad, read by the host of its station. None of them exist. All of them are open late.',
@@ -154,7 +154,7 @@ function ui(){
   marks.querySelectorAll('div').forEach(d=>d.classList.toggle('on',d.dataset.id===cur));
   chips.querySelectorAll('button').forEach(b=>{ b.classList.toggle('on',b.dataset.id===cur); b.setAttribute('aria-pressed',on&&b.dataset.id===cur); });
   document.querySelectorAll('.st').forEach(c=>{ const p=on&&c.dataset.id===cur; c.classList.toggle('playing',p); const b=c.querySelector('.st-play'); if(b) b.textContent=p?tr('st_playing'):tr('st_listen'); });
-  document.title=(on?'▶ '+s.name+' '+s.f.toFixed(1)+' · ':'')+'Vice Bay Radio · 6 stations FM, Vice Bay 1986';
+  document.title=(on?'▶ '+s.name+' '+s.f.toFixed(1)+' · ':'')+'Vice Bay Radio · 7 stations FM, Vice Bay 1986';
   if('mediaSession' in navigator) navigator.mediaSession.playbackState=on?'playing':(s?'paused':'none');
   if(typeof RX!=='undefined') RX.update(on,s);
 }

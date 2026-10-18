@@ -1,7 +1,7 @@
 {
  "name": "Vice Bay Radio",
  "short_name": "Vice Bay",
- "description": "Six stations FM, Vice Bay 1986. La radio d'une ville qui n'existe pas.",
+ "description": "Sept stations FM, Vice Bay 1986. La radio d'une ville qui n'existe pas.",
  "lang": "fr",
  "start_url": "./?source=pwa",
  "scope": "./",
