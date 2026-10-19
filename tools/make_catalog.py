@@ -9,7 +9,7 @@ LIVE = "https://live.2-29-41-109.sslip.io/"
 def absu(u): return u if u.startswith("http") else BASE + u
 stations = []
 for s in sorted(d["stations"], key=lambda s: s["f"]):
-    stations.append({k: s.get(k, "") for k in ("id", "name", "f", "genre", "genre_en", "slogan", "slogan_en", "c", "host")}
+    stations.append({k: s.get(k, "") for k in ("id", "name", "f", "genre", "genre_en", "slogan", "slogan_en", "c", "host", "bio", "bio_en")}
                     | {"logo": absu(s["logo"]),
                        "tracks": [{"src": absu(t["src"]), "title": t["title"], "artist": t["artist"]} for t in s["live"] if t["type"] == "track"],
                        "jingles": s.get("jingles", []),
