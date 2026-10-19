@@ -185,7 +185,10 @@ $('dock-skip').addEventListener('click',next);
 $('dock-vol').addEventListener('input',e=>{ volume=+e.target.value; clearInterval(fade); audio.volume=volume/100; });
 audio.addEventListener('ended',()=>{ if(!cur||!st().live.length) return; load(cur,0); play(); ui(); meta(); });
 /* un fichier qui ne charge pas : on passe au suivant, sans boucler à l'infini */
-audio.addEventListener('error',()=>{ if(!cur||!audio.getAttribute('src')) return; if(++errors>=3){ stop(); return; } load(cur,0); play(); ui(); meta(); });
+audio.addEventListener('error',()=>{ if(!cur||!audio.getAttribute('src')) return; const w=Math.min(15000,++errors*2000); setTimeout(()=>{ if(want&&cur){ load(cur,0); play(); ui(); meta(); } },w); });
+/* chien de garde : direct voulu mais le temps n'avance plus pendant ~12 s (réseau, mise en veille, flux figé) : on se rebranche */
+let wdT=-1, wdN=0; setInterval(()=>{ if(!want||!cur||!st().live.length){ wdN=0; return; }
+  if(audio.currentTime===wdT&&!audio.seeking){ if(++wdN>=2){ wdN=0; load(cur,0); play(); ui(); meta(); } } else wdN=0; wdT=audio.currentTime; },6000);
 audio.addEventListener('timeupdate',()=>{ $('dock-prog').style.width=(audio.duration?audio.currentTime/audio.duration*100:0)+'%'; });
 audio.addEventListener('play',ui); audio.addEventListener('pause',ui); audio.addEventListener('playing',()=>{ errors=0; });
 document.addEventListener('click',e=>{ const b=e.target.closest('[data-tune]'); if(b){ e.preventDefault(); tune(b.dataset.tune); } });
