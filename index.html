@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="radio.css?v=mv10150544"/>
+<link rel="stylesheet" href="radio.css?v=20261022pod"/>
 <link rel="stylesheet" href="receiver.css?v=20261004f"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"RadioStation","name":"Vice Bay Radio","url":"https://vicebayradio.com/","logo":"https://vicebayradio.com/img/icon-192.png","sameAs":["https://www.instagram.com/vicebayradio/","https://discord.gg/TSaxEnt2dG"]}</script>
 </head>
@@ -33,6 +33,7 @@
   </a>
   <nav class="nav" aria-label="Sections">
     <a href="#stations" data-i18n="nav_stations">Stations</a>
+    <a href="#podcast" data-i18n="nav_pod">Podcast</a>
     <a href="#pubs" data-i18n="nav_ads">Pubs</a>
     <a href="#ville" data-i18n="nav_city">La ville</a>
     <a href="#participe" data-i18n="nav_part">Participer</a>
@@ -143,6 +144,16 @@
     <h2 data-i18n-html="st_title">Sept stations, <em>sept nuits différentes</em></h2>
     <p class="sub" data-i18n="st_sub">Chaque station a sa couleur, son quartier, son animateur et ses annonceurs. Musique 100 % libre, voix originales écrites pour Vice Bay.</p>
     <div class="st-grid" id="st-grid"></div>
+  </div>
+</section>
+
+<!-- PODCAST -->
+<section class="sec sec-pod" id="podcast">
+  <div class="wrap">
+    <p class="label" data-i18n="pod_label">Vice Bay Podcast</p>
+    <h2 data-i18n-html="pod_title">Le <em>Vice Bay Podcast</em></h2>
+    <p class="sub" id="pod-tag"></p>
+    <div class="pod-list" id="pod-list"></div>
   </div>
 </section>
 
@@ -280,7 +291,7 @@
 </dialog>
 
 <script src="data.js"></script>
-<script src="radio.js?v=20261019wd"></script>
+<script src="radio.js?v=20261022pod"></script>
 <script>if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{})); }</script>
 <script src="multivers.js?v=1" defer></script>
 </body>

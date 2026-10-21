@@ -6,7 +6,7 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 
 /* ---------- LANGUES ---------- */
 const T={
-fr:{mv_label:'Vice Bay, ce n\'est pas que la radio',mv_title:"Tous nos sites, <em>au même endroit</em>",mv_sub:"Vice Bay Radio est la radio de la ville. Le point de départ de tout : GTA VI France, avec nos applis.",mv_tag:'PUB',nav_mv:'Nos sites',mv_gta:'Le compte à rebours, les actus deux fois par jour, la boutique et la radio de Vice Bay en direct.',mv_gta_cta:'Voir le compte à rebours →',mv_game:'Le casse-briques néon de Vice Bay. 500 silhouettes, les six stations en fond. Sortie le 19 novembre 2026.',mv_game_cta:'Découvrir le jeu →',mv_kot:'Devine le mot caché en six essais, en français et en japonais. Gratuit sur iPhone et Android.',mv_kot_cta:'Jouer au mot du jour →',mv_vd:'Chaque jour une question A ou B. Vote, compare avec tes amis et avec le monde. Gratuit sur iPhone.',mv_vd_cta:"Voter aujourd'hui →",nav_stations:'Stations',nav_ads:'Pubs',nav_city:'La ville',nav_links:'Liens',cta_game_short:'Le jeu',
+fr:{mv_label:'Vice Bay, ce n\'est pas que la radio',mv_title:"Tous nos sites, <em>au même endroit</em>",mv_sub:"Vice Bay Radio est la radio de la ville. Le point de départ de tout : GTA VI France, avec nos applis.",mv_tag:'PUB',nav_mv:'Nos sites',mv_gta:'Le compte à rebours, les actus deux fois par jour, la boutique et la radio de Vice Bay en direct.',mv_gta_cta:'Voir le compte à rebours →',mv_game:'Le casse-briques néon de Vice Bay. 500 silhouettes, les six stations en fond. Sortie le 19 novembre 2026.',mv_game_cta:'Découvrir le jeu →',mv_kot:'Devine le mot caché en six essais, en français et en japonais. Gratuit sur iPhone et Android.',mv_kot_cta:'Jouer au mot du jour →',mv_vd:'Chaque jour une question A ou B. Vote, compare avec tes amis et avec le monde. Gratuit sur iPhone.',mv_vd_cta:"Voter aujourd'hui →",nav_stations:'Stations',nav_pod:'Podcast',pod_label:'Vice Bay Podcast',pod_title:'Le <em>Vice Bay Podcast</em>',pod_soon:"Le premier épisode arrive bientôt : Sakura et Big Lou parlent d'OKALAM Studio",pod_play:'▶ Écouter',pod_pause:'❚❚ Pause',pod_min:'min',pod_off:'Podcast indisponible pour le moment.',nav_ads:'Pubs',nav_city:'La ville',nav_links:'Liens',cta_game_short:'Le jeu',
 hero_kicker:'Vice Bay · 1986 · FM stéréo',hero_title:'Sept stations.<br/><em>Toute la nuit.</em>',
 hero_lead:"Les radios d'une ville qui n'existe pas. Des animateurs qui parlent trop, des jingles, et les pubs de tous les commerces du front de mer. Tourne le bouton.",
 cta_listen:'▶ Allumer la radio',cta_ads:'📺 Les fausses pubs',pick:'Choisis une station',pick_hint:"tourne le bouton ou appuie sur une touche",
@@ -30,7 +30,7 @@ nav_part:'Participer',pa_label:'Communauté',pa_title:"Cette radio, <em>c'est la
 fiction:'Vice Bay est une ville imaginaire. Ses stations, ses animateurs et ses commerces sont fictifs ; toute ressemblance avec une entreprise réelle serait une coïncidence.',
 privacy:'Confidentialité',days:'J-',release_today:"C'est aujourd'hui.",released:'Disponible maintenant',shops:'annonceurs',
 weather:['27 °C · humide','24 °C · pluie fine','29 °C · ciel rose','22 °C · brume sur les marais','26 °C · vent de mer']},
-en:{mv_label:'Vice Bay is more than a radio',mv_title:"All our sites, <em>in one place</em>",mv_sub:'Vice Bay Radio is the radio of the city. The hub of it all: GTA VI France, with our apps.',mv_tag:'AD',nav_mv:'Our sites',mv_gta:'The countdown, news twice a day, the shop and the Vice Bay radio live.',mv_gta_cta:'See the countdown →',mv_game:'The neon brick-breaker set in Vice Bay. 500 silhouettes, the six stations in the background. Out November 19, 2026.',mv_game_cta:'Discover the game →',mv_kot:'Guess the hidden word in six tries, in French and Japanese. Free on iPhone and Android.',mv_kot_cta:'Play the word of the day →',mv_vd:'Every day an A or B question. Vote, compare with friends and the world. Free on iPhone.',mv_vd_cta:'Vote today →',nav_stations:'Stations',nav_ads:'Ads',nav_city:'The city',nav_links:'Links',cta_game_short:'The game',
+en:{mv_label:'Vice Bay is more than a radio',mv_title:"All our sites, <em>in one place</em>",mv_sub:'Vice Bay Radio is the radio of the city. The hub of it all: GTA VI France, with our apps.',mv_tag:'AD',nav_mv:'Our sites',mv_gta:'The countdown, news twice a day, the shop and the Vice Bay radio live.',mv_gta_cta:'See the countdown →',mv_game:'The neon brick-breaker set in Vice Bay. 500 silhouettes, the six stations in the background. Out November 19, 2026.',mv_game_cta:'Discover the game →',mv_kot:'Guess the hidden word in six tries, in French and Japanese. Free on iPhone and Android.',mv_kot_cta:'Play the word of the day →',mv_vd:'Every day an A or B question. Vote, compare with friends and the world. Free on iPhone.',mv_vd_cta:'Vote today →',nav_stations:'Stations',nav_pod:'Podcast',pod_label:'Vice Bay Podcast',pod_title:'The <em>Vice Bay Podcast</em>',pod_soon:'The first episode is coming soon: Sakura and Big Lou talk about OKALAM Studio',pod_play:'▶ Listen',pod_pause:'❚❚ Pause',pod_min:'min',pod_off:'Podcast unavailable right now.',nav_ads:'Ads',nav_city:'The city',nav_links:'Links',cta_game_short:'The game',
 hero_kicker:'Vice Bay · 1986 · FM stereo',hero_title:'Seven stations.<br/><em>All night long.</em>',
 hero_lead:"The radio of a city that doesn't exist. Hosts who talk too much, jingles, and ads for every business on the waterfront. Turn the dial.",
 cta_listen:'▶ Turn the radio on',cta_ads:'📺 The fake ads',pick:'Pick a station',pick_hint:'turn the knob or press a preset',
@@ -54,7 +54,7 @@ nav_part:'Join in',pa_label:'Community',pa_title:"This radio is <em>yours</em>",
 fiction:'Vice Bay is an imaginary city. Its stations, hosts and businesses are fictional; any resemblance to a real company is a coincidence.',
 privacy:'Privacy',days:'D-',release_today:"It's today.",released:'Out now',shops:'advertisers',
 weather:['81 °F · humid','75 °F · light rain','84 °F · pink sky','72 °F · mist over the swamp','79 °F · sea breeze']}};
-let lang='fr';
+let lang='fr'; let POD=null, podEl=null, podId=null;
 try{ lang=localStorage.getItem('vbr_lang')||((navigator.language||'fr').toLowerCase().startsWith('fr')?'fr':'en'); }catch(e){}
 const tr=k=>(T[lang]&&T[lang][k]!==undefined)?T[lang][k]:T.fr[k];
 
@@ -74,7 +74,7 @@ function applyLang(){
   document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=tr(el.dataset.i18n);});
   document.querySelectorAll('[data-i18n-html]').forEach(el=>{el.innerHTML=tr(el.dataset.i18nHtml);});
   $('lang').textContent=lang==='fr'?'EN':'FR';
-  renderStations(); renderParticipate(); renderCredits(); renderFilters(); renderAds(); renderCity(); countdown(); clock(); ui();
+  renderStations(); renderParticipate(); renderCredits(); renderFilters(); renderAds(); renderCity(); renderPodcast(); countdown(); clock(); ui();
 }
 $('lang').addEventListener('click',()=>{ lang=lang==='fr'?'en':'fr'; try{localStorage.setItem('vbr_lang',lang);}catch(e){} applyLang(); });
 
@@ -417,8 +417,58 @@ const RX=(()=>{
 applyLang();
 try{ const q=new URLSearchParams(location.search).get('tune'); if(q&&S.some(s=>s.id===q)){ const s0=S.find(s=>s.id===q); load(q,firstTrack(s0.live),0); ui(); meta(); } }catch(e){}
 /* Arrivée sur la page : la radio s'allume seule. Si le navigateur bloque le son sans geste, elle démarre au premier clic ou touche */
+
+/* ---------- PODCAST ---------- */
+const fmtT=s=>{ s=Math.max(0,Math.floor(s||0)); return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); };
+function podEpisodes(){ return (POD&&Array.isArray(POD.episodes))?POD.episodes:[]; }
+function renderPodcast(){
+  const list=$('pod-list'), tag=$('pod-tag'); if(!list) return;
+  if(POD) tag.textContent=(lang==='fr'?POD.tagline:(POD.tagline_en||POD.tagline))||'';
+  const eps=podEpisodes();
+  if(!POD){ list.innerHTML='<p class="pod-soon">'+esc(tr('pod_off'))+'</p>'; return; }
+  if(!eps.length){ list.innerHTML='<p class="pod-soon">'+esc(tr('pod_soon'))+'</p>'; return; }
+  const loc=lang==='fr'?'fr-FR':'en-US';
+  list.innerHTML=eps.map(e=>{
+    const d=e.date?new Date(e.date):null, ds=d&&!isNaN(d)?d.toLocaleDateString(loc,{year:'numeric',month:'long',day:'numeric'}):'';
+    const on=podId===e.id&&podEl&&!podEl.paused;
+    return '<article class="pod-ep'+(podId===e.id?' cur':'')+'" data-id="'+esc(e.id)+'">'+
+      '<button class="pod-btn" type="button" data-pod="'+esc(e.id)+'" aria-label="'+esc(tr(on?'pod_pause':'pod_play'))+'">'+(on?'❚❚':'▶')+'</button>'+
+      '<div class="pod-body"><h3>'+(e.n?'<span>#'+esc(e.n)+'</span> ':'')+esc(lang==='fr'?e.title:(e.title_en||e.title))+'</h3>'+
+      '<p>'+esc(lang==='fr'?e.desc:(e.desc_en||e.desc))+'</p>'+
+      '<div class="pod-meta">'+[ds,e.minutes?e.minutes+' '+tr('pod_min'):'',(e.hosts||[]).join(' · ')].filter(Boolean).map(esc).join(' · ')+'</div>'+
+      '<div class="pod-bar"><input type="range" min="0" max="1000" value="0" step="1" aria-label="Progression" '+(podId===e.id?'':'disabled')+'/><time>0:00</time></div></div></article>';
+  }).join('');
+  podSync();
+}
+function podSync(){
+  const p=podEl; document.querySelectorAll('.pod-ep').forEach(a=>{
+    const me=a.dataset.id===podId, on=me&&p&&!p.paused, r=a.querySelector('input'), t=a.querySelector('time'), b=a.querySelector('.pod-btn');
+    a.classList.toggle('cur',me); b.textContent=on?'❚❚':'▶'; b.setAttribute('aria-label',tr(on?'pod_pause':'pod_play'));
+    r.disabled=!me;
+    if(me&&p){ if(!r.matches(':active')) r.value=p.duration?Math.round(p.currentTime/p.duration*1000):0; t.textContent=fmtT(p.currentTime)+(p.duration?' / '+fmtT(p.duration):''); }
+    else { r.value=0; t.textContent='0:00'; }
+  });
+}
+function podToggle(id){
+  const e=podEpisodes().find(v=>v.id===id); if(!e||!e.audio) return;
+  if(!podEl){
+    podEl=new Audio(); podEl.preload='none';
+    ['timeupdate','pause','ended','loadedmetadata','durationchange'].forEach(t=>podEl.addEventListener(t,podSync));
+    podEl.addEventListener('play',()=>{ if(!audio.paused||want) stop(); podSync(); });
+    /* la radio reprend la main : on met le podcast en pause */
+    audio.addEventListener('play',()=>{ if(podEl&&!podEl.paused) podEl.pause(); });
+  }
+  if(podId===id){ if(podEl.paused) podEl.play().catch(podSync); else podEl.pause(); podSync(); return; }
+  podId=id; podEl.src=new URL(e.audio,location.href).href; podEl.play().catch(podSync);
+  try{ navigator.mediaSession.metadata=new MediaMetadata({title:e.title,artist:'Vice Bay Podcast',album:'Vice Bay Podcast'}); }catch(_){}
+  podSync();
+}
+document.addEventListener('click',ev=>{ const b=ev.target.closest&&ev.target.closest('[data-pod]'); if(b) podToggle(b.dataset.pod); });
+document.addEventListener('input',ev=>{ const r=ev.target; if(r.matches&&r.matches('.pod-bar input')&&podEl&&podEl.duration) podEl.currentTime=r.value/1000*podEl.duration; });
+fetch('podcast.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).then(j=>{ POD=j; renderPodcast(); }).catch(()=>{ renderPodcast(); });
+
 (function autostart(){
-  const go=()=>{ try{ if(!cur) tune('tropicana'); else if(audio.paused) play(); }catch(e){} };
+  const go=()=>{ try{ if(podEl&&!podEl.paused) return; if(!cur) tune('tropicana'); else if(audio.paused) play(); }catch(e){} };
   const evs=['click','keydown','touchend'];
   const off=()=>evs.forEach(t=>document.removeEventListener(t,once));
   const once=()=>{ off(); setTimeout(()=>{ if(audio.paused){ slowStart=true; go(); } },0); };
