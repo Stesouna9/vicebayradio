@@ -3,5 +3,21 @@
   "title": "Vice Bay Podcast",
   "tagline": "Sakura et Big Lou parlent d'OKALAM Studio, de la baie et de tous ses mondes.",
   "tagline_en": "Sakura and Big Lou talk about OKALAM Studio, the bay and all its worlds.",
-  "episodes": []
+  "episodes": [
+    {
+      "id": "ep1",
+      "n": 1,
+      "title": "Tout OKALAM Studio",
+      "title_en": "All of OKALAM Studio",
+      "desc": "Sakura et Big Lou font le tour du studio : la baie, les sept stations, Vice Break, VoteDay, Kotoba, le Discord, Pierre, Elisa. Avec des taquineries et du japonais pas toujours compris. Musique : mrpoly (CC0), Chopin (Musopen, CC0), Satie par Kevin MacLeod (CC BY 4.0).",
+      "desc_en": "Sakura and Big Lou tour the studio: the bay, the seven stations, Vice Break, VoteDay, Kotoba, the Discord, Pierre, Elisa. With teasing and Japanese not always understood. Music: mrpoly (CC0), Chopin (Musopen, CC0), Satie by Kevin MacLeod (CC BY 4.0).",
+      "date": "2026-10-22",
+      "minutes": 13,
+      "audio": "https://vicebayradio.com/audio/vice_bay_podcast_ep1.mp3",
+      "hosts": [
+        "Sakura",
+        "Big Lou"
+      ]
+    }
+  ]
 }
