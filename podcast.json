@@ -1,23 +1,38 @@
 {
-  "version": "1",
-  "title": "Vice Bay Podcast",
-  "tagline": "Sakura et Big Lou parlent d'OKALAM Studio, de la baie et de tous ses mondes.",
-  "tagline_en": "Sakura and Big Lou talk about OKALAM Studio, the bay and all its worlds.",
-  "episodes": [
-    {
-      "id": "ep1",
-      "n": 1,
-      "title": "Tout OKALAM Studio",
-      "title_en": "All of OKALAM Studio",
-      "desc": "Sakura et Big Lou font le tour du studio : la baie, les sept stations, Vice Break, VoteDay, Kotoba, le Discord, Pierre, Elisa. Avec des taquineries et du japonais pas toujours compris. Musique : mrpoly (CC0), Dark Fog et Night Cave par Kevin MacLeod (incompetech.com, CC BY 4.0).",
-      "desc_en": "Sakura and Big Lou tour the studio: the bay, the seven stations, Vice Break, VoteDay, Kotoba, the Discord, Pierre, Elisa. With teasing and Japanese not always understood. Music: mrpoly (CC0), Dark Fog and Night Cave by Kevin MacLeod (incompetech.com, CC BY 4.0).",
-      "date": "2026-10-22",
-      "minutes": 14,
-      "audio": "https://vicebayradio.com/audio/vice_bay_podcast_ep1.mp3",
-      "hosts": [
-        "Sakura",
-        "Big Lou"
-      ]
-    }
-  ]
+ "version": "1",
+ "title": "Vice Bay Podcast",
+ "tagline": "Sakura et Big Lou parlent d'OKALAM Studio, de la baie et de tous ses mondes.",
+ "tagline_en": "Sakura and Big Lou talk about OKALAM Studio, the bay and all its worlds.",
+ "episodes": [
+  {
+   "id": "ep1",
+   "n": 1,
+   "title": "Tout OKALAM Studio",
+   "title_en": "All of OKALAM Studio",
+   "desc": "Sakura et Big Lou font le tour du studio : la baie, les sept stations, Vice Break, VoteDay, Kotoba, le Discord, Pierre, Elisa. Avec des taquineries et du japonais pas toujours compris. Musique : mrpoly (CC0), Dark Fog et Night Cave par Kevin MacLeod (incompetech.com, CC BY 4.0).",
+   "desc_en": "Sakura and Big Lou tour the studio: the bay, the seven stations, Vice Break, VoteDay, Kotoba, the Discord, Pierre, Elisa. With teasing and Japanese not always understood. Music: mrpoly (CC0), Dark Fog and Night Cave by Kevin MacLeod (incompetech.com, CC BY 4.0).",
+   "date": "2026-10-22",
+   "minutes": 14,
+   "audio": "https://vicebayradio.com/audio/vice_bay_podcast_ep1.mp3",
+   "hosts": [
+    "Sakura",
+    "Big Lou"
+   ]
+  },
+  {
+   "id": "ep2",
+   "n": 2,
+   "title": "Road trip dans Vice Bay",
+   "title_en": "Road trip through Vice Bay",
+   "desc": "Sakura et Mél de Sunset Drive traversent les cinq quartiers de la baie, de Beach à Skyline, en se moquant avec amour des pubs. Deux amies, une voiture, un sandwich de secours. Musique : mrpoly (CC0), Dark Fog et Night Cave par Kevin MacLeod (incompetech.com, CC BY 4.0).",
+   "desc_en": "Sakura and Mél from Sunset Drive drive through the bay's five districts, from Beach to Skyline, lovingly mocking the ads. Two friends, one car, one emergency sandwich. Music: mrpoly (CC0), Dark Fog and Night Cave by Kevin MacLeod (incompetech.com, CC BY 4.0).",
+   "date": "2026-10-22",
+   "minutes": 11,
+   "audio": "https://vicebayradio.com/audio/vice_bay_podcast_ep2.mp3",
+   "hosts": [
+    "Sakura",
+    "Mél"
+   ]
+  }
+ ]
 }
