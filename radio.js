@@ -6,7 +6,7 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 
 /* ---------- LANGUES ---------- */
 const T={
-fr:{mv_label:'Vice Bay, ce n\'est pas que la radio',mv_title:"Tous nos sites, <em>au même endroit</em>",mv_sub:"Vice Bay Radio est la radio de la ville. Le point de départ de tout : GTA VI France, avec nos applis.",mv_tag:'PUB',nav_mv:'Nos sites',mv_gta:'Le compte à rebours, les actus deux fois par jour, la boutique et la radio de Vice Bay en direct.',mv_gta_cta:'Voir le compte à rebours →',mv_game:'Le casse-briques néon de Vice Bay. 500 silhouettes, les six stations en fond. Sortie le 19 novembre 2026.',mv_game_cta:'Découvrir le jeu →',mv_kot:'Devine le mot caché en six essais, en français et en japonais. Gratuit sur iPhone et Android.',mv_kot_cta:'Jouer à Kotoba →',mv_vd:'Chaque jour une question A ou B. Vote, compare avec tes amis et avec le monde. Gratuit sur iPhone.',mv_vd_cta:"Voter aujourd'hui →",nav_stations:'Stations',nav_pod:'Podcast',pod_label:'Vice Bay Podcast',pod_title:'Le <em>Vice Bay Podcast</em>',pod_soon:"Le premier épisode arrive bientôt : Sakura et Big Lou parlent d'OKALAM Studio",pod_play:'▶ Écouter',pod_pause:'❚❚ Pause',pod_min:'min',pod_off:'Podcast indisponible pour le moment.',com_btn:"Commentaires",com_btn_n:"Commentaires (%n)",com_hide:"Masquer les commentaires",com_load:"Chargement…",com_none:"Aucun commentaire pour le moment. Sois le premier !",com_ph:"Écris un commentaire…",com_send:"Envoyer",com_sending:"Envoi…",com_pseudo_t:"Choisis ton pseudo",com_pseudo_w:"Ton pseudo est définitif : tu ne pourras plus le changer.",com_pseudo_ph:"Ton pseudo (3 à 20 caractères)",com_pseudo_ok:"Valider",com_as:"Tu commentes sous le pseudo",com_e_net:"Connexion impossible. Réessaie dans un instant.",com_e_taken:"Ce pseudo est déjà pris.",com_e_already:"Cet appareil a déjà le pseudo",com_e_pinv:"Pseudo invalide : 3 à 20 caractères, lettres, chiffres, _ - . seulement, sans lien ni mot interdit.",com_e_tinv:"Commentaire invalide : 1 à 500 caractères, sans lien ni mot interdit.",com_e_slow:"Doucement : un commentaire toutes les 20 secondes, 30 par jour.",com_e_pseudo:"Choisis d'abord un pseudo.",com_ago_now:"à l'instant",com_ago_m:"il y a %n min",com_ago_h:"il y a %n h",com_ago_d:"il y a %n j",nav_ads:'Pubs',nav_city:'La ville',nav_links:'Liens',cta_game_short:'Le jeu',
+fr:{mv_label:'Vice Bay, ce n\'est pas que la radio',mv_title:"Tous nos sites, <em>au même endroit</em>",mv_sub:"Vice Bay Radio est la radio de la ville. Le point de départ de tout : GTA VI France, avec nos applis.",mv_tag:'PUB',nav_mv:'Nos sites',mv_gta:'Le compte à rebours, les actus deux fois par jour, la boutique et la radio de Vice Bay en direct.',mv_gta_cta:'Voir le compte à rebours →',mv_game:'Le casse-briques néon de Vice Bay. 500 silhouettes, les six stations en fond. Sortie le 19 novembre 2026.',mv_game_cta:'Découvrir le jeu →',mv_kot:'Devine le mot caché en six essais, en français et en japonais. Gratuit sur iPhone et Android.',mv_kot_cta:'Jouer à Kotoba →',mv_vd:'Chaque jour une question A ou B. Vote, compare avec tes amis et avec le monde. Gratuit sur iPhone.',mv_vd_cta:"Voter aujourd'hui →",nav_stations:'Stations',nav_pod:'Podcast',pod_label:'Vice Bay Podcast',pod_title:'Le <em>Vice Bay Podcast</em>',pod_soon:"Le premier épisode arrive bientôt : Sakura et Big Lou parlent d'OKALAM Studio",pod_play:'▶ Écouter',pod_pause:'❚❚ Pause',pod_min:'min',pod_off:'Podcast indisponible pour le moment.',com_btn:"Commentaires",com_btn_n:"Commentaires (%n)",com_hide:"Masquer les commentaires",com_load:"Chargement…",com_none:"Aucun commentaire pour le moment. Sois le premier !",com_ph:"Écris un commentaire…",com_send:"Envoyer",com_sending:"Envoi…",com_pseudo_t:"Choisis ton pseudo",com_pseudo_w:"Ton pseudo est définitif : tu ne pourras plus le changer.",com_pseudo_ph:"Ton pseudo (3 à 20 caractères)",com_pseudo_ok:"Valider",com_as:"Tu commentes sous le pseudo",com_e_net:"Connexion impossible. Réessaie dans un instant.",com_e_taken:"Ce pseudo est déjà pris.",com_e_already:"Cet appareil a déjà le pseudo",com_e_pinv:"Pseudo invalide : 3 à 20 caractères, lettres, chiffres, _ - . seulement, sans lien ni mot interdit.",com_e_tinv:"Commentaire invalide : 1 à 500 caractères, sans lien ni mot interdit.",com_e_slow:"Doucement : un commentaire toutes les 20 secondes, 30 par jour.",com_e_pseudo:"Choisis d'abord un pseudo.",rate_n:"%a · %n avis",rate_1:"%a · 1 avis",rate_none:"Pas encore de note",rate_mine:"Ta note : %m sur 5",rate_aria:"Noter %n sur 5",like_aria:"J'aime",com_ago_now:"à l'instant",com_ago_m:"il y a %n min",com_ago_h:"il y a %n h",com_ago_d:"il y a %n j",nav_ads:'Pubs',nav_city:'La ville',nav_links:'Liens',cta_game_short:'Le jeu',
 hero_kicker:'Vice Bay · 1986 · FM stéréo',hero_title:'Sept stations.<br/><em>Toute la nuit.</em>',
 hero_lead:"Les radios d'une ville qui n'existe pas. Des animateurs qui parlent trop, des jingles, et les pubs de tous les commerces du front de mer. Tourne le bouton.",
 cta_listen:'▶ Allumer la radio',cta_ads:'📺 Les fausses pubs',pick:'Choisis une station',pick_hint:"tourne le bouton ou appuie sur une touche",
@@ -30,7 +30,7 @@ nav_part:'Participer',pa_label:'Communauté',pa_title:"Cette radio, <em>c'est la
 fiction:'Vice Bay est une ville imaginaire. Ses stations, ses animateurs et ses commerces sont fictifs ; toute ressemblance avec une entreprise réelle serait une coïncidence.',
 privacy:'Confidentialité',days:'J-',release_today:"C'est aujourd'hui.",released:'Disponible maintenant',shops:'annonceurs',
 weather:['27 °C · humide','24 °C · pluie fine','29 °C · ciel rose','22 °C · brume sur les marais','26 °C · vent de mer']},
-en:{mv_label:'Vice Bay is more than a radio',mv_title:"All our sites, <em>in one place</em>",mv_sub:'Vice Bay Radio is the radio of the city. The hub of it all: GTA VI France, with our apps.',mv_tag:'AD',nav_mv:'Our sites',mv_gta:'The countdown, news twice a day, the shop and the Vice Bay radio live.',mv_gta_cta:'See the countdown →',mv_game:'The neon brick-breaker set in Vice Bay. 500 silhouettes, the six stations in the background. Out November 19, 2026.',mv_game_cta:'Discover the game →',mv_kot:'Guess the hidden word in six tries, in French and Japanese. Free on iPhone and Android.',mv_kot_cta:'Play Kotoba →',mv_vd:'Every day an A or B question. Vote, compare with friends and the world. Free on iPhone.',mv_vd_cta:'Vote today →',nav_stations:'Stations',nav_pod:'Podcast',pod_label:'Vice Bay Podcast',pod_title:'The <em>Vice Bay Podcast</em>',pod_soon:'The first episode is coming soon: Sakura and Big Lou talk about OKALAM Studio',pod_play:'▶ Listen',pod_pause:'❚❚ Pause',pod_min:'min',pod_off:'Podcast unavailable right now.',com_btn:"Comments",com_btn_n:"Comments (%n)",com_hide:"Hide comments",com_load:"Loading…",com_none:"No comments yet. Be the first!",com_ph:"Write a comment…",com_send:"Send",com_sending:"Sending…",com_pseudo_t:"Pick your nickname",com_pseudo_w:"Your nickname is permanent: you won't be able to change it.",com_pseudo_ph:"Your nickname (3 to 20 characters)",com_pseudo_ok:"Confirm",com_as:"You comment as",com_e_net:"Can't connect. Try again in a moment.",com_e_taken:"That nickname is already taken.",com_e_already:"This device already has the nickname",com_e_pinv:"Invalid nickname: 3 to 20 characters, letters, digits, _ - . only, no link or banned word.",com_e_tinv:"Invalid comment: 1 to 500 characters, no link or banned word.",com_e_slow:"Slow down: one comment every 20 seconds, 30 per day.",com_e_pseudo:"Pick a nickname first.",com_ago_now:"just now",com_ago_m:"%n min ago",com_ago_h:"%n h ago",com_ago_d:"%n d ago",nav_ads:'Ads',nav_city:'The city',nav_links:'Links',cta_game_short:'The game',
+en:{mv_label:'Vice Bay is more than a radio',mv_title:"All our sites, <em>in one place</em>",mv_sub:'Vice Bay Radio is the radio of the city. The hub of it all: GTA VI France, with our apps.',mv_tag:'AD',nav_mv:'Our sites',mv_gta:'The countdown, news twice a day, the shop and the Vice Bay radio live.',mv_gta_cta:'See the countdown →',mv_game:'The neon brick-breaker set in Vice Bay. 500 silhouettes, the six stations in the background. Out November 19, 2026.',mv_game_cta:'Discover the game →',mv_kot:'Guess the hidden word in six tries, in French and Japanese. Free on iPhone and Android.',mv_kot_cta:'Play Kotoba →',mv_vd:'Every day an A or B question. Vote, compare with friends and the world. Free on iPhone.',mv_vd_cta:'Vote today →',nav_stations:'Stations',nav_pod:'Podcast',pod_label:'Vice Bay Podcast',pod_title:'The <em>Vice Bay Podcast</em>',pod_soon:'The first episode is coming soon: Sakura and Big Lou talk about OKALAM Studio',pod_play:'▶ Listen',pod_pause:'❚❚ Pause',pod_min:'min',pod_off:'Podcast unavailable right now.',com_btn:"Comments",com_btn_n:"Comments (%n)",com_hide:"Hide comments",com_load:"Loading…",com_none:"No comments yet. Be the first!",com_ph:"Write a comment…",com_send:"Send",com_sending:"Sending…",com_pseudo_t:"Pick your nickname",com_pseudo_w:"Your nickname is permanent: you won't be able to change it.",com_pseudo_ph:"Your nickname (3 to 20 characters)",com_pseudo_ok:"Confirm",com_as:"You comment as",com_e_net:"Can't connect. Try again in a moment.",com_e_taken:"That nickname is already taken.",com_e_already:"This device already has the nickname",com_e_pinv:"Invalid nickname: 3 to 20 characters, letters, digits, _ - . only, no link or banned word.",com_e_tinv:"Invalid comment: 1 to 500 characters, no link or banned word.",com_e_slow:"Slow down: one comment every 20 seconds, 30 per day.",com_e_pseudo:"Pick a nickname first.",rate_n:"%a · %n ratings",rate_1:"%a · 1 rating",rate_none:"No rating yet",rate_mine:"Your rating: %m out of 5",rate_aria:"Rate %n out of 5",like_aria:"Like",com_ago_now:"just now",com_ago_m:"%n min ago",com_ago_h:"%n h ago",com_ago_d:"%n d ago",nav_ads:'Ads',nav_city:'The city',nav_links:'Links',cta_game_short:'The game',
 hero_kicker:'Vice Bay · 1986 · FM stereo',hero_title:'Seven stations.<br/><em>All night long.</em>',
 hero_lead:"The radio of a city that doesn't exist. Hosts who talk too much, jingles, and ads for every business on the waterfront. Turn the dial.",
 cta_listen:'▶ Turn the radio on',cta_ads:'📺 The fake ads',pick:'Pick a station',pick_hint:'turn the knob or press a preset',
@@ -470,7 +470,7 @@ document.addEventListener('input',ev=>{ const r=ev.target; if(r.matches&&r.match
 /* ---------- COMMENTAIRES DU PODCAST ---------- */
 const COM_API='https://live.vicebayradio.com/podcast', K_DEV='vbr.podcast.device', K_PSE='vbr.podcast.pseudo';
 const comState={};
-function COM(id){ return comState[id]||(comState[id]={open:false,loaded:false,loading:false,list:[],draft:'',err:'',busy:false,needPseudo:false,pseudoDraft:''}); }
+function COM(id){ return comState[id]||(comState[id]={open:false,loaded:false,loading:false,list:[],draft:'',err:'',busy:false,needPseudo:false,pseudoDraft:'',rate:{avg:0,count:0,mine:0}}); }
 function lsGet(k){ try{return localStorage.getItem(k);}catch(e){return null;} }
 function lsSet(k,v){ try{localStorage.setItem(k,v);}catch(e){} }
 let _devMem=null;
@@ -517,16 +517,42 @@ function comRender(id){
   box.hidden=!s.open; if(!s.open){ box.innerHTML=''; return; }
   const ps=comPseudo();
   const list=s.loading&&!s.loaded?'<p class="com-note">'+esc(tr('com_load'))+'</p>':
-    (s.list.length?'<ul class="com-list">'+s.list.map(c=>'<li><div class="com-h"><b style="color:hsl('+comHue(c.pseudo)+',85%,68%)">'+esc(c.pseudo)+'</b><time>'+esc(comAgo(c.at))+'</time></div><p>'+esc(c.text)+'</p></li>').join('')+'</ul>':
+    (s.list.length?'<ul class="com-list">'+s.list.map(c=>'<li><div class="com-h"><b style="color:hsl('+comHue(c.pseudo)+',85%,68%)">'+esc(c.pseudo)+'</b><time>'+esc(comAgo(c.at))+'</time></div><div class="com-b"><p>'+esc(c.text)+'</p><button type="button" class="com-like'+(c.liked?' on':'')+'" data-com-like="'+esc(c.id)+'" aria-pressed="'+(c.liked?'true':'false')+'" aria-label="'+esc(tr('like_aria'))+'"><span aria-hidden="true">'+(c.liked?'♥':'♡')+'</span> <i>'+(c.likes|0)+'</i></button></div></li>').join('')+'</ul>':
      '<p class="com-note">'+esc(tr('com_none'))+'</p>');
   const form=s.needPseudo&&!ps?
     '<div class="com-pseudo"><strong>'+esc(tr('com_pseudo_t'))+'</strong><p class="com-warn">'+esc(tr('com_pseudo_w'))+'</p><div class="com-row"><input class="com-p" type="text" maxlength="20" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="'+esc(tr('com_pseudo_ph'))+'" value="'+esc(s.pseudoDraft)+'" aria-label="'+esc(tr('com_pseudo_t'))+'"/><button type="button" class="com-ok" data-com-pseudo="'+esc(id)+'"'+(s.busy?' disabled':'')+'>'+esc(tr(s.busy?'com_sending':'com_pseudo_ok'))+'</button></div></div>':
     '<div class="com-new">'+(ps?'<p class="com-as">'+esc(tr('com_as'))+' <b style="color:hsl('+comHue(ps)+',85%,68%)">'+esc(ps)+'</b></p>':'')+'<textarea class="com-t" maxlength="500" rows="2" placeholder="'+esc(tr('com_ph'))+'" aria-label="'+esc(tr('com_ph'))+'">'+esc(s.draft)+'</textarea><button type="button" class="com-ok" data-com-send="'+esc(id)+'"'+(s.busy?' disabled':'')+'>'+esc(tr(s.busy?'com_sending':'com_send'))+'</button></div>';
-  box.innerHTML=list+form+(s.err?'<p class="com-err" role="alert">'+esc(s.err)+'</p>':'');
+  box.innerHTML=comRateHtml(id)+list+form+(s.err?'<p class="com-err" role="alert">'+esc(s.err)+'</p>':'');
+}
+function comRateHtml(id){
+  const r=COM(id).rate, n=r.count|0, m=r.mine|0;
+  const txt=n?(n===1?tr('rate_1'):tr('rate_n').replace('%n',n)).replace('%a',(Math.round(r.avg*10)/10).toLocaleString(lang==='en'?'en-US':'fr-FR',{minimumFractionDigits:1,maximumFractionDigits:1})):tr('rate_none');
+  let st=''; for(let i=1;i<=5;i++) st+='<button type="button" class="com-star'+(i<=m?' on':'')+'" data-com-star="'+i+'" aria-label="'+esc(tr('rate_aria').replace('%n',i))+'">'+(i<=m?'★':'☆')+'</button>';
+  return '<div class="com-rate" title="'+esc(m?tr('rate_mine').replace('%m',m):'')+'"><div class="com-stars" role="group">'+st+'</div><span class="com-rtxt">'+esc(txt)+'</span></div>';
+}
+async function comLoadRate(id){
+  const s=COM(id), r=await comApi('/rating?ep='+encodeURIComponent(id)+'&device='+encodeURIComponent(comDevice()));
+  if(r.status===200&&r.j&&typeof r.j.avg==='number'){ s.rate={avg:r.j.avg,count:r.j.count|0,mine:r.j.mine|0}; comRender(id); }
+}
+async function comRate(id,stars){
+  const s=COM(id), prev=s.rate, n=prev.count|0, m=prev.mine|0;
+  const sum=prev.avg*n-(m?m:0)+stars, cnt=m?n:n+1;
+  s.rate={avg:cnt?sum/cnt:0,count:cnt,mine:stars}; comRender(id);
+  const r=await comApi('/rating',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ep:id,device:comDevice(),stars})});
+  if(r.status===200&&r.j&&typeof r.j.avg==='number') s.rate={avg:r.j.avg,count:r.j.count|0,mine:r.j.mine|0}; else s.rate=prev;
+  comRender(id); if(r.status===200) comLoadRate(id);
+}
+async function comLike(id,cid){
+  const s=COM(id), c=s.list.find(x=>String(x.id)===String(cid)); if(!c) return;
+  const was=!!c.liked, wasN=c.likes|0;
+  c.liked=!was; c.likes=Math.max(0,wasN+(was?-1:1)); comRender(id);
+  const r=await comApi('/like',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({device:comDevice(),id:c.id})});
+  if(r.status===200&&r.j&&typeof r.j.liked==='boolean'){ c.liked=r.j.liked; c.likes=r.j.likes|0; } else { c.liked=was; c.likes=wasN; }
+  comRender(id);
 }
 async function comLoad(id){
   const s=COM(id); s.loading=true; comRender(id);
-  const r=await comApi('/comments?ep='+encodeURIComponent(id));
+  const r=await comApi('/comments?ep='+encodeURIComponent(id)+'&device='+encodeURIComponent(comDevice()));
   s.loading=false;
   if(r.status===200&&r.j&&Array.isArray(r.j.comments)){ s.list=r.j.comments; s.loaded=true; if(s.err===tr('com_e_net')) s.err=''; }
   else if(!s.loaded){ s.err=tr('com_e_net'); }
@@ -539,7 +565,7 @@ async function comSyncPseudo(){
 }
 async function comToggle(id){
   const s=COM(id); s.open=!s.open; s.err='';
-  if(s.open){ comRender(id); await comSyncPseudo(); comLoad(id); } else comRender(id);
+  if(s.open){ comRender(id); comLoadRate(id); await comSyncPseudo(); comLoad(id); } else comRender(id);
 }
 async function comPost(id){
   const s=COM(id), box=document.querySelector('.com-box[data-com="'+id+'"]');
@@ -567,10 +593,11 @@ async function comClaim(id){
   s.err=comErr('pseudo',r); comRender(id);
 }
 document.addEventListener('click',ev=>{
-  const t=ev.target.closest&&ev.target.closest('[data-com-tog],[data-com-send],[data-com-pseudo]'); if(!t) return;
+  const t=ev.target.closest&&ev.target.closest('[data-com-tog],[data-com-send],[data-com-pseudo],[data-com-star],[data-com-like]'); if(!t) return;
   if(t.dataset.comTog) comToggle(t.dataset.comTog);
   else if(t.dataset.comSend) comPost(t.dataset.comSend);
   else if(t.dataset.comPseudo) comClaim(t.dataset.comPseudo);
+  else{ const b=t.closest('.com-box'); if(!b) return; if(t.dataset.comStar) comRate(b.dataset.com,+t.dataset.comStar); else comLike(b.dataset.com,t.dataset.comLike); }
 });
 document.addEventListener('input',ev=>{
   const el=ev.target; if(!el.matches) return; const box=el.closest&&el.closest('.com-box'); if(!box) return;

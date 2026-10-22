@@ -246,6 +246,17 @@ h2{font-size:clamp(1.6rem,4vw,2.6rem);margin-bottom:14px;}
 .com-h{display:flex;justify-content:space-between;gap:10px;font-size:.8rem;}
 .com-h time{font-family:'Space Mono',monospace;font-size:.66rem;color:var(--muted);}
 .com-list p{margin-top:4px;color:var(--sand);font-size:.9rem;overflow-wrap:anywhere;white-space:pre-wrap;}
+.com-rate{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.com-stars{display:flex;gap:2px;}
+.com-star{background:none;border:none;padding:2px 3px;font-size:1.5rem;line-height:1;color:var(--muted);cursor:pointer;}
+.com-star.on{color:var(--sodium);}
+.com-star:hover{color:var(--sodium);}
+.com-rtxt{font-family:'Space Mono',monospace;font-size:.74rem;color:var(--muted);}
+.com-b{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
+.com-b p{flex:1;min-width:0;}
+.com-like{flex:none;display:inline-flex;align-items:center;gap:4px;margin-top:2px;padding:4px 9px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--muted);font-family:'Space Mono',monospace;font-size:.74rem;cursor:pointer;}
+.com-like i{font-style:normal;}
+.com-like.on{color:var(--pink);border-color:var(--pink);}
 .com-note{color:var(--muted);font-size:.85rem;}
 .com-new,.com-pseudo{display:grid;gap:8px;}
 .com-as{font-size:.78rem;color:var(--muted);}
