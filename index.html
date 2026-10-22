@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="radio.css?v=20261022like"/>
+<link rel="stylesheet" href="radio.css?v=20261022pod"/>
 <link rel="stylesheet" href="receiver.css?v=20261004f"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"RadioStation","name":"Vice Bay Radio","url":"https://vicebayradio.com/","logo":"https://vicebayradio.com/img/icon-192.png","sameAs":["https://www.instagram.com/vicebayradio/","https://discord.gg/TSaxEnt2dG"]}</script>
 </head>
@@ -59,6 +59,7 @@
       <p class="kicker" data-i18n="hero_kicker">Vice Bay · 1986 · FM stéréo</p>
       <h1 data-i18n-html="hero_title">Sept stations.<br/><em>Toute la nuit.</em></h1>
       <p class="lead" data-i18n="hero_lead">Les radios d'une ville qui n'existe pas. Des animateurs qui parlent trop, des jingles, et les pubs de tous les commerces du front de mer. Tourne le bouton.</p>
+      <a class="pod-chip" href="#podcast" id="pod-chip" data-i18n="chip_pod">🎙 Nouveau · Vice Bay Podcast</a>
       <div class="cta">
         <button class="btn" type="button" data-tune="tropicana" data-i18n="cta_listen">▶ Allumer la radio</button>
         <a class="btn btn-ghost" href="#pubs" data-i18n="cta_ads">📺 Les fausses pubs</a>
@@ -152,7 +153,15 @@
   <div class="wrap">
     <p class="label" data-i18n="pod_label">Vice Bay Podcast</p>
     <h2 data-i18n-html="pod_title">Le <em>Vice Bay Podcast</em></h2>
-    <p class="sub" id="pod-tag"></p>
+    <div class="pod-hero">
+      <img src="img/podcast_cover.jpg" alt="Vice Bay Podcast" width="220" height="220"/>
+      <div>
+        <p class="sub" id="pod-tag"></p>
+        <p class="pod-by">OKALAM Studio</p>
+        <button class="btn" type="button" id="pod-latest" data-i18n="pod_latest">▶ Écouter le dernier épisode</button>
+      </div>
+    </div>
+    <h3 class="pod-h" data-i18n="pod_eps">Épisodes</h3>
     <div class="pod-list" id="pod-list"></div>
   </div>
 </section>
@@ -291,7 +300,7 @@
 </dialog>
 
 <script src="data.js"></script>
-<script src="radio.js?v=20261022like"></script>
+<script src="radio.js?v=20261022pod"></script>
 <script>if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{})); }</script>
 <script src="multivers.js?v=1" defer></script>
 </body>
