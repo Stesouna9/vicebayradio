@@ -6,7 +6,7 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 
 /* ---------- LANGUES ---------- */
 const T={
-fr:{mv_label:'Vice Bay, ce n\'est pas que la radio',mv_title:"Tous nos sites, <em>au même endroit</em>",mv_sub:"Vice Bay Radio est la radio de la ville. Le point de départ de tout : GTA VI France, avec nos applis.",mv_tag:'PUB',nav_mv:'Nos sites',mv_gta:'Le compte à rebours, les actus deux fois par jour, la boutique et la radio de Vice Bay en direct.',mv_gta_cta:'Voir le compte à rebours →',mv_game:'Le casse-briques néon de Vice Bay. 500 silhouettes, les six stations en fond. Sortie le 19 novembre 2026.',mv_game_cta:'Découvrir le jeu →',mv_kot:'Devine le mot caché en six essais, en français et en japonais. Gratuit sur iPhone et Android.',mv_kot_cta:'Jouer au mot du jour →',mv_vd:'Chaque jour une question A ou B. Vote, compare avec tes amis et avec le monde. Gratuit sur iPhone.',mv_vd_cta:"Voter aujourd'hui →",nav_stations:'Stations',nav_pod:'Podcast',pod_label:'Vice Bay Podcast',pod_title:'Le <em>Vice Bay Podcast</em>',pod_soon:"Le premier épisode arrive bientôt : Sakura et Big Lou parlent d'OKALAM Studio",pod_play:'▶ Écouter',pod_pause:'❚❚ Pause',pod_min:'min',pod_off:'Podcast indisponible pour le moment.',nav_ads:'Pubs',nav_city:'La ville',nav_links:'Liens',cta_game_short:'Le jeu',
+fr:{mv_label:'Vice Bay, ce n\'est pas que la radio',mv_title:"Tous nos sites, <em>au même endroit</em>",mv_sub:"Vice Bay Radio est la radio de la ville. Le point de départ de tout : GTA VI France, avec nos applis.",mv_tag:'PUB',nav_mv:'Nos sites',mv_gta:'Le compte à rebours, les actus deux fois par jour, la boutique et la radio de Vice Bay en direct.',mv_gta_cta:'Voir le compte à rebours →',mv_game:'Le casse-briques néon de Vice Bay. 500 silhouettes, les six stations en fond. Sortie le 19 novembre 2026.',mv_game_cta:'Découvrir le jeu →',mv_kot:'Devine le mot caché en six essais, en français et en japonais. Gratuit sur iPhone et Android.',mv_kot_cta:'Jouer au mot du jour →',mv_vd:'Chaque jour une question A ou B. Vote, compare avec tes amis et avec le monde. Gratuit sur iPhone.',mv_vd_cta:"Voter aujourd'hui →",nav_stations:'Stations',nav_pod:'Podcast',pod_label:'Vice Bay Podcast',pod_title:'Le <em>Vice Bay Podcast</em>',pod_soon:"Le premier épisode arrive bientôt : Sakura et Big Lou parlent d'OKALAM Studio",pod_play:'▶ Écouter',pod_pause:'❚❚ Pause',pod_min:'min',pod_off:'Podcast indisponible pour le moment.',com_btn:"Commentaires",com_btn_n:"Commentaires (%n)",com_hide:"Masquer les commentaires",com_load:"Chargement…",com_none:"Aucun commentaire pour le moment. Sois le premier !",com_ph:"Écris un commentaire…",com_send:"Envoyer",com_sending:"Envoi…",com_pseudo_t:"Choisis ton pseudo",com_pseudo_w:"Ton pseudo est définitif : tu ne pourras plus le changer.",com_pseudo_ph:"Ton pseudo (3 à 20 caractères)",com_pseudo_ok:"Valider",com_as:"Tu commentes sous le pseudo",com_e_net:"Connexion impossible. Réessaie dans un instant.",com_e_taken:"Ce pseudo est déjà pris.",com_e_already:"Cet appareil a déjà le pseudo",com_e_pinv:"Pseudo invalide : 3 à 20 caractères, lettres, chiffres, _ - . seulement, sans lien ni mot interdit.",com_e_tinv:"Commentaire invalide : 1 à 500 caractères, sans lien ni mot interdit.",com_e_slow:"Doucement : un commentaire toutes les 20 secondes, 30 par jour.",com_e_pseudo:"Choisis d'abord un pseudo.",com_ago_now:"à l'instant",com_ago_m:"il y a %n min",com_ago_h:"il y a %n h",com_ago_d:"il y a %n j",nav_ads:'Pubs',nav_city:'La ville',nav_links:'Liens',cta_game_short:'Le jeu',
 hero_kicker:'Vice Bay · 1986 · FM stéréo',hero_title:'Sept stations.<br/><em>Toute la nuit.</em>',
 hero_lead:"Les radios d'une ville qui n'existe pas. Des animateurs qui parlent trop, des jingles, et les pubs de tous les commerces du front de mer. Tourne le bouton.",
 cta_listen:'▶ Allumer la radio',cta_ads:'📺 Les fausses pubs',pick:'Choisis une station',pick_hint:"tourne le bouton ou appuie sur une touche",
@@ -30,7 +30,7 @@ nav_part:'Participer',pa_label:'Communauté',pa_title:"Cette radio, <em>c'est la
 fiction:'Vice Bay est une ville imaginaire. Ses stations, ses animateurs et ses commerces sont fictifs ; toute ressemblance avec une entreprise réelle serait une coïncidence.',
 privacy:'Confidentialité',days:'J-',release_today:"C'est aujourd'hui.",released:'Disponible maintenant',shops:'annonceurs',
 weather:['27 °C · humide','24 °C · pluie fine','29 °C · ciel rose','22 °C · brume sur les marais','26 °C · vent de mer']},
-en:{mv_label:'Vice Bay is more than a radio',mv_title:"All our sites, <em>in one place</em>",mv_sub:'Vice Bay Radio is the radio of the city. The hub of it all: GTA VI France, with our apps.',mv_tag:'AD',nav_mv:'Our sites',mv_gta:'The countdown, news twice a day, the shop and the Vice Bay radio live.',mv_gta_cta:'See the countdown →',mv_game:'The neon brick-breaker set in Vice Bay. 500 silhouettes, the six stations in the background. Out November 19, 2026.',mv_game_cta:'Discover the game →',mv_kot:'Guess the hidden word in six tries, in French and Japanese. Free on iPhone and Android.',mv_kot_cta:'Play the word of the day →',mv_vd:'Every day an A or B question. Vote, compare with friends and the world. Free on iPhone.',mv_vd_cta:'Vote today →',nav_stations:'Stations',nav_pod:'Podcast',pod_label:'Vice Bay Podcast',pod_title:'The <em>Vice Bay Podcast</em>',pod_soon:'The first episode is coming soon: Sakura and Big Lou talk about OKALAM Studio',pod_play:'▶ Listen',pod_pause:'❚❚ Pause',pod_min:'min',pod_off:'Podcast unavailable right now.',nav_ads:'Ads',nav_city:'The city',nav_links:'Links',cta_game_short:'The game',
+en:{mv_label:'Vice Bay is more than a radio',mv_title:"All our sites, <em>in one place</em>",mv_sub:'Vice Bay Radio is the radio of the city. The hub of it all: GTA VI France, with our apps.',mv_tag:'AD',nav_mv:'Our sites',mv_gta:'The countdown, news twice a day, the shop and the Vice Bay radio live.',mv_gta_cta:'See the countdown →',mv_game:'The neon brick-breaker set in Vice Bay. 500 silhouettes, the six stations in the background. Out November 19, 2026.',mv_game_cta:'Discover the game →',mv_kot:'Guess the hidden word in six tries, in French and Japanese. Free on iPhone and Android.',mv_kot_cta:'Play the word of the day →',mv_vd:'Every day an A or B question. Vote, compare with friends and the world. Free on iPhone.',mv_vd_cta:'Vote today →',nav_stations:'Stations',nav_pod:'Podcast',pod_label:'Vice Bay Podcast',pod_title:'The <em>Vice Bay Podcast</em>',pod_soon:'The first episode is coming soon: Sakura and Big Lou talk about OKALAM Studio',pod_play:'▶ Listen',pod_pause:'❚❚ Pause',pod_min:'min',pod_off:'Podcast unavailable right now.',com_btn:"Comments",com_btn_n:"Comments (%n)",com_hide:"Hide comments",com_load:"Loading…",com_none:"No comments yet. Be the first!",com_ph:"Write a comment…",com_send:"Send",com_sending:"Sending…",com_pseudo_t:"Pick your nickname",com_pseudo_w:"Your nickname is permanent: you won't be able to change it.",com_pseudo_ph:"Your nickname (3 to 20 characters)",com_pseudo_ok:"Confirm",com_as:"You comment as",com_e_net:"Can't connect. Try again in a moment.",com_e_taken:"That nickname is already taken.",com_e_already:"This device already has the nickname",com_e_pinv:"Invalid nickname: 3 to 20 characters, letters, digits, _ - . only, no link or banned word.",com_e_tinv:"Invalid comment: 1 to 500 characters, no link or banned word.",com_e_slow:"Slow down: one comment every 20 seconds, 30 per day.",com_e_pseudo:"Pick a nickname first.",com_ago_now:"just now",com_ago_m:"%n min ago",com_ago_h:"%n h ago",com_ago_d:"%n d ago",nav_ads:'Ads',nav_city:'The city',nav_links:'Links',cta_game_short:'The game',
 hero_kicker:'Vice Bay · 1986 · FM stereo',hero_title:'Seven stations.<br/><em>All night long.</em>',
 hero_lead:"The radio of a city that doesn't exist. Hosts who talk too much, jingles, and ads for every business on the waterfront. Turn the dial.",
 cta_listen:'▶ Turn the radio on',cta_ads:'📺 The fake ads',pick:'Pick a station',pick_hint:'turn the knob or press a preset',
@@ -436,8 +436,10 @@ function renderPodcast(){
       '<div class="pod-body"><h3>'+(e.n?'<span>#'+esc(e.n)+'</span> ':'')+esc(lang==='fr'?e.title:(e.title_en||e.title))+'</h3>'+
       '<p>'+esc(lang==='fr'?e.desc:(e.desc_en||e.desc))+'</p>'+
       '<div class="pod-meta">'+[ds,e.minutes?e.minutes+' '+tr('pod_min'):'',(e.hosts||[]).join(' · ')].filter(Boolean).map(esc).join(' · ')+'</div>'+
-      '<div class="pod-bar"><input type="range" min="0" max="1000" value="0" step="1" aria-label="Progression" '+(podId===e.id?'':'disabled')+'/><time>0:00</time></div></div></article>';
+      '<div class="pod-bar"><input type="range" min="0" max="1000" value="0" step="1" aria-label="Progression" '+(podId===e.id?'':'disabled')+'/><time>0:00</time></div>'+
+      '<button class="com-tog" type="button" data-com-tog="'+esc(e.id)+'" aria-expanded="'+(COM(e.id).open?'true':'false')+'"></button><div class="com-box" data-com="'+esc(e.id)+'"></div></div></article>';
   }).join('');
+  eps.forEach(e=>comRender(e.id));
   podSync();
 }
 function podSync(){
@@ -465,6 +467,121 @@ function podToggle(id){
 }
 document.addEventListener('click',ev=>{ const b=ev.target.closest&&ev.target.closest('[data-pod]'); if(b) podToggle(b.dataset.pod); });
 document.addEventListener('input',ev=>{ const r=ev.target; if(r.matches&&r.matches('.pod-bar input')&&podEl&&podEl.duration) podEl.currentTime=r.value/1000*podEl.duration; });
+/* ---------- COMMENTAIRES DU PODCAST ---------- */
+const COM_API='https://live.vicebayradio.com/podcast', K_DEV='vbr.podcast.device', K_PSE='vbr.podcast.pseudo';
+const comState={};
+function COM(id){ return comState[id]||(comState[id]={open:false,loaded:false,loading:false,list:[],draft:'',err:'',busy:false,needPseudo:false,pseudoDraft:''}); }
+function lsGet(k){ try{return localStorage.getItem(k);}catch(e){return null;} }
+function lsSet(k,v){ try{localStorage.setItem(k,v);}catch(e){} }
+let _devMem=null;
+function comDevice(){
+  let d=lsGet(K_DEV); if(d) return d;
+  if(_devMem) return _devMem;
+  const u=(window.crypto&&crypto.randomUUID)?crypto.randomUUID():'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,c=>{ const r=(window.crypto&&crypto.getRandomValues)?crypto.getRandomValues(new Uint8Array(1))[0]&15:Math.random()*16|0; return (c==='x'?r:(r&3|8)).toString(16); });
+  _devMem=u; lsSet(K_DEV,u); return u;
+}
+const comPseudo=()=>lsGet(K_PSE)||'';
+async function comApi(path,opt){
+  try{
+    const r=await fetch(COM_API+path,opt); let j={}; try{ j=await r.json(); }catch(e){}
+    return {status:r.status,j};
+  }catch(e){ return {status:0,j:{}}; }
+}
+function comAgo(at){
+  const s=Math.max(0,Math.floor(Date.now()/1000-at));
+  if(s<60) return tr('com_ago_now');
+  if(s<3600) return tr('com_ago_m').replace('%n',Math.floor(s/60));
+  if(s<86400) return tr('com_ago_h').replace('%n',Math.floor(s/3600));
+  return tr('com_ago_d').replace('%n',Math.floor(s/86400));
+}
+function comHue(p){ let h=0; for(const c of String(p)) h=(h*31+c.codePointAt(0))%360; return h; }
+function comErr(kind,r){
+  const e=r.j&&r.j.error;
+  if(!r.status) return tr('com_e_net');
+  if(kind==='pseudo'){
+    if(e==='taken') return tr('com_e_taken');
+    if(e==='already') return tr('com_e_already')+(r.j.pseudo?' « '+r.j.pseudo+' »':'')+'.';
+    if(e==='invalid') return tr('com_e_pinv');
+  } else {
+    if(e==='pseudo') return tr('com_e_pseudo');
+    if(e==='invalid') return tr('com_e_tinv');
+    if(e==='slow'||r.status===429) return tr('com_e_slow');
+  }
+  return tr('com_e_net');
+}
+function comRender(id){
+  const box=document.querySelector('.com-box[data-com="'+id+'"]'), tog=document.querySelector('[data-com-tog="'+id+'"]'); if(!box||!tog) return;
+  const s=COM(id);
+  tog.textContent=s.open?tr('com_hide'):(s.loaded&&s.list.length?tr('com_btn_n').replace('%n',s.list.length):tr('com_btn'));
+  tog.setAttribute('aria-expanded',s.open?'true':'false');
+  box.hidden=!s.open; if(!s.open){ box.innerHTML=''; return; }
+  const ps=comPseudo();
+  const list=s.loading&&!s.loaded?'<p class="com-note">'+esc(tr('com_load'))+'</p>':
+    (s.list.length?'<ul class="com-list">'+s.list.map(c=>'<li><div class="com-h"><b style="color:hsl('+comHue(c.pseudo)+',85%,68%)">'+esc(c.pseudo)+'</b><time>'+esc(comAgo(c.at))+'</time></div><p>'+esc(c.text)+'</p></li>').join('')+'</ul>':
+     '<p class="com-note">'+esc(tr('com_none'))+'</p>');
+  const form=s.needPseudo&&!ps?
+    '<div class="com-pseudo"><strong>'+esc(tr('com_pseudo_t'))+'</strong><p class="com-warn">'+esc(tr('com_pseudo_w'))+'</p><div class="com-row"><input class="com-p" type="text" maxlength="20" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="'+esc(tr('com_pseudo_ph'))+'" value="'+esc(s.pseudoDraft)+'" aria-label="'+esc(tr('com_pseudo_t'))+'"/><button type="button" class="com-ok" data-com-pseudo="'+esc(id)+'"'+(s.busy?' disabled':'')+'>'+esc(tr(s.busy?'com_sending':'com_pseudo_ok'))+'</button></div></div>':
+    '<div class="com-new">'+(ps?'<p class="com-as">'+esc(tr('com_as'))+' <b style="color:hsl('+comHue(ps)+',85%,68%)">'+esc(ps)+'</b></p>':'')+'<textarea class="com-t" maxlength="500" rows="2" placeholder="'+esc(tr('com_ph'))+'" aria-label="'+esc(tr('com_ph'))+'">'+esc(s.draft)+'</textarea><button type="button" class="com-ok" data-com-send="'+esc(id)+'"'+(s.busy?' disabled':'')+'>'+esc(tr(s.busy?'com_sending':'com_send'))+'</button></div>';
+  box.innerHTML=list+form+(s.err?'<p class="com-err" role="alert">'+esc(s.err)+'</p>':'');
+}
+async function comLoad(id){
+  const s=COM(id); s.loading=true; comRender(id);
+  const r=await comApi('/comments?ep='+encodeURIComponent(id));
+  s.loading=false;
+  if(r.status===200&&r.j&&Array.isArray(r.j.comments)){ s.list=r.j.comments; s.loaded=true; if(s.err===tr('com_e_net')) s.err=''; }
+  else if(!s.loaded){ s.err=tr('com_e_net'); }
+  comRender(id);
+}
+async function comSyncPseudo(){
+  if(comPseudo()) return;
+  const r=await comApi('/pseudo?device='+encodeURIComponent(comDevice()));
+  if(r.status===200&&r.j&&r.j.pseudo) lsSet(K_PSE,r.j.pseudo);
+}
+async function comToggle(id){
+  const s=COM(id); s.open=!s.open; s.err='';
+  if(s.open){ comRender(id); await comSyncPseudo(); comLoad(id); } else comRender(id);
+}
+async function comPost(id){
+  const s=COM(id), box=document.querySelector('.com-box[data-com="'+id+'"]');
+  const ta=box&&box.querySelector('.com-t'); if(ta) s.draft=ta.value;
+  if(!s.draft.trim()){ s.err=tr('com_e_tinv'); comRender(id); return; }
+  if(!comPseudo()){ await comSyncPseudo(); }
+  if(!comPseudo()){ s.needPseudo=true; s.err=''; comRender(id); return; }
+  s.busy=true; s.err=''; comRender(id);
+  const r=await comApi('/comments',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ep:id,device:comDevice(),text:s.draft})});
+  s.busy=false;
+  if(r.status===200){ s.draft=''; s.needPseudo=false; await comLoad(id); return; }
+  if(r.j&&r.j.error==='pseudo'){ try{localStorage.removeItem(K_PSE);}catch(e){} s.needPseudo=true; s.err=''; }
+  else s.err=comErr('comment',r);
+  comRender(id);
+}
+async function comClaim(id){
+  const s=COM(id), box=document.querySelector('.com-box[data-com="'+id+'"]');
+  const inp=box&&box.querySelector('.com-p'); const v=(inp?inp.value:s.pseudoDraft).trim(); s.pseudoDraft=v;
+  if(!/^[A-Za-z0-9_.\-]{3,20}$/.test(v)){ s.err=tr('com_e_pinv'); comRender(id); return; }
+  s.busy=true; s.err=''; comRender(id);
+  const r=await comApi('/pseudo',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({device:comDevice(),pseudo:v})});
+  s.busy=false;
+  if(r.status===200&&r.j&&r.j.pseudo){ lsSet(K_PSE,r.j.pseudo); s.needPseudo=false; s.err=''; comPost(id); return; }
+  if(r.status===409&&r.j&&r.j.error==='already'&&r.j.pseudo){ lsSet(K_PSE,r.j.pseudo); s.needPseudo=false; s.err=''; comRender(id); return; }
+  s.err=comErr('pseudo',r); comRender(id);
+}
+document.addEventListener('click',ev=>{
+  const t=ev.target.closest&&ev.target.closest('[data-com-tog],[data-com-send],[data-com-pseudo]'); if(!t) return;
+  if(t.dataset.comTog) comToggle(t.dataset.comTog);
+  else if(t.dataset.comSend) comPost(t.dataset.comSend);
+  else if(t.dataset.comPseudo) comClaim(t.dataset.comPseudo);
+});
+document.addEventListener('input',ev=>{
+  const el=ev.target; if(!el.matches) return; const box=el.closest&&el.closest('.com-box'); if(!box) return;
+  const s=COM(box.dataset.com); if(el.matches('.com-t')) s.draft=el.value; else if(el.matches('.com-p')) s.pseudoDraft=el.value;
+});
+document.addEventListener('keydown',ev=>{
+  if(ev.key!=='Enter'||ev.shiftKey||!ev.target.matches) return;
+  const box=ev.target.closest&&ev.target.closest('.com-box'); if(!box) return;
+  if(ev.target.matches('.com-p')){ ev.preventDefault(); comClaim(box.dataset.com); }
+  else if(ev.target.matches('.com-t')&&(ev.metaKey||ev.ctrlKey)){ ev.preventDefault(); comPost(box.dataset.com); }
+});
 fetch('podcast.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).then(j=>{ POD=j; renderPodcast(); }).catch(()=>{ renderPodcast(); });
 
 (function autostart(){
