@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>Vice Bay Podcast · Sakura, Big Lou, Mél · OKALAM Studio</title>
+<meta name="description" content="Vice Bay Podcast : Sakura, Big Lou, Mél et les autres racontent la baie et tous les mondes d'OKALAM Studio. Épisodes, notes et commentaires."/>
+<meta name="theme-color" content="#0B0A1E"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Vice Bay Podcast"/>
+<meta property="og:description" content="Sakura, Big Lou, Mél et les autres racontent la baie et tous les mondes d'OKALAM Studio."/>
+<meta property="og:image" content="https://vicebayradio.com/img/podcast_cover_1400.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="canonical" href="https://vicebayradio.com/podcast.html"/>
+<link rel="alternate" type="application/rss+xml" title="Vice Bay Podcast" href="https://vicebayradio.com/podcast.xml"/>
+<link rel="icon" href="img/icon.png"/>
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="podcast.css?v=1"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"PodcastSeries","name":"Vice Bay Podcast","url":"https://vicebayradio.com/podcast.html","webFeed":"https://vicebayradio.com/podcast.xml","image":"https://vicebayradio.com/img/podcast_cover_1400.jpg","inLanguage":"fr","author":{"@type":"Organization","name":"OKALAM Studio"},"description":"Sakura, Big Lou, Mél et les autres racontent la baie et tous les mondes d'OKALAM Studio."}</script>
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="./"><span class="dot"></span>VICE BAY <b>RADIO</b></a>
+  <nav>
+    <a href="./#stations" data-i18n="nav_radio">La radio</a>
+    <a href="podcast.html" class="on">Podcast</a>
+    <a href="./#pubs" data-i18n="nav_ads">Pubs</a>
+    <a href="./#liens" data-i18n="nav_links">Liens</a>
+  </nav>
+  <button class="lang" id="lang" type="button" aria-label="Language">EN</button>
+</header>
+
+<main class="page">
+  <aside class="show">
+    <img class="cover" src="img/podcast_cover_1400.jpg" alt="Vice Bay Podcast" width="320" height="320"/>
+    <h1>Vice Bay Podcast</h1>
+    <p class="by">OKALAM Studio</p>
+    <p class="cats" data-i18n="cats">Humour · Musique · Culture</p>
+    <p class="rate" id="show-rate" aria-live="polite"></p>
+    <p class="tag" id="tag"></p>
+    <div class="actions">
+      <button class="btn" type="button" id="play-latest" data-i18n="play_latest">▶ Écouter le dernier épisode</button>
+      <div class="row2">
+        <a class="btn ghost" href="podcast.xml" id="rss" data-i18n="rss">📡 Flux RSS</a>
+        <button class="btn ghost" type="button" id="share" data-i18n="share">↗ Partager</button>
+      </div>
+      <p class="hint" id="hint"></p>
+    </div>
+  </aside>
+
+  <section class="eps">
+    <div class="eps-head"><h2 data-i18n="episodes">Épisodes</h2><span id="count"></span></div>
+    <div id="list"></div>
+  </section>
+</main>
+
+<div class="player" id="player" hidden>
+  <div class="p-id"><img id="p-cover" src="img/podcast_cover_1400.jpg" alt="" width="52" height="52"/>
+  <div class="p-info"><b id="p-title"></b><span id="p-sub">Vice Bay Podcast</span></div></div>
+  <div class="p-mid">
+    <div class="p-ctl">
+      <button type="button" id="p-rep" aria-label="Répéter" title="Répéter">⟲</button>
+      <button type="button" id="p-prev" aria-label="Précédent">⏮</button>
+      <button type="button" id="p-b15" aria-label="Reculer de 15 secondes">−15</button>
+      <button type="button" id="p-play" class="big" aria-label="Lecture">▶</button>
+      <button type="button" id="p-f30" aria-label="Avancer de 30 secondes">+30</button>
+      <button type="button" id="p-next" aria-label="Suivant">⏭</button>
+      <button type="button" id="p-speed" aria-label="Vitesse">1×</button>
+    </div>
+    <div class="p-bar"><time id="p-cur">0:00</time><input id="p-seek" type="range" min="0" max="1000" value="0" aria-label="Progression"/><time id="p-rem">-0:00</time></div>
+  </div>
+</div>
+
+<script src="podcast.js?v=1"></script>
+<script src="multivers.js?v=1" defer></script>
+</body>
+</html>

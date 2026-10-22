@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vice Bay Podcast</title>
+    <link>https://vicebayradio.com/podcast.html</link>
+    <atom:link href="https://vicebayradio.com/podcast.xml" rel="self" type="application/rss+xml"/>
+    <language>fr</language>
+    <copyright>© OKALAM Studio</copyright>
+    <description>Sakura, Big Lou, Mél et les autres racontent la baie et tous les mondes d'OKALAM Studio.</description>
+    <itunes:summary>Sakura, Big Lou, Mél et les autres racontent la baie et tous les mondes d'OKALAM Studio.</itunes:summary>
+    <itunes:author>OKALAM Studio</itunes:author>
+    <itunes:owner><itunes:name>OKALAM Studio</itunes:name><itunes:email>support@okalamstudio.com</itunes:email></itunes:owner>
+    <itunes:image href="https://vicebayradio.com/img/podcast_cover_1400.jpg"/>
+    <image><url>https://vicebayradio.com/img/podcast_cover_1400.jpg</url><title>Vice Bay Podcast</title><link>https://vicebayradio.com/podcast.html</link></image>
+    <itunes:category text="Comedy"/>
+    <itunes:category text="Arts"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <item>
+      <title>Road trip dans Vice Bay</title>
+      <itunes:title>Road trip dans Vice Bay</itunes:title>
+      <description>Sakura et Mél de Sunset Drive traversent les cinq quartiers de la baie, de Beach à Skyline, en se moquant avec amour des pubs. Deux amies, une voiture, un sandwich de secours. Musique : mrpoly (CC0), Dark Fog et Night Cave par Kevin MacLeod (incompetech.com, CC BY 4.0).</description>
+      <itunes:summary>Sakura et Mél de Sunset Drive traversent les cinq quartiers de la baie, de Beach à Skyline, en se moquant avec amour des pubs. Deux amies, une voiture, un sandwich de secours. Musique : mrpoly (CC0), Dark Fog et Night Cave par Kevin MacLeod (incompetech.com, CC BY 4.0).</itunes:summary>
+      <pubDate>Thu, 22 Oct 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://vicebayradio.com/audio/vice_bay_podcast_ep2.mp3" length="13153524" type="audio/mpeg"/>
+      <guid isPermaLink="false">vicebay-podcast-ep2</guid>
+      <link>https://vicebayradio.com/podcast.html#ep2</link>
+      <itunes:episode>2</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>00:10:57</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://vicebayradio.com/img/podcast_cover_1400.jpg"/>
+    </item>
+    <item>
+      <title>Tout OKALAM Studio</title>
+      <itunes:title>Tout OKALAM Studio</itunes:title>
+      <description>Sakura et Big Lou font le tour du studio : la baie, les sept stations, Vice Break, VoteDay, Kotoba, le Discord, Pierre, Elisa. Avec des taquineries et du japonais pas toujours compris. Musique : mrpoly (CC0), Dark Fog et Night Cave par Kevin MacLeod (incompetech.com, CC BY 4.0).</description>
+      <itunes:summary>Sakura et Big Lou font le tour du studio : la baie, les sept stations, Vice Break, VoteDay, Kotoba, le Discord, Pierre, Elisa. Avec des taquineries et du japonais pas toujours compris. Musique : mrpoly (CC0), Dark Fog et Night Cave par Kevin MacLeod (incompetech.com, CC BY 4.0).</itunes:summary>
+      <pubDate>Thu, 22 Oct 2026 08:00:00 +0000</pubDate>
+      <enclosure url="https://vicebayradio.com/audio/vice_bay_podcast_ep1.mp3" length="16838964" type="audio/mpeg"/>
+      <guid isPermaLink="false">vicebay-podcast-ep1</guid>
+      <link>https://vicebayradio.com/podcast.html#ep1</link>
+      <itunes:episode>1</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>00:14:01</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://vicebayradio.com/img/podcast_cover_1400.jpg"/>
+    </item>
+  </channel>
+</rss>
