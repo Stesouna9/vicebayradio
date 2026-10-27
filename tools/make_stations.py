@@ -21,6 +21,7 @@ PAGE = """<!doctype html>
 <meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0b0b14">
 <link rel="icon" href="../img/icon.png">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<script>window.goatcounter={{path:function(p){{var h=location.host;if(/github\.io$/.test(h)){{var s=p.split("/");h=s[1]+"."+h;p="/"+s.slice(2).join("/")}}return h+p}}}}</script><script data-goatcounter="https://stats.2-29-41-109.sslip.io/count" async src="https://stats.2-29-41-109.sslip.io/count.js"></script>
 <script type="application/ld+json">{ld}</script>
 <style>
 :root{{--c:{c};--bg:#0b0b14;--fg:#f2f0ff;--mu:#a9a6c4;--ca:#16162a}}
