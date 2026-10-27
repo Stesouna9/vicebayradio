@@ -17,18 +17,23 @@ TXT = {
                ouvrir="Ouvrir dans le lecteur complet", antenne="À l'antenne", jingle="Le jingle", programme="Au programme", morceaux="morceaux, voir la liste",
                autres="Les autres stations de Vice Bay", gta_t="Tu attends GTA VI ?", gta_p="Actus vérifiées, compte à rebours et guides en français sur GTA VI France.",
                gta_b="Aller sur gtavifrance.com", pied="Vice Bay Radio, les radios de Vice Bay, 1986. Univers fictif et indépendant, sans lien avec Rockstar Games. Une création OKALAM Studio, musiques sous licence libre, auteurs crédités.",
-               desc="{name} {f} FM : {genre}, avec {host} au micro. {slogan} Écoute gratuite en direct sur Vice Bay Radio.", avec="avec", vol="Volume", live="EN DIRECT", direct_t="En direct, comme à la radio", direct_p="Pas de playlist à choisir : tu arrives au milieu de l'émission, jingles, voix des animateurs et pubs compris.", nx="À suivre", prec="Précédent", suiv="Suivant", prog_t="Sur l'antenne", prog_sub="Touche un titre pour l'écouter.", cred_t="Crédits et licences", bio_t="Qui est", a_savoir="À savoir", lien_t="À l'antenne, entre voisins", pubs_t="Les pubs de la station", pubs_sub="Les commerçants de Vice Bay qui passent sur {name}."),
+               desc="{name} {f} FM : {genre}, avec {host} au micro. {slogan} Écoute gratuite en direct sur Vice Bay Radio.", avec="avec", vol="Volume", live="EN DIRECT", direct_t="En direct, comme à la radio", direct_p="Pas de playlist à choisir : tu arrives au milieu de l'émission, jingles, voix des animateurs et pubs compris.", nx="À suivre", prec="Précédent", suiv="Suivant", prog_t="Sur l'antenne", prog_sub="Touche un titre pour l'écouter.", cred_t="Crédits et licences", bio_t="Qui est", hist_t="L'histoire de la station", anec_t="Petites histoires", vois_t="Les voisins", visite_t="Comment la trouver", a_savoir="À savoir", lien_t="À l'antenne, entre voisins", pubs_t="Les pubs de la station", pubs_sub="Les commerçants de Vice Bay qui passent sur {name}."),
     "en": dict(retour="← All stations", ecouter="Listen", connexion="Connecting…", en_ecoute="On air", pause="Paused", reessayer="Retry",
                ouvrir="Open in the full player", antenne="On air", jingle="The jingle (in French)", programme="Playlist", morceaux="tracks, see the list",
                autres="More Vice Bay stations", gta_t="Waiting for GTA VI?", gta_p="Verified news, countdown and guides on GTA VI France.",
                gta_b="Visit gtavifrance.com", pied="Vice Bay Radio, the radio stations of Vice Bay, 1986. A fictional, independent universe, not affiliated with Rockstar Games. Made by OKALAM Studio, royalty-free music, artists credited.",
-               desc="{name} {f} FM: {genre}, hosted by {host}. {slogan} Free live radio on Vice Bay Radio.", avec="with", vol="Volume", live="LIVE", direct_t="Live, like real radio", direct_p="No playlist to pick from: you join the show already in progress, jingles, host voices and ads included.", nx="Up next", prec="Previous", suiv="Next", prog_t="On the air", prog_sub="Tap a track to play it.", cred_t="Credits and licences", bio_t="Who is", a_savoir="Good to know", lien_t="On air, between neighbours", pubs_t="Station ads", pubs_sub="Vice Bay shops advertising on {name}."),
+               desc="{name} {f} FM: {genre}, hosted by {host}. {slogan} Free live radio on Vice Bay Radio.", avec="with", vol="Volume", live="LIVE", direct_t="Live, like real radio", direct_p="No playlist to pick from: you join the show already in progress, jingles, host voices and ads included.", nx="Up next", prec="Previous", suiv="Next", prog_t="On the air", prog_sub="Tap a track to play it.", cred_t="Credits and licences", bio_t="Who is", hist_t="The station's story", anec_t="Little stories", vois_t="The neighbours", visite_t="How to find it", a_savoir="Good to know", lien_t="On air, between neighbours", pubs_t="Station ads", pubs_sub="Vice Bay shops advertising on {name}."),
 }
 
 BIOS = {}
 _bp = RACINE / "tools" / "bios.json"
 if _bp.exists():
     BIOS = json.loads(_bp.read_text(encoding="utf-8"))
+SHOPNAME = {a["id"]: a["shop"] for a in D.get("ads", [])}
+HIST = {}
+_hp = RACINE / "tools" / "histoires.json"
+if _hp.exists():
+    HIST = json.loads(_hp.read_text(encoding="utf-8"))
 PLAYER_JS = (RACINE / "tools" / "station_player.js").read_text(encoding="utf-8")
 
 EXTRA_CSS = r"""
@@ -55,11 +60,14 @@ EXTRA_CSS = r"""
 .bio p{margin:0 0 12px;max-width:68ch}.bio .cols{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;margin-top:8px}
 .faits{list-style:none;margin:0;padding:14px 16px;background:#ffffff08;border-radius:14px;border:1px solid #ffffff10}.faits li{font-size:14px;padding:6px 0;break-inside:auto}
 .faits li+li{border-top:1px dashed #ffffff1c}.faits h3{margin:0 0 6px;font:700 12px Orbitron,sans-serif;color:var(--c);letter-spacing:.08em}
+.hist .cols{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;margin-top:8px}.hist p{margin:0 0 12px;max-width:68ch}
+.hist .lieu{font:700 12px Orbitron,sans-serif;color:var(--c);letter-spacing:.08em;margin:0 0 10px}.hist .bat{color:var(--mu);font-size:14px;margin:0 0 14px;max-width:68ch}
+.hist .voisins a{color:var(--c);font-weight:700;text-decoration:none}.hist .visite{margin-top:14px;padding:12px 14px;border-left:3px solid var(--c);background:#ffffff08;border-radius:0 12px 12px 0;font-size:14px}
 .bio .lien{font-size:14px;color:var(--mu);margin-top:14px}.bio .lien b{color:var(--fg)}
 .pubs{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:12px}
 .pubs a{display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px;border-radius:14px;background:#ffffff08;border:1px solid #ffffff10;text-decoration:none;color:var(--fg);font-size:12px;text-align:center}
 .pubs a:hover{border-color:var(--c)}.pubs img{width:72px;height:72px;object-fit:contain;border-radius:10px}
-@media(max-width:760px){.prog{grid-template-columns:1fr}.bio .cols{grid-template-columns:1fr}.l-vol{width:110px}}
+@media(max-width:760px){.prog{grid-template-columns:1fr}.hist .cols{grid-template-columns:1fr}.bio .cols{grid-template-columns:1fr}.l-vol{width:110px}}
 """
 
 PAGE = """<!doctype html>
@@ -123,6 +131,7 @@ footer{{color:var(--mu);font-size:12px;text-align:center;max-width:640px;margin:
 </div>
 <div class="portrait"><img src="{rel}img/hostL_{id}.jpg" alt="{host}, {name} {f} FM" width="600" height="600"><img class="logo" src="{rel}{logo}" alt="Logo {name}"></div>
 </div>
+{hist_html}
 {bio_html}
 <section><h2>{jingle}</h2><blockquote>« {jingle_txt} »</blockquote></section>
 <section><h2>{programme}</h2><details><summary>{n} {morceaux}</summary><ol>{titres}</ol></details></section>
@@ -168,9 +177,19 @@ def main():
                             + (f'<p class="lien"><b>{t["lien_t"]}.</b> {e(b["lien"])}</p>' if b.get("lien") else "") + '</section>')
             else:
                 bio_html = f'<section><h2>{t["antenne"]}</h2><strong>{e(s["host"])}</strong><br><span style="color:var(--mu)">{e(bio)}</span></section>'
+            h = (HIST.get(s["id"]) or {}).get(lg)
+            hist_html = ""
+            if h:
+                vois = "".join(f'<li><a href="{rel}{"" if lg == "fr" else "en/"}pub/{e(v["id"])}.html">{e(SHOPNAME.get(v["id"], v["id"]))}</a> : {e(v["texte"])}</li>' for v in h["voisins"])
+                hist_html = (f'<section class="hist"><h2>{t["hist_t"]}</h2><p class="acc" style="font:700 clamp(20px,3vw,26px)/1.25 \'DM Sans\',sans-serif;color:#fff;margin:0 0 6px">{e(h["titre"])}</p>'
+                             f'<p class="lieu">{e(h["quartier"].upper())} · {e(h["adresse"].upper())}</p><p class="bat">{e(h["batiment"])}</p><div class="cols"><div>'
+                             + "".join(f"<p>{e(x)}</p>" for x in h["histoire"]) + '</div><div>'
+                             + f'<ul class="faits"><h3>{t["anec_t"].upper()}</h3>' + "".join(f"<li>{e(x)}</li>" for x in h["anecdotes"]) + '</ul>'
+                             + f'<ul class="faits voisins" style="margin-top:16px"><h3>{t["vois_t"].upper()}</h3>{vois}</ul></div></div>'
+                             + f'<p class="visite"><b>{t["visite_t"]}.</b> {e(h["visite"])}</p></section>')
             ads = [x for x in D.get("ads", []) if x.get("station") == s["id"]]
             pubs_html = ("" if not ads else f'<section><h2>{t["pubs_t"]}</h2><p class="sub">{t["pubs_sub"].replace("{name}", s["name"])}</p><div class="pubs">'
-                         + "".join(f'<a href="{rel}#pub-{x["id"]}"><img src="{rel}{x["logo"]}" alt="" loading="lazy" width="72" height="72">{e(x["shop"])}</a>' for x in ads) + '</div></section>')
+                         + "".join(f'<a href="{rel}{"" if lg == "fr" else "en/"}pub/{x["id"]}.html"><img src="{rel}{x["logo"]}" alt="" loading="lazy" width="72" height="72">{e(x["shop"])}</a>' for x in ads) + '</div></section>')
             page = PAGE.format(
                 lg=lg, SITE=SITE, url=url, url_fr=url_fr, url_en=url_en, rel=rel,
                 lang_url=url_en if lg == "fr" else url_fr, lang_lab="English" if lg == "fr" else "Français",
@@ -179,7 +198,7 @@ def main():
                 jingle_txt=e((s.get("jingles") or [slogan])[0]), n=len(s.get("catalog", [])),
                 titres="".join(f"<li>{e(x['t'])} <span>· {e(x['a'])}</span></li>" for x in s.get("catalog", [])),
                 autres_l="".join(f'<a href="{o["id"]}.html" style="color:{o["c"]}">{e(o["name"])} {o["f"]}</a>' for o in S if o["id"] != s["id"]),
-                player=player, extra_css=EXTRA_CSS, bio_html=bio_html, pubs_html=pubs_html, prog_l=prog_l, gta_lg="" if lg == "fr" else "en/", **{k: v for k, v in t.items() if k != "desc"})
+                player=player, extra_css=EXTRA_CSS, bio_html=bio_html, hist_html=hist_html, pubs_html=pubs_html, prog_l=prog_l, gta_lg="" if lg == "fr" else "en/", **{k: v for k, v in t.items() if k != "desc"})
             (dossier / f"{s['id']}.html").write_text(page, encoding="utf-8")
             urls.append(url)
     jour = datetime.date.today().isoformat()

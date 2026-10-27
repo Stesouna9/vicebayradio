@@ -1,0 +1,1227 @@
+{
+  "sunshinemotors": {
+    "patron": "Walter et June Bellamy",
+    "annee_creation": 1978,
+    "adresse": "410 Palmetto Drive, Highway",
+    "fr": {
+      "quartier_phrase": "À hauteur de l’échangeur 9, prenez Palmetto Drive et suivez les trois capots jaunes.",
+      "horaires": "Lun-sam 8 h–19 h ; dimanche 10 h–16 h, même si le bouchon ouvre plus tôt.",
+      "histoire": [
+        "Walter et June ouvrent en 1978 avec quatre berlines et un palmier en pot. June tient les comptes ; Walter mesure les coffres avec le palmier.",
+        "En 1984, une livraison de douze voitures sans manivelles de vitre menace la trésorerie. Leur contrôle gratuit de climatisation attire assez de clients pour payer les pièces ; ils gardent désormais une caisse de manivelles."
+      ],
+      "anecdotes": [
+        "En juin 1984, Dolores Van Pelt coupe le ruban du bureau des ventes avant la pose de sa porte.",
+        "En août 1985, Gabriel rapporte une cassette de cuivres oubliée dans une familiale ; June la classe parmi les accessoires.",
+        "En avril 1986, le client Ernest Vale vérifie les quatre roues du modèle à 4 995 dollars avec une craie blanche."
+      ],
+      "phrase_signature": "Une voiture, quatre roues, et votre décision.",
+      "a_savoir": [
+        "Le palmier de mesure possède sa propre fiche de stock.",
+        "June interdit le mot « impeccable » avant le deuxième essai."
+      ],
+      "voisin": {
+        "id": "coralmotors",
+        "texte": "Coral Motors est quelques numéros plus loin ; June lui prête des stylos, jamais son palmier."
+      }
+    },
+    "en": {
+      "quartier_phrase": "By interchange 9, turn onto Palmetto Drive and follow the three yellow bonnets.",
+      "horaires": "Mon–Sat 8am–7pm; Sunday 10am–4pm, even when the traffic jam opens earlier.",
+      "histoire": [
+        "Walter and June opened in 1978 with four saloons and a potted palm. June keeps the books; Walter measures boots with the palm.",
+        "In 1984, twelve cars delivered without window handles threatened their cash flow. Free air-conditioning checks brought enough customers to pay for replacements; they now keep a crate of handles."
+      ],
+      "anecdotes": [
+        "In June 1984, Dolores Van Pelt cut the sales-office ribbon before its door was fitted.",
+        "In August 1985, Gabriel returned a brass-band cassette left in an estate car; June filed it under accessories.",
+        "In April 1986, customer Ernest Vale checked all four wheels of the $4,995 model with white chalk."
+      ],
+      "phrase_signature": "A car, four wheels, and your decision.",
+      "a_savoir": [
+        "The measuring palm has its own stock card.",
+        "June bans the word “immaculate” before the second test drive."
+      ],
+      "voisin": {
+        "id": "coralmotors",
+        "texte": "Coral Motors is a few numbers away; June lends them pens, never her palm."
+      }
+    }
+  },
+  "coconutpalace": {
+    "patron": "Alma et Ruben Calder",
+    "annee_creation": 1969,
+    "adresse": "112 Ocean Drive, Beach",
+    "fr": {
+      "quartier_phrase": "Derrière la promenade, depuis la jetée suivez Ocean Drive jusqu’au comptoir vert.",
+      "horaires": "Tous les jours 10 h–22 h ; inventaire des noix à 9 h 45, sans les secouer.",
+      "histoire": [
+        "Alma prépare les sandwichs et salades depuis 1969 ; Ruben ouvre les noix de coco avec un outil qu’il appelle son secrétaire. Leur premier comptoir mesurait 1,80 mètre.",
+        "En 1984, le vent emporte les menus mais laisse les noix en place. Ruben lance son offre de deux pour une ; Alma exige que la petite soit montrée avant paiement."
+      ],
+      "anecdotes": [
+        "En mai 1984, la cliente Nora Pell rapporte une noix marquée « réserve » et demande depuis quand.",
+        "En juillet 1985, Gabriel emprunte deux coques pour une percussion ; Ruben exige leur retour lavées.",
+        "En mars 1986, Dolores Van Pelt inaugure le bac à glaçons, plein de jus parce que Ruben a lu trop vite."
+      ],
+      "phrase_signature": "La deuxième est petite, le geste est grand.",
+      "a_savoir": [
+        "La noix la plus ancienne sert de presse-papiers, jamais de dessert.",
+        "Les sandwichs tombés dans le sable ne rentrent pas en cuisine."
+      ],
+      "voisin": {
+        "id": "pixelpierarcade",
+        "texte": "Pixel Pier Arcade est à deux vitrines ; Alma échange des sandwichs contre la monnaie du soir."
+      }
+    },
+    "en": {
+      "quartier_phrase": "Behind the promenade, follow Ocean Drive from the pier to the green counter.",
+      "horaires": "Daily 10am–10pm; coconut inventory at 9:45am, without shaking them.",
+      "histoire": [
+        "Alma has made sandwiches and salads since 1969; Ruben opens coconuts with a tool he calls his secretary. Their first counter was 1.8 metres long.",
+        "In 1984, wind carried off the menus but left the coconuts standing. Ruben introduced two for one; Alma insisted customers see the smaller one before paying."
+      ],
+      "anecdotes": [
+        "In May 1984, customer Nora Pell returned a coconut marked “reserve” and asked since when.",
+        "In July 1985, Gabriel borrowed two shells as percussion instruments; Ruben required their return washed.",
+        "In March 1986, Dolores Van Pelt inaugurated the ice bin, full of juice because Ruben had read too quickly."
+      ],
+      "phrase_signature": "The second is small; the gesture is big.",
+      "a_savoir": [
+        "The oldest coconut is a paperweight, never dessert.",
+        "Sandwiches dropped in sand cannot re-enter the kitchen."
+      ],
+      "voisin": {
+        "id": "pixelpierarcade",
+        "texte": "Pixel Pier Arcade is two shopfronts away; Alma trades sandwiches for the evening’s small change."
+      }
+    }
+  },
+  "bluewaverentals": {
+    "patron": "Diane Mercer",
+    "annee_creation": 1982,
+    "adresse": "128 Ocean Drive, Beach",
+    "fr": {
+      "quartier_phrase": "Depuis la jetée, longez Ocean Drive jusqu’aux gilets orange de la marina.",
+      "horaires": "Tous les jours 8 h–18 h ; dernier départ à 17 h, briefing avant toute location.",
+      "histoire": [
+        "Diane ouvre en 1982 avec deux scooters des mers et six gilets. Ancienne réparatrice de moteurs, elle préfère expliquer un virage avant de réparer une coque.",
+        "En 1985, un client revient avec un poisson dans le panier arrière. La photo attire quatorze réservations ; Diane ajoute une ligne au contrat, sans promettre de poisson."
+      ],
+      "anecdotes": [
+        "En août 1984, le client Milo Trent chronomètre les trois minutes de briefing sur sa montre étanche.",
+        "En septembre 1985, Gabriel laisse une cassette au vestiaire ; Diane lui rend dans une boîte sèche.",
+        "En juin 1986, Dolores Van Pelt inaugure un crochet à casques et en laisse tomber deux."
+      ],
+      "phrase_signature": "Le large se prend avec un gilet.",
+      "a_savoir": [
+        "Le casque numéro 6 porte une étiquette « tête comprise séparément ».",
+        "Diane vérifie les paniers avant de rendre les cautions."
+      ],
+      "voisin": {
+        "id": "marinamoon",
+        "texte": "Marina Moon borde le même quai ; Diane y réserve une table pour les clients qui ont retrouvé la terre."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From the pier, follow Ocean Drive to the marina’s orange life jackets.",
+      "horaires": "Daily 8am–6pm; last departure 5pm, briefing before every hire.",
+      "histoire": [
+        "Diane opened in 1982 with two jet skis and six life jackets. A former engine repairer, she prefers explaining a turn to repairing a hull.",
+        "In 1985, a customer returned with a fish in the rear basket. The photograph brought fourteen bookings; Diane added a contract clause without promising fish."
+      ],
+      "anecdotes": [
+        "In August 1984, customer Milo Trent timed the three-minute briefing on his waterproof watch.",
+        "In September 1985, Gabriel left a cassette in the changing room; Diane returned it in a dry box.",
+        "In June 1986, Dolores Van Pelt inaugurated a helmet hook and dropped two helmets."
+      ],
+      "phrase_signature": "Open water starts with a life jacket.",
+      "a_savoir": [
+        "Helmet 6 is labelled “head supplied separately”.",
+        "Diane checks baskets before returning deposits."
+      ],
+      "voisin": {
+        "id": "marinamoon",
+        "texte": "Marina Moon shares the quay; Diane books tables there for customers who have rediscovered land."
+      }
+    }
+  },
+  "palmsidebarbershop": {
+    "patron": "Leonard Brindle",
+    "annee_creation": 1963,
+    "adresse": "426 Palmetto Drive, Highway",
+    "fr": {
+      "quartier_phrase": "Depuis l’échangeur 9, prenez Palmetto Drive jusqu’au fauteuil visible en vitrine.",
+      "horaires": "Mar-sam 7 h–19 h ; dimanche 8 h–12 h pour les coiffures du dimanche, lundi repos des ciseaux.",
+      "histoire": [
+        "Leonard ouvre en 1963 après avoir coiffé ses trois frères dans une cuisine. Il conserve le premier miroir, dont le coin manquant évite de voir la caisse.",
+        "La chaleur de 1984 fait tomber les brushings avant le trottoir. Il installe un ventilateur orientable et invente une finition « jusqu’à la voiture », sans abandonner les coupes classiques."
+      ],
+      "anecdotes": [
+        "En avril 1984, Dolores Van Pelt inaugure le ventilateur réglé sur sa coiffure.",
+        "En août 1985, Gabriel bat le rythme sur l’accoudoir ; Leonard attend la fin des cuivres pour tracer la nuque.",
+        "En janvier 1986, le client Cecil Rusk apporte 12,99 dollars et une barbe dessinée sur carton ; Leonard refuse la remise."
+      ],
+      "phrase_signature": "La réputation commence derrière les oreilles.",
+      "a_savoir": [
+        "La barbe du patron figure sur la liste du matériel obligatoire.",
+        "Le fauteuil tourne à droite seulement ; Leonard fait le reste du tour."
+      ],
+      "voisin": {
+        "id": "sunshinemotors",
+        "texte": "Sunshine Motors est à quelques portes ; Leonard y fait essayer ses coiffures fenêtres ouvertes."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From interchange 9, take Palmetto Drive to the chair displayed in the window.",
+      "horaires": "Tue–Sat 7am–7pm; Sunday 8am–noon for Sunday hair, Monday the scissors rest.",
+      "histoire": [
+        "Leonard opened in 1963 after cutting his three brothers’ hair in a kitchen. He keeps the first mirror; its missing corner conveniently hides the till.",
+        "The heat of 1984 flattened blow-dries before customers reached the pavement. He fitted an adjustable fan and introduced a “lasting to the car” finish alongside his classic cuts."
+      ],
+      "anecdotes": [
+        "In April 1984, Dolores Van Pelt inaugurated the fan pointed at her own hair.",
+        "In August 1985, Gabriel tapped the armrest in rhythm; Leonard waited for the brass to finish before trimming his neck.",
+        "In January 1986, customer Cecil Rusk brought $12.99 and a cardboard beard; Leonard refused the discount."
+      ],
+      "phrase_signature": "Reputation starts behind the ears.",
+      "a_savoir": [
+        "The owner’s beard appears on the mandatory equipment list.",
+        "The chair only turns right; Leonard walks the rest of the way."
+      ],
+      "voisin": {
+        "id": "sunshinemotors",
+        "texte": "Sunshine Motors is a few doors away; Leonard tests his hairstyles there with the windows open."
+      }
+    }
+  },
+  "marinamoon": {
+    "patron": "Estelle et Martin Voss",
+    "annee_creation": 1977,
+    "adresse": "136 Ocean Drive, Beach",
+    "fr": {
+      "quartier_phrase": "Suivez Ocean Drive depuis la jetée jusqu’à la terrasse face au petit bateau bleu.",
+      "horaires": "Tous les jours 17 h–23 h ; dernière grillade 22 h 15, vue selon stationnement.",
+      "histoire": [
+        "Estelle et Martin ouvrent en 1977 avec un gril et huit tables. Elle prépare le riz tropical ; lui compte les crevettes avant de déclarer les portions généreuses.",
+        "Depuis 1981, un capitaine prétend détenir la place devant la terrasse. En 1984, Estelle transforme cette vue bouchée en table « au plus près des bateaux » ; le dîner pour deux finit par remplir la salle."
+      ],
+      "anecdotes": [
+        "En juillet 1984, la cliente Ada Morn apporte des jumelles pour regarder au-dessus du bateau bleu.",
+        "En août 1985, Gabriel demande une limonade sans glaçon sonore pour enregistrer les mâts.",
+        "En mai 1986, Dolores Van Pelt inaugure la neuvième table ; Martin facture séparément sa bouteille d’eau."
+      ],
+      "phrase_signature": "La mer est comprise, la bouteille se commande.",
+      "a_savoir": [
+        "Le contrat du capitaine possède un classeur, toujours vide.",
+        "La table 4 a deux menus : avec bateau et avec espoir."
+      ],
+      "voisin": {
+        "id": "bluewaverentals",
+        "texte": "Bluewave Rentals est au même quai ; Estelle garde un lot de serviettes pour ses clients encore mouillés."
+      }
+    },
+    "en": {
+      "quartier_phrase": "Follow Ocean Drive from the pier to the terrace facing the little blue boat.",
+      "horaires": "Daily 5pm–11pm; last grill order 10:15pm, view subject to mooring.",
+      "histoire": [
+        "Estelle and Martin opened in 1977 with a grill and eight tables. She makes tropical rice; he counts the prawns before declaring the portions generous.",
+        "Since 1981, a captain has claimed the berth in front. In 1984, Estelle turned the blocked view into a table “closest to the boats”; the dinner for two eventually filled the room."
+      ],
+      "anecdotes": [
+        "In July 1984, customer Ada Morn brought binoculars to see over the blue boat.",
+        "In August 1985, Gabriel requested lemonade without noisy ice to record the masts.",
+        "In May 1986, Dolores Van Pelt inaugurated the ninth table; Martin billed her water bottle separately."
+      ],
+      "phrase_signature": "The sea is included; bottled water is ordered.",
+      "a_savoir": [
+        "The captain’s contract has a folder, still empty.",
+        "Table 4 has two menus: with boat and with hope."
+      ],
+      "voisin": {
+        "id": "bluewaverentals",
+        "texte": "Bluewave Rentals shares the quay; Estelle keeps spare towels for its still-wet customers."
+      }
+    }
+  },
+  "laststopmotel": {
+    "patron": "Irene et Paul Darnell",
+    "annee_creation": 1958,
+    "adresse": "512 Palmetto Drive, Highway",
+    "fr": {
+      "quartier_phrase": "Après l’échangeur 9, suivez Palmetto Drive jusqu’à l’enseigne dont le dernier néon reste éveillé.",
+      "horaires": "Réception 24 h/24 ; chambres libérées à 11 h, piscine sans horaires puisqu’elle est vide.",
+      "histoire": [
+        "Irene et Paul ouvrent en 1958 avec dix chambres et une promesse de petit-déjeuner. Ils retirent la promesse le deuxième jour et agrandissent jusqu’à dix-neuf chambres.",
+        "En 1984, une fuite vide la piscine. La réparer coûterait six mois de recettes ; Paul repeint le fond et Irene investit dans les matelas. Les routiers reviennent pour dormir."
+      ],
+      "anecdotes": [
+        "En octobre 1984, Dolores Van Pelt inaugure le parking éclairé avec une lampe de poche éteinte.",
+        "En février 1985, Marie laisse une dédicace sur le registre ; Régis imprime une patte à côté.",
+        "En juin 1986, le client Owen Pike réserve la 19 pour son palmier et obtient la chambre avec vue sur un autre."
+      ],
+      "phrase_signature": "Un lit ce soir. Demain possède sa propre réception.",
+      "a_savoir": [
+        "La chambre 18 donne sur le parking ; Paul vérifie chaque lundi.",
+        "La case petit-déjeuner du registre est barrée à la règle."
+      ],
+      "voisin": {
+        "id": "quietwashlaundry",
+        "texte": "Quiet Wash Laundry est à côté ; Irene y lave les draps et récupère parfois une chaussette de plus."
+      }
+    },
+    "en": {
+      "quartier_phrase": "Past interchange 9, follow Palmetto Drive to the sign whose last neon tube stays awake.",
+      "horaires": "Reception 24 hours; checkout 11am, pool has no hours because it is empty.",
+      "histoire": [
+        "Irene and Paul opened in 1958 with ten rooms and a breakfast promise. They withdrew the promise on day two and expanded to nineteen rooms.",
+        "In 1984, a leak emptied the pool. Repairs would cost six months’ takings; Paul repainted the bottom and Irene bought mattresses. Drivers returned for the sleep."
+      ],
+      "anecdotes": [
+        "In October 1984, Dolores Van Pelt inaugurated the lit car park with an unlit torch.",
+        "In February 1985, Marie left a dedication in the register; Régis added a paw print.",
+        "In June 1986, customer Owen Pike booked room 19 for his palm and received the room overlooking another one."
+      ],
+      "phrase_signature": "A bed tonight. Tomorrow has its own reception desk.",
+      "a_savoir": [
+        "Room 18 overlooks the car park; Paul checks every Monday.",
+        "The breakfast box in the register is crossed out with a ruler."
+      ],
+      "voisin": {
+        "id": "quietwashlaundry",
+        "texte": "Quiet Wash Laundry is next door; Irene washes the sheets there and occasionally retrieves an extra sock."
+      }
+    }
+  },
+  "moonlightcleaners": {
+    "patron": "Edith Fenwick",
+    "annee_creation": 1971,
+    "adresse": "208 Front Street, Downtown",
+    "fr": {
+      "quartier_phrase": "Depuis les travaux de la 3e Avenue, rejoignez Front Street et les cintres argentés.",
+      "horaires": "Lun-sam 8 h–minuit ; express rendu le lendemain matin, pas le même soir à 23 h 59.",
+      "histoire": [
+        "Edith ouvre en 1971 avec une presse et trente cintres numérotés. Elle nettoie costumes, robes et chemises en notant les taches comme des descriptions de témoins.",
+        "En 1984, une coupure bloque la presse sur une veste beige. Edith travaille à la main toute la nuit ; le propriétaire lui confie ensuite les costumes de son orchestre, sans préciser ses soirées."
+      ],
+      "anecdotes": [
+        "En novembre 1984, le client Silas Wren réclame la même tache pour reconnaître sa veste ; Edith lui propose une étiquette.",
+        "En mars 1985, Marie apporte une housse pleine de poils de Régis et une lettre de quatre lignes.",
+        "En avril 1986, Dolores Van Pelt inaugure le comptoir express à 8,50 dollars en oubliant son ticket."
+      ],
+      "phrase_signature": "Votre veste peut repartir sur de bonnes bases.",
+      "a_savoir": [
+        "Les taches inconnues sont inscrites au crayon, par prudence.",
+        "Edith ne lit jamais les billets trouvés en poche, sauf le montant des billets de banque."
+      ],
+      "voisin": {
+        "id": "bluerosesflorist",
+        "texte": "Blue Roses Florist est deux portes plus loin ; Edith enlève le pollen des manches des livreurs."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From the 3e Avenue roadworks, reach Front Street and the silver coat hangers.",
+      "horaires": "Mon–Sat 8am–midnight; express returns next morning, not that same evening at 11:59pm.",
+      "histoire": [
+        "Edith opened in 1971 with a press and thirty numbered hangers. She cleans suits, dresses and shirts, recording stains like witness descriptions.",
+        "In 1984, a power cut trapped a beige jacket in the press. Edith worked by hand all night; its owner then entrusted her with his orchestra’s suits without explaining their evenings."
+      ],
+      "anecdotes": [
+        "In November 1984, customer Silas Wren requested the same stain to recognise his jacket; Edith offered a label.",
+        "In March 1985, Marie brought a garment bag full of Régis’s fur and a four-line letter.",
+        "In April 1986, Dolores Van Pelt inaugurated the $8.50 express counter and forgot her ticket."
+      ],
+      "phrase_signature": "Your jacket can make a fresh start.",
+      "a_savoir": [
+        "Unknown stains are recorded in pencil, as a precaution.",
+        "Edith never reads notes left in pockets, except the denominations of banknotes."
+      ],
+      "voisin": {
+        "id": "bluerosesflorist",
+        "texte": "Blue Roses Florist is two doors away; Edith removes pollen from its delivery staff’s sleeves."
+      }
+    }
+  },
+  "bluerosesflorist": {
+    "patron": "Vivian et Arthur Mallow",
+    "annee_creation": 1967,
+    "adresse": "212 Front Street, Downtown",
+    "fr": {
+      "quartier_phrase": "Sur Front Street, depuis la 3e Avenue en travaux, cherchez les seaux bleus.",
+      "horaires": "Tous les jours 9 h–23 h ; dernière livraison Downtown 22 h 30, dernières excuses au comptoir.",
+      "histoire": [
+        "Vivian fonde la boutique en 1967 ; Arthur la rejoint avec un vélo et une caisse de cartes vierges. Elle assemble roses, lys et orchidées ; il livre sans commenter les destinataires.",
+        "En 1984, Arthur rédige un message à la place d’un client et réconcilie le mauvais couple. Depuis, les bouquets romantiques à 14,99 dollars comprennent une carte strictement vierge."
+      ],
+      "anecdotes": [
+        "En décembre 1984, le client Felix Penn achète onze cartes avant de choisir une rose.",
+        "En février 1986, Marie lit leur demande de confirmation à l’antenne ; onze réconciliations suivent, mais le bordereau revient sans signature.",
+        "En mai 1986, Dolores Van Pelt inaugure un seau de lys ; Vivian lui fait rendre le seau."
+      ],
+      "phrase_signature": "Nous choisissons les fleurs. Vous connaissez les mots.",
+      "a_savoir": [
+        "Arthur possède une gomme, destinée uniquement aux numéros d’adresse.",
+        "Les roses bleues ont une fiche de couleur plus longue que leur facture."
+      ],
+      "voisin": {
+        "id": "moonlightcleaners",
+        "texte": "Moonlight Cleaners nettoie les tabliers du magasin ; Vivian lui réserve les fleurs dont le pollen tombe peu."
+      }
+    },
+    "en": {
+      "quartier_phrase": "On Front Street, coming from the 3e Avenue works, look for the blue buckets.",
+      "horaires": "Daily 9am–11pm; last Downtown delivery 10:30pm, last apologies at the counter.",
+      "histoire": [
+        "Vivian founded the shop in 1967; Arthur joined with a bicycle and a box of blank cards. She arranges roses, lilies and orchids; he delivers without commenting on recipients.",
+        "In 1984, Arthur wrote a customer’s message and reconciled the wrong couple. Since then, the $14.99 romantic bouquet includes a strictly blank card."
+      ],
+      "anecdotes": [
+        "In December 1984, customer Felix Penn bought eleven cards before choosing one rose.",
+        "In February 1986, Marie read their delivery confirmation request on air; eleven reconciliations followed, but the receipt returned unsigned.",
+        "In May 1986, Dolores Van Pelt inaugurated a bucket of lilies; Vivian made her return the bucket."
+      ],
+      "phrase_signature": "We choose the flowers. You know the words.",
+      "a_savoir": [
+        "Arthur owns an eraser solely for address numbers.",
+        "The blue roses have a colour specification longer than their invoice."
+      ],
+      "voisin": {
+        "id": "moonlightcleaners",
+        "texte": "Moonlight Cleaners washes the shop’s aprons; Vivian reserves flowers that shed little pollen for Edith."
+      }
+    }
+  },
+  "quietwashlaundry": {
+    "patron": "Harold Seddon",
+    "annee_creation": 1979,
+    "adresse": "516 Palmetto Drive, Highway",
+    "fr": {
+      "quartier_phrase": "Depuis l’échangeur 9, suivez Palmetto Drive jusqu’aux hublots éclairés après le motel.",
+      "horaires": "24 h/24 ; présence du patron 20 h–6 h, distributeur éveillé sans supplément.",
+      "histoire": [
+        "Harold ouvre en 1979 avec huit machines et douze chaises. Ancien veilleur, il veut un endroit où attendre sans devoir commander de café.",
+        "En mars 1985, une chaussette reste seule après un cycle. Harold l’affiche ; les visiteurs viennent la reconnaître puis lavent leur linge. Il cesse les recherches, mais conserve le panneau."
+      ],
+      "anecdotes": [
+        "En septembre 1984, la cliente Beryl Moss écoute le distributeur pendant 43 minutes avant d’acheter une limonade.",
+        "En juin 1985, Marie apporte une couverture de Régis ; Harold retire les poils du filtre dans une enveloppe.",
+        "En avril 1986, Dolores Van Pelt inaugure la chaise 13 et demande où est passée la 12 : à côté."
+      ],
+      "phrase_signature": "Le linge tourne. Vous pouvez rester assis.",
+      "a_savoir": [
+        "La chaussette du mur n’est pas un modèle de couleur garanti.",
+        "Le distributeur possède un carnet d’entretien intitulé « petit bruit »."
+      ],
+      "voisin": {
+        "id": "laststopmotel",
+        "texte": "Last Stop Motel fournit les draps du lundi ; Harold lui rend les pièces oubliées dans les housses."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From interchange 9, follow Palmetto Drive to the lit machine doors just past the motel.",
+      "horaires": "24 hours; owner present 8pm–6am, vending machine awake at no extra charge.",
+      "histoire": [
+        "Harold opened in 1979 with eight machines and twelve chairs. A former night watchman, he wanted somewhere to wait without ordering coffee.",
+        "In March 1985, one sock remained after a wash. Harold pinned it up; visitors came to identify it and washed their clothes. He stopped searching but kept the display."
+      ],
+      "anecdotes": [
+        "In September 1984, customer Beryl Moss listened to the vending machine for 43 minutes before buying lemonade.",
+        "In June 1985, Marie brought Régis’s blanket; Harold returned the filter fur in an envelope.",
+        "In April 1986, Dolores Van Pelt inaugurated chair 13 and asked where 12 had gone: beside it."
+      ],
+      "phrase_signature": "The laundry turns. You may sit still.",
+      "a_savoir": [
+        "The wall sock is not a guaranteed colour sample.",
+        "The vending machine has a maintenance book titled “little noise”."
+      ],
+      "voisin": {
+        "id": "laststopmotel",
+        "texte": "Last Stop Motel supplies Monday’s sheets; Harold returns coins forgotten in pillowcases."
+      }
+    }
+  },
+  "silvercabservice": {
+    "patron": "Frank et Elsie Corbett",
+    "annee_creation": 1954,
+    "adresse": "230 Front Street, Downtown",
+    "fr": {
+      "quartier_phrase": "Depuis le pont est, suivez Front Street jusqu’au petit bureau aux cinq clés jaunes.",
+      "horaires": "Courses 24 h/24 ; bureau 6 h–minuit, parapluies rendus aux heures de bureau.",
+      "histoire": [
+        "Frank commence en 1954 avec un taxi et une serviette pour les sièges mouillés. Elsie organise les appels sur des fiches de trois couleurs, toutes consacrées à l’urgence.",
+        "Les travaux de 1984 ferment son trajet favori par la 3e Avenue. Elsie dessine un détour par Front Street ; Frank l’appelle toujours un raccourci, même quand le pont est reste levé."
+      ],
+      "anecdotes": [
+        "En octobre 1984, le client Norman Teal oublie sept parapluies en une semaine et reconnaît le huitième, qui appartient à Frank.",
+        "En janvier 1985, Marie dicte une adresse comme une dernière lettre ; Elsie demande seulement le numéro.",
+        "En juillet 1986, Dolores Van Pelt inaugure le nouveau carnet de courses à partir de 6 dollars."
+      ],
+      "phrase_signature": "Les bagages et les soupirs voyagent gratuitement.",
+      "a_savoir": [
+        "Le délai de cinq minutes se mesure depuis le dernier appel.",
+        "Elsie classe les parapluies par propriétaire supposé."
+      ],
+      "voisin": {
+        "id": "nightshiftfinance",
+        "texte": "Nightshift Finance occupe le pâté voisin ; Elsie attend ses clients tardifs sans lire leurs dossiers."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From the east bridge, follow Front Street to the little office with five yellow keys.",
+      "horaires": "Rides 24 hours; office 6am–midnight, umbrellas returned during office hours.",
+      "histoire": [
+        "Frank started in 1954 with one taxi and a towel for wet seats. Elsie organises calls on cards in three colours, all meaning urgent.",
+        "The 1984 works closed his favourite route along 3e Avenue. Elsie drew a Front Street diversion; Frank still calls it a shortcut even when the east bridge stays raised."
+      ],
+      "anecdotes": [
+        "In October 1984, customer Norman Teal forgot seven umbrellas in a week and recognised an eighth, which belonged to Frank.",
+        "In January 1985, Marie dictated an address like a final letter; Elsie only asked for the number.",
+        "In July 1986, Dolores Van Pelt inaugurated the new ride ledger, with fares starting at $6."
+      ],
+      "phrase_signature": "Luggage and sighs ride free.",
+      "a_savoir": [
+        "Five minutes is measured from the latest call.",
+        "Elsie files umbrellas by presumed owner."
+      ],
+      "voisin": {
+        "id": "nightshiftfinance",
+        "texte": "Nightshift Finance occupies the next block; Elsie waits for its late customers without reading their files."
+      }
+    }
+  },
+  "sunsetgarage": {
+    "patron": "Gordon Pike",
+    "annee_creation": 1973,
+    "adresse": "442 Palmetto Drive, Highway",
+    "fr": {
+      "quartier_phrase": "Depuis l’échangeur 9, remontez Palmetto Drive jusqu’au portail portant une oreille peinte.",
+      "horaires": "Lun-sam 7 h–20 h ; essais de bruit avant 19 h, pour les voisins.",
+      "histoire": [
+        "Gordon ouvre en 1973 avec un pont élévateur d’occasion et un carnet de bruits. Il répare freins, moteurs, batteries et climatisations, les yeux parfaitement ouverts.",
+        "En 1985, un client demande si le diagnostic gratuit inclut trois heures de démontage. Gordon crée deux colonnes : écoute gratuite, recherche technique dès 29 dollars. Il les montre avant de prendre les clés."
+      ],
+      "anecdotes": [
+        "En juin 1984, Dolores Van Pelt inaugure le pont élévateur sans monter dessus.",
+        "En octobre 1985, Mél apporte un bruit enregistré sur cassette ; Gordon identifie son clignotant.",
+        "En avril 1986, le client Perry Holt imite un moteur pendant neuf minutes ; Gordon lui offre un verre d’eau."
+      ],
+      "phrase_signature": "Je ferme le capot, pas les yeux.",
+      "a_savoir": [
+        "Le carnet distingue « clac inquiet » et « clac normal ».",
+        "La chaise d’écoute n’entre jamais dans le devis."
+      ],
+      "voisin": {
+        "id": "highwaydiner",
+        "texte": "Highway Diner est à quelques pas ; Gordon y attend les moteurs refroidis avec un café qu’il trouve cher."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From interchange 9, follow Palmetto Drive uphill to the gate with a painted ear.",
+      "horaires": "Mon–Sat 7am–8pm; noise tests before 7pm, for the neighbours.",
+      "histoire": [
+        "Gordon opened in 1973 with a second-hand lift and a noise notebook. He repairs brakes, engines, batteries and air conditioning with his eyes fully open.",
+        "In 1985, a customer asked whether a free diagnosis included three hours of dismantling. Gordon made two columns: free listening, technical investigation from $29. He shows them before taking the keys."
+      ],
+      "anecdotes": [
+        "In June 1984, Dolores Van Pelt inaugurated the lift without standing on it.",
+        "In October 1985, Mél brought a noise recorded on cassette; Gordon identified her indicator.",
+        "In April 1986, customer Perry Holt imitated an engine for nine minutes; Gordon offered him water."
+      ],
+      "phrase_signature": "I close the bonnet, not my eyes.",
+      "a_savoir": [
+        "The notebook distinguishes “worried clack” from “normal clack”.",
+        "The listening chair never appears on the estimate."
+      ],
+      "voisin": {
+        "id": "highwaydiner",
+        "texte": "Highway Diner is a short walk away; Gordon waits for engines to cool over coffee he considers expensive."
+      }
+    }
+  },
+  "palmettodrivein": {
+    "patron": "Ruth et Dennis Harker",
+    "annee_creation": 1961,
+    "adresse": "468 Palmetto Drive, Highway",
+    "fr": {
+      "quartier_phrase": "Depuis l’échangeur 9, prenez Palmetto Drive ; les deux écrans dépassent les palmiers.",
+      "horaires": "Tous les jours 18 h–minuit ; snack dès 17 h 30, recherche des voitures jusqu’à 0 h 30.",
+      "histoire": [
+        "Ruth et Dennis ouvrent en 1961 avec un écran et une friteuse. Ruth projette ; Dennis nourrit le parking et confond parfois commande double et double séance.",
+        "En 1984, une copie arrive coupée en deux bobines mal étiquetées. Ruth sauve la séance en les remettant dans l’ordre ; les recettes financent le deuxième écran et les panneaux de rangées de 1986."
+      ],
+      "anecdotes": [
+        "En août 1984, le client Hugh Baines garde son ticket de burger comme preuve de stationnement.",
+        "En mai 1985, Mél annonce une séance « sans bouchon » et attire trente voitures avant l’ouverture.",
+        "En février 1986, Dolores Van Pelt inaugure la rangée A depuis la rangée C."
+      ],
+      "phrase_signature": "Deux places pour une ; pensez à prendre le film.",
+      "a_savoir": [
+        "Les grands sodas n’entrent pas dans le tarif du parking.",
+        "Dennis garde une carte du parking sous la carte du menu."
+      ],
+      "voisin": {
+        "id": "highwaydiner",
+        "texte": "Highway Diner est au bout du même tronçon ; Ruth y emprunte des filtres à café pendant les doubles séances."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From interchange 9, take Palmetto Drive; the two screens rise above the palms.",
+      "horaires": "Daily 6pm–midnight; snack bar from 5:30pm, car searches until 12:30am.",
+      "histoire": [
+        "Ruth and Dennis opened in 1961 with one screen and a fryer. Ruth projects; Dennis feeds the car park and sometimes confuses double orders with double features.",
+        "In 1984, a print arrived in two wrongly labelled reels. Ruth saved the screening by restoring their order; the takings funded the second screen and the 1986 row signs."
+      ],
+      "anecdotes": [
+        "In August 1984, customer Hugh Baines kept his burger receipt as proof of parking.",
+        "In May 1985, Mél announced a “jam-free” screening and attracted thirty cars before opening.",
+        "In February 1986, Dolores Van Pelt inaugurated row A from row C."
+      ],
+      "phrase_signature": "Two spaces for one; remember to buy the film.",
+      "a_savoir": [
+        "Large sodas are not included in parking rates.",
+        "Dennis keeps a parking map beneath the menu."
+      ],
+      "voisin": {
+        "id": "highwaydiner",
+        "texte": "Highway Diner is at the end of the same stretch; Ruth borrows coffee filters during double features."
+      }
+    }
+  },
+  "seabreezeterrace": {
+    "patron": "Celia Ashcombe",
+    "annee_creation": 1980,
+    "adresse": "320 Front Street, Skyline — étage 32",
+    "fr": {
+      "quartier_phrase": "Depuis le pont est, suivez Front Street jusqu’au hall marqué 320, puis montez au 32e.",
+      "horaires": "Tous les jours 17 h–1 h ; terrasse suspendue si le vent emporte deux serviettes de suite.",
+      "histoire": [
+        "Celia ouvre en 1980 au trente-deuxième étage, avec seize tables et un carnet de prévisions du vent. Elle vend une soirée dehors, musique douce et baie entière à portée des yeux.",
+        "En 1984, une rafale enlève vingt serviettes. Le serveur les rattrape dans un panier ; les clients applaudissent et reviennent voir une terrasse devenue célèbre pour son linge."
+      ],
+      "anecdotes": [
+        "En juin 1984, la cliente Mavis Orton applaudit un torchon, qui n’était pas au programme.",
+        "En août 1985, Mél annonce le parking gratuit ; Celia lui montre la pancarte à 27 dollars.",
+        "En avril 1986, Dolores Van Pelt inaugure les pinces à serviettes avec un ruban qui s’envole."
+      ],
+      "phrase_signature": "La vue est offerte. Nous avons un tarif pour le reste.",
+      "a_savoir": [
+        "Le panier à serviettes est inscrit comme matériel de spectacle.",
+        "Les 10 dollars d’entrée ne règlent pas les 27 dollars de parking."
+      ],
+      "voisin": {
+        "id": "laserlounge",
+        "texte": "Laser Lounge est dans le hall voisin ; Celia lui prête des pinces, contre des ampoules ordinaires."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From the east bridge, follow Front Street to lobby 320, then go up to floor 32.",
+      "horaires": "Daily 5pm–1am; terrace paused if the wind takes two napkins in a row.",
+      "histoire": [
+        "Celia opened in 1980 on the thirty-second floor with sixteen tables and a wind forecast notebook. She sells an evening outdoors, soft music and the whole bay within sight.",
+        "In 1984, a gust lifted twenty napkins. A waiter caught them in a basket; guests applauded and returned to a terrace famous for its linen."
+      ],
+      "anecdotes": [
+        "In June 1984, customer Mavis Orton applauded a tea towel that was not on the programme.",
+        "In August 1985, Mél announced free parking; Celia showed her the $27 sign.",
+        "In April 1986, Dolores Van Pelt inaugurated the napkin clips with a ribbon that blew away."
+      ],
+      "phrase_signature": "The view is complimentary. We price everything else.",
+      "a_savoir": [
+        "The napkin basket is listed as entertainment equipment.",
+        "The $10 admission does not cover the $27 parking."
+      ],
+      "voisin": {
+        "id": "laserlounge",
+        "texte": "Laser Lounge is in the neighbouring lobby; Celia lends it clips in exchange for ordinary light bulbs."
+      }
+    }
+  },
+  "coralmotors": {
+    "patron": "Russell Fenner",
+    "annee_creation": 1976,
+    "adresse": "418 Palmetto Drive, Highway",
+    "fr": {
+      "quartier_phrase": "Depuis l’échangeur 9, suivez Palmetto Drive jusqu’au coupé rouge sous l’auvent.",
+      "horaires": "Tous les jours 9 h–19 h ; essais jusqu’à 18 h 30, trois premières minutes sans commentaire.",
+      "histoire": [
+        "Russell ouvre en 1976 avec cinq voitures et une paire de lunettes teintées. Il choisit les berlines au confort du siège et les familiales au nombre de sacs de plage acceptés.",
+        "En 1984, le modèle rouge immobilise les passants devant la vitrine. Russell en fait sa vedette, puis peint une ligne au sol pour que l’admiration laisse passer les autres clients."
+      ],
+      "anecdotes": [
+        "En avril 1984, le client Colin Wade apporte neuf sacs pour mesurer un coffre.",
+        "En novembre 1985, Mél annonce un essai silencieux de trois heures ; Russell lui montre son minuteur de trois minutes.",
+        "En mai 1986, Dolores Van Pelt inaugure le bureau financement et demande une chaise plus facile que le dossier."
+      ],
+      "phrase_signature": "Les trois premières minutes appartiennent au moteur.",
+      "a_savoir": [
+        "Le mot « facile » possède sa propre note en bas de page.",
+        "Les lunettes d’essai se rendent avec les clés."
+      ],
+      "voisin": {
+        "id": "sunshinemotors",
+        "texte": "Sunshine Motors est presque en face ; Russell admire son palmier mais mesure les coffres avec de vrais bagages."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From interchange 9, follow Palmetto Drive to the red coupé beneath the awning.",
+      "horaires": "Daily 9am–7pm; test drives until 6:30pm, first three minutes without commentary.",
+      "histoire": [
+        "Russell opened in 1976 with five cars and tinted glasses. He judges saloons by their seats and estate cars by the number of beach bags they hold.",
+        "In 1984, the red model stopped pedestrians outside the window. Russell made it his star, then painted a floor line so admiration would leave room for other customers."
+      ],
+      "anecdotes": [
+        "In April 1984, customer Colin Wade brought nine bags to measure a boot.",
+        "In November 1985, Mél announced a three-hour silent test drive; Russell showed her his three-minute timer.",
+        "In May 1986, Dolores Van Pelt inaugurated the finance desk and requested a chair easier than the paperwork."
+      ],
+      "phrase_signature": "The first three minutes belong to the engine.",
+      "a_savoir": [
+        "The word “easy” has its own footnote.",
+        "Test-drive sunglasses must be returned with the keys."
+      ],
+      "voisin": {
+        "id": "sunshinemotors",
+        "texte": "Sunshine Motors is almost opposite; Russell admires its palm but measures boots with actual luggage."
+      }
+    }
+  },
+  "highwaydiner": {
+    "patron": "Doris et Earl Tuttle",
+    "annee_creation": 1956,
+    "adresse": "450 Palmetto Drive, Highway",
+    "fr": {
+      "quartier_phrase": "Quittez l’échangeur 9 pour Palmetto Drive et arrêtez-vous à la cafetière peinte.",
+      "horaires": "24 h/24 ; tarte après le café, sauf mardi, conformément au cahier.",
+      "histoire": [
+        "Doris et Earl ouvrent en 1956 pour servir les conducteurs avant leur prochaine panne. Elle cuit les tartes ; lui sert pancakes, burgers et frites sans poser le plateau sur les cartes routières.",
+        "En 1984, Earl inverse tarte et café un mardi pour sauver une pâte trop chaude. Le client revient le mardi suivant ; Earl inscrit la méthode au règlement plutôt que d’admettre le hasard."
+      ],
+      "anecdotes": [
+        "En juin 1984, le client Vern Lister commande le menu à 7,99 dollars et vérifie deux fois le café à 8 dollars.",
+        "En mai 1985, Mél prend la queue du comptoir pour un bouchon et obtient ensuite son émission.",
+        "En janvier 1986, Dolores Van Pelt inaugure un tabouret déjà occupé ; Earl attend que le client termine."
+      ],
+      "phrase_signature": "La route attendra que vous ayez fini.",
+      "a_savoir": [
+        "Le café se commande séparément ; Doris le fait préciser avant de servir.",
+        "Le mardi est souligné en rouge sur les sept pages du planning."
+      ],
+      "voisin": {
+        "id": "sunsetgarage",
+        "texte": "Sunset Garage est à quatre numéros ; Doris lui garde une table assez loin pour ne pas écouter les moteurs."
+      }
+    },
+    "en": {
+      "quartier_phrase": "Leave interchange 9 for Palmetto Drive and stop at the painted coffee pot.",
+      "horaires": "24 hours; pie after coffee except Tuesday, according to the ledger.",
+      "histoire": [
+        "Doris and Earl opened in 1956 to feed drivers before their next breakdown. She bakes pies; he serves pancakes, burgers and chips without placing trays on road maps.",
+        "In 1984, Earl reversed pie and coffee one Tuesday to save an overheated crust. The customer returned the next Tuesday; Earl wrote the method into the rules rather than admit chance."
+      ],
+      "anecdotes": [
+        "In June 1984, customer Vern Lister ordered the $7.99 meal and checked the $8 coffee twice.",
+        "In May 1985, Mél mistook the counter queue for a traffic jam and later got her radio show.",
+        "In January 1986, Dolores Van Pelt inaugurated an occupied stool; Earl waited for its customer to finish."
+      ],
+      "phrase_signature": "The road can wait until you finish.",
+      "a_savoir": [
+        "Coffee is ordered separately; Doris insists this is explained before serving.",
+        "Tuesday is underlined in red on all seven schedule pages."
+      ],
+      "voisin": {
+        "id": "sunsetgarage",
+        "texte": "Sunset Garage is four numbers away; Doris reserves a table far enough away to stop listening to engines."
+      }
+    }
+  },
+  "goldenpawn": {
+    "patron": "Milton Quill",
+    "annee_creation": 1965,
+    "adresse": "244 Front Street, Downtown",
+    "fr": {
+      "quartier_phrase": "Depuis les travaux de la 3e Avenue, prenez Front Street et cherchez la vitrine aux six réveils.",
+      "horaires": "Lun-sam 9 h–21 h ; estimations jusqu’à 20 h 45, dix secondes réservées aux lampes qui marchent.",
+      "histoire": [
+        "Milton ouvre en 1965 avec une balance et une loupe trop puissante. Il prête sur montres, radios, appareils photo et chaînes stéréo, après estimation de cinq minutes.",
+        "En 1984, un lot de quarante réveils sonne en pleine négociation. Les passants entrent ; Milton vend assez de réveils pour payer une armoire acoustique, qu’il n’utilise pas."
+      ],
+      "anecdotes": [
+        "En février 1984, le client Amos Reed apporte une lampe de poche allumée ; Milton observe exactement dix secondes.",
+        "En décembre 1985, une cassette de test de Melvin fait biper les six radios de la vitrine.",
+        "En avril 1986, Dolores Van Pelt inaugure une étagère portant déjà son ancien presse-papiers."
+      ],
+      "phrase_signature": "Votre grenier mérite une estimation.",
+      "a_savoir": [
+        "La loupe ne sert jamais à grossir les prix sur les reçus.",
+        "Un objet sans fonction connue reçoit une étiquette « à déterminer »."
+      ],
+      "voisin": {
+        "id": "futurephone",
+        "texte": "Future Phone est deux vitrines plus loin ; Milton reçoit ses anciens appareils et lui réclame toujours les chargeurs."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From the 3e Avenue works, take Front Street and find the window with six alarm clocks.",
+      "horaires": "Mon–Sat 9am–9pm; valuations until 8:45pm, ten seconds reserved for working torches.",
+      "histoire": [
+        "Milton opened in 1965 with scales and an overly strong magnifier. He lends against watches, radios, cameras and stereos after a five-minute valuation.",
+        "In 1984, forty alarm clocks rang during a negotiation. Passers-by came in; Milton sold enough clocks to buy a soundproof cabinet, which he never uses."
+      ],
+      "anecdotes": [
+        "In February 1984, customer Amos Reed brought a lit torch; Milton observed it for exactly ten seconds.",
+        "In December 1985, a Melvin test cassette made all six window radios beep.",
+        "In April 1986, Dolores Van Pelt inaugurated a shelf already holding her former paperweight."
+      ],
+      "phrase_signature": "Your attic deserves a valuation.",
+      "a_savoir": [
+        "The magnifier is never used to enlarge prices on receipts.",
+        "An object of unknown purpose gets a “to be determined” label."
+      ],
+      "voisin": {
+        "id": "futurephone",
+        "texte": "Future Phone is two windows away; Milton takes its old devices and always demands the chargers."
+      }
+    }
+  },
+  "nightowlmarket": {
+    "patron": "Stanley Pruitt",
+    "annee_creation": 1981,
+    "adresse": "530 Palmetto Drive, Highway",
+    "fr": {
+      "quartier_phrase": "Depuis l’échangeur 9, suivez Palmetto Drive jusqu’à la chouette en carton éclairée.",
+      "horaires": "Tous les jours 18 h–4 h 30 ; dernier client à 4 h 25, premier bâillement sans heure garantie.",
+      "histoire": [
+        "Stanley ouvre en 1981 avec des piles, des sodas et trois journaux. Ancien livreur de nuit, il sait combien une faim de deux heures supporte mal une porte fermée.",
+        "En 1984, une caisse de lampes arrive à la place des glaces. Il crée le rayon « après minuit » ; les ventes paient un congélateur, puis un réveil pour fermer à 4 h 30."
+      ],
+      "anecdotes": [
+        "En mars 1984, la cliente Hazel Flint achète une pile pour regarder si son réveil indique vraiment deux heures.",
+        "En novembre 1985, Stanley teste ses piles avec une cassette de bips de NEON attribuée à Melvin.",
+        "En juillet 1986, Dolores Van Pelt inaugure le congélateur à 4 h 20 ; Stanley bâille pendant le ruban."
+      ],
+      "phrase_signature": "Le sommeil peut attendre jusqu’à quatre heures trente.",
+      "a_savoir": [
+        "Le rayon de nuit reste bâché avant minuit, même quand le magasin ouvre.",
+        "La chouette a des yeux peints ouverts et un contrat sans pause."
+      ],
+      "voisin": {
+        "id": "quietwashlaundry",
+        "texte": "Quiet Wash Laundry est quelques portes avant ; Stanley y fait patienter les clients pendant le nettoyage du sol."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From interchange 9, follow Palmetto Drive to the illuminated cardboard owl.",
+      "horaires": "Daily 6pm–4:30am; last customer 4:25am, first yawn at no guaranteed time.",
+      "histoire": [
+        "Stanley opened in 1981 with batteries, sodas and three newspapers. A former night delivery driver, he knows how badly two-in-the-morning hunger tolerates a closed door.",
+        "In 1984, a crate of torches arrived instead of ice cream. He created the “after midnight” aisle; sales paid for a freezer, then an alarm clock to close at 4:30am."
+      ],
+      "anecdotes": [
+        "In March 1984, customer Hazel Flint bought a battery to check whether her clock really said two.",
+        "In November 1985, Stanley tested batteries with a NEON beep cassette attributed to Melvin.",
+        "In July 1986, Dolores Van Pelt inaugurated the freezer at 4:20am; Stanley yawned through the ribbon."
+      ],
+      "phrase_signature": "Sleep can wait until half past four.",
+      "a_savoir": [
+        "The night aisle stays covered before midnight, even when the shop is open.",
+        "The owl has painted-open eyes and a contract without breaks."
+      ],
+      "voisin": {
+        "id": "quietwashlaundry",
+        "texte": "Quiet Wash Laundry is a few doors before it; Stanley sends customers there while he mops the floor."
+      }
+    }
+  },
+  "laserlounge": {
+    "patron": "Vincent et Paula Rook",
+    "annee_creation": 1983,
+    "adresse": "328 Front Street, Skyline — étage 18",
+    "fr": {
+      "quartier_phrase": "Depuis le pont est, suivez Front Street jusqu’au 328 ; ascenseur 18, reflet violet à la sortie.",
+      "horaires": "Jeu-dim 21 h–3 h ; contrôle des lumières à 20 h, bouton rouge toujours hors service client.",
+      "histoire": [
+        "Vincent et Paula ouvrent en 1983 avec une piste brillante et quatre écrans. Elle programme les lumières ; il mesure les reflets sur les chaussures avant d’ouvrir les portes.",
+        "En 1985, leur nouveau laser arrive avec une notice dont manque la dernière page. Paula protège le bouton rouge par un capot ; sa réputation attire les curieux, qui viennent danser en attendant une explication."
+      ],
+      "anecdotes": [
+        "En juin 1984, le client Dean Moss apporte des chaussures mates et réclame leur part de reflet.",
+        "En octobre 1985, la cassette de test de Melvin sert à caler les éclairs, sans annonce publicitaire de sa voix.",
+        "En mai 1986, Dolores Van Pelt inaugure le capot du bouton rouge ; Paula garde la clé."
+      ],
+      "phrase_signature": "Le futur est ouvert. Le bouton reste couvert.",
+      "a_savoir": [
+        "Le registre compte les ampoules, pas les étoiles aperçues par les clients.",
+        "Vincent cire le bord de piste, jamais la surface de danse."
+      ],
+      "voisin": {
+        "id": "seabreezeterrace",
+        "texte": "Seabreeze Terrace est dans l’immeuble voisin ; Paula lui donne des ampoules contre des pinces pour ses câbles."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From the east bridge, follow Front Street to 328; lift to floor 18, violet reflection at the exit.",
+      "horaires": "Thu–Sun 9pm–3am; lighting checks 8pm, red button always outside customer service.",
+      "histoire": [
+        "Vincent and Paula opened in 1983 with a shiny floor and four screens. She programmes lights; he measures reflections on shoes before opening the doors.",
+        "In 1985, their new laser arrived with its manual’s last page missing. Paula covered the red button; its reputation attracted curious people who danced while awaiting an explanation."
+      ],
+      "anecdotes": [
+        "In June 1984, customer Dean Moss brought matt shoes and demanded their share of reflection.",
+        "In October 1985, Melvin’s test cassette helped time the flashes, without using his voice in an advertisement.",
+        "In May 1986, Dolores Van Pelt inaugurated the red button’s cover; Paula kept the key."
+      ],
+      "phrase_signature": "The future is open. The button stays covered.",
+      "a_savoir": [
+        "The ledger counts bulbs, not stars seen by customers.",
+        "Vincent polishes the edge of the floor, never the dancing surface."
+      ],
+      "voisin": {
+        "id": "seabreezeterrace",
+        "texte": "Seabreeze Terrace is in the next building; Paula trades bulbs for clips to hold her cables."
+      }
+    }
+  },
+  "pixelpierarcade": {
+    "patron": "Beatrice et Calvin Doss",
+    "annee_creation": 1980,
+    "adresse": "116 Ocean Drive, Beach",
+    "fr": {
+      "quartier_phrase": "Depuis la jetée, rejoignez Ocean Drive ; les bips viennent de la vitrine au numéro 116.",
+      "horaires": "Tous les jours 11 h–1 h ; monnaie jusqu’à 0 h 45, scores photographiés à la fermeture.",
+      "histoire": [
+        "Beatrice et son fils Calvin ouvrent en 1980 avec six bornes et un tabouret. Elle répare les monnayeurs ; lui tient les registres de courses, jeux spatiaux et casse-briques.",
+        "En 1985, la borne huit affiche ZAP et 900 000 points. Personne ne sait identifier le joueur ; une demande écrite reste sans réponse. Les visiteurs viennent vérifier le score et financent deux autres bornes."
+      ],
+      "anecdotes": [
+        "En juillet 1984, la cliente Lorna Beck dépense ses pièces à comparer les volants des deux machines de course.",
+        "En novembre 1985, Melvin fait transmettre un relevé de bips ; Calvin refuse de le compter comme une partie.",
+        "En avril 1986, Dolores Van Pelt inaugure un rouleau de tickets sans battre aucun record."
+      ],
+      "phrase_signature": "Une pièce donne une chance, pas une identité.",
+      "a_savoir": [
+        "Trois bornes gardent encore leur meilleur score sous une étiquette illisible.",
+        "Le dossier ZAP contient une lettre et une enveloppe revenue fermée."
+      ],
+      "voisin": {
+        "id": "coconutpalace",
+        "texte": "Coconut Palace est à deux vitrines ; Calvin lui fournit la monnaie contre des sandwichs sans sable."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From the pier, reach Ocean Drive; the beeps come from the window at number 116.",
+      "horaires": "Daily 11am–1am; change until 12:45am, scores photographed at closing.",
+      "histoire": [
+        "Beatrice and her son Calvin opened in 1980 with six cabinets and a stool. She repairs coin mechanisms; he records racing, space-game and brick-breaking scores.",
+        "In 1985, cabinet eight displayed ZAP and 900,000 points. Nobody can identify the player; a written inquiry remains unanswered. Visitors come to verify the score and fund two more cabinets."
+      ],
+      "anecdotes": [
+        "In July 1984, customer Lorna Beck spent her coins comparing the two racing machines’ steering wheels.",
+        "In November 1985, Melvin sent a beep readout; Calvin refused to count it as a game.",
+        "In April 1986, Dolores Van Pelt inaugurated a ticket roll without breaking any records."
+      ],
+      "phrase_signature": "A coin gives you a chance, not an identity.",
+      "a_savoir": [
+        "Three cabinets still hide their top scores beneath illegible labels.",
+        "The ZAP file contains one letter and an envelope returned unopened."
+      ],
+      "voisin": {
+        "id": "coconutpalace",
+        "texte": "Coconut Palace is two windows away; Calvin supplies change in exchange for sand-free sandwiches."
+      }
+    }
+  },
+  "futurephone": {
+    "patron": "Dennis et Sylvia Kester",
+    "annee_creation": 1982,
+    "adresse": "248 Front Street, Downtown",
+    "fr": {
+      "quartier_phrase": "Depuis la 3e Avenue en travaux, rejoignez Front Street et la vitrine à écran vert.",
+      "horaires": "Lun-sam 10 h–20 h ; nouveautés le mardi, explications jusqu’à épuisement du vendeur.",
+      "histoire": [
+        "Dennis et Sylvia ouvrent en 1982 avec douze appareils et deux prises. Elle teste les batteries ; lui présente chaque bouton comme une raison de changer de téléphone.",
+        "En 1985, un modèle à écran vert arrive un lundi, suivi d’un modèle plus récent le mardi. Sylvia conserve les deux notices pour justifier la durée exacte de leur avance technologique."
+      ],
+      "anecdotes": [
+        "En août 1984, le client Ellis Ward apporte une valise pour un téléphone annoncé « plus léger ».",
+        "En décembre 1985, une cassette de Melvin mesure les bips ; Sylvia note trois décimales sur la fiche de démonstration.",
+        "En juin 1986, Dolores Van Pelt inaugure le présentoir à 99 dollars ; Dennis détaille ensuite batterie, chargeur et appareil."
+      ],
+      "phrase_signature": "Plus de boutons, davantage d’avenir.",
+      "a_savoir": [
+        "Le prix de 99 dollars désigne l’offre de base détaillée au comptoir.",
+        "Sylvia colle « jusqu’à mardi » au dos de l’étiquette « le plus moderne »."
+      ],
+      "voisin": {
+        "id": "goldenpawn",
+        "texte": "Golden Pawn est à deux vitrines ; Sylvia lui envoie les anciens modèles avec une liste des câbles nécessaires."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From the 3e Avenue works, reach Front Street and the green-screen window.",
+      "horaires": "Mon–Sat 10am–8pm; new models Tuesday, explanations until the salesperson runs out.",
+      "histoire": [
+        "Dennis and Sylvia opened in 1982 with twelve devices and two sockets. She tests batteries; he presents every button as a reason to replace a telephone.",
+        "In 1985, a green-screen model arrived on Monday, followed by a newer model Tuesday. Sylvia kept both manuals to prove the exact duration of their technological lead."
+      ],
+      "anecdotes": [
+        "In August 1984, customer Ellis Ward brought a suitcase for a phone advertised as “lighter”.",
+        "In December 1985, a Melvin cassette measured beeps; Sylvia wrote three decimal places on the demonstration sheet.",
+        "In June 1986, Dolores Van Pelt inaugurated the $99 display; Dennis then itemised battery, charger and handset."
+      ],
+      "phrase_signature": "More buttons, more future.",
+      "a_savoir": [
+        "The $99 price refers to the basic offer itemised at the counter.",
+        "Sylvia sticks “until Tuesday” behind the “most modern” label."
+      ],
+      "voisin": {
+        "id": "goldenpawn",
+        "texte": "Golden Pawn is two windows away; Sylvia sends old models with a list of required cables."
+      }
+    }
+  },
+  "bayoubreakdowngarage": {
+    "patron": "Otis et Pearl Fenley",
+    "annee_creation": 1968,
+    "adresse": "610 Palmetto Drive, Everglades",
+    "fr": {
+      "quartier_phrase": "Depuis l’échangeur 9, poursuivez Palmetto Drive vers les pilotis jusqu’à la dépanneuse verte.",
+      "horaires": "Lun-sam 6 h–19 h ; remorquage de garde 24 h/24, diagnostic dès 19 dollars.",
+      "histoire": [
+        "Otis et sa sœur Pearl ouvrent en 1968 après avoir remorqué trois voisins en une journée. Il répare moteurs et climatisations ; elle conduit la dépanneuse et choisit les chemins portants.",
+        "En 1984, une chaussure bloque un moteur. Pearl la retire, le moteur repart et le client recommande l’atelier à onze cousins ; le propriétaire de la chaussure reste inconnu."
+      ],
+      "anecdotes": [
+        "En septembre 1984, le client Wade Pell reconnaît la pointure mais refuse de reconnaître la chaussure.",
+        "En janvier 1985, Big Lou apporte un câble chaud ; Otis lui rappelle que le tarif concerne les voitures.",
+        "En mai 1986, Dolores Van Pelt inaugure le crochet de remorquage posé sur un coussin."
+      ],
+      "phrase_signature": "Les voitures ici. Les chaussures ailleurs.",
+      "a_savoir": [
+        "La chaussure conservée n’entre dans aucun forfait de diagnostic.",
+        "Pearl teste les klaxons avec des protections auditives, même quand ils semblent morts."
+      ],
+      "voisin": {
+        "id": "marshlinesalvage",
+        "texte": "Marshline Salvage est au prochain portail ; Pearl y cherche des pièces avec une liste, jamais au hasard."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From interchange 9, continue along Palmetto Drive towards the stilts to the green recovery truck.",
+      "horaires": "Mon–Sat 6am–7pm; recovery on call 24 hours, diagnosis from $19.",
+      "histoire": [
+        "Otis and his sister Pearl opened in 1968 after towing three neighbours in one day. He repairs engines and air conditioning; she drives the recovery truck and chooses firm tracks.",
+        "In 1984, a shoe jammed an engine. Pearl removed it, the engine started and the customer recommended the garage to eleven cousins; the shoe’s owner remains unknown."
+      ],
+      "anecdotes": [
+        "In September 1984, customer Wade Pell recognised the size but refused to recognise the shoe.",
+        "In January 1985, Big Lou brought a hot cable; Otis reminded him the rate covered cars.",
+        "In May 1986, Dolores Van Pelt inaugurated the recovery hook resting on a cushion."
+      ],
+      "phrase_signature": "Cars here. Shoes elsewhere.",
+      "a_savoir": [
+        "The preserved shoe is not included in any diagnostic package.",
+        "Pearl wears hearing protection to test horns, even apparently dead ones."
+      ],
+      "voisin": {
+        "id": "marshlinesalvage",
+        "texte": "Marshline Salvage is at the next gate; Pearl searches for parts there with a list, never at random."
+      }
+    }
+  },
+  "nightshiftfinance": {
+    "patron": "Edmund Vale",
+    "annee_creation": 1970,
+    "adresse": "234 Front Street, Downtown",
+    "fr": {
+      "quartier_phrase": "Depuis le pont est, suivez Front Street jusqu’à la lampe verte derrière les stores.",
+      "horaires": "Lun-sam 14 h–minuit ; consultation gratuite, café à 4 dollars annoncé avant de verser.",
+      "histoire": [
+        "Edmund ouvre en 1970 avec deux chaises et des formulaires rangés par épaisseur. Il explique prêts et dossiers en laissant aux clients le temps de lire les petits caractères.",
+        "En 1985, l’horloge commence à perdre cinq minutes par jour. Edmund garde l’objet mais ajoute une montre au comptoir ; les rendez-vous restent à l’heure, le décor prend son temps."
+      ],
+      "anecdotes": [
+        "En novembre 1984, le client Vernon Cole apporte une loupe et signe seulement le reçu du café.",
+        "En décembre 1985, Big Lou tape deux fois sur un dossier comme sur ses cassettes ; Edmund vérifie les agrafes.",
+        "En mars 1986, Dolores Van Pelt inaugure la seconde chaise, pourtant occupée depuis seize ans."
+      ],
+      "phrase_signature": "Les chiffres restent. Prenez une chaise.",
+      "a_savoir": [
+        "La montre de service fait foi, jamais l’horloge du décor.",
+        "Le café possède une ligne plus grosse que les clauses du dossier."
+      ],
+      "voisin": {
+        "id": "silvercabservice",
+        "texte": "Silver Cab Service est à quatre numéros ; Edmund appelle Elsie quand un client a fini de lire."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From the east bridge, follow Front Street to the green lamp behind the blinds.",
+      "horaires": "Mon–Sat 2pm–midnight; free consultation, $4 coffee announced before pouring.",
+      "histoire": [
+        "Edmund opened in 1970 with two chairs and forms filed by thickness. He explains loans and applications while allowing customers time to read the small print.",
+        "In 1985, the clock began losing five minutes a day. Edmund kept it but added a watch on the counter; appointments stay punctual while the décor takes its time."
+      ],
+      "anecdotes": [
+        "In November 1984, customer Vernon Cole brought a magnifier and signed only the coffee receipt.",
+        "In December 1985, Big Lou tapped a file twice like his cassettes; Edmund checked the staples.",
+        "In March 1986, Dolores Van Pelt inaugurated the second chair, already occupied for sixteen years."
+      ],
+      "phrase_signature": "The numbers stay. Take a chair.",
+      "a_savoir": [
+        "The service watch is authoritative, never the decorative clock.",
+        "Coffee has a larger printed line than the application clauses."
+      ],
+      "voisin": {
+        "id": "silvercabservice",
+        "texte": "Silver Cab Service is four numbers away; Edmund calls Elsie when a customer has finished reading."
+      }
+    }
+  },
+  "marshrunnertours": {
+    "patron": "Mavis et Joel Weller",
+    "annee_creation": 1974,
+    "adresse": "626 Palmetto Drive, Everglades",
+    "fr": {
+      "quartier_phrase": "Depuis l’échangeur 9, suivez Palmetto Drive jusqu’au ponton aux trois gilets suspendus.",
+      "horaires": "Tous les jours départs à 8 h, 11 h et 17 h ; météo vérifiée avant chaque embarquement.",
+      "histoire": [
+        "Mavis et son fils Joel ouvrent en 1974 avec un bateau et un carnet d’oiseaux. Elle pilote ; lui compte tortues et poissons sans promettre qu’ils resteront pour la photo.",
+        "En 1984, un groupe baptise Kevin un gros reptile qui s’éloigne aussitôt. Joel ajoute la règle de l’anonymat ; l’excursion gagne sa réputation en laissant les habitants tranquilles."
+      ],
+      "anecdotes": [
+        "En août 1984, la cliente Elsie Marr écrit « Kevin » sur une carte ; Joel la range côté texte pour ne pas la montrer à l’animal.",
+        "En avril 1985, Big Lou apporte un magnétophone pour les oiseaux ; Mavis exige qu’il coupe son commentaire.",
+        "En juin 1986, Dolores Van Pelt inaugure une marche du ponton et demande quand commence la deuxième."
+      ],
+      "phrase_signature": "Nous faisons les présentations du paysage, pas des reptiles.",
+      "a_savoir": [
+        "Le carnet distingue les oiseaux vus des oiseaux entendus.",
+        "Le bateau possède douze places ; l’anonymat n’en occupe aucune."
+      ],
+      "voisin": {
+        "id": "ironcoastclub",
+        "texte": "Iron Coast Club est à deux portails ; Joel y entretient ses bras, sans appeler cela une excursion."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From interchange 9, follow Palmetto Drive to the landing with three hanging life jackets.",
+      "horaires": "Daily departures 8am, 11am and 5pm; weather checked before every boarding.",
+      "histoire": [
+        "Mavis and her son Joel opened in 1974 with a boat and a bird notebook. She pilots; he counts turtles and fish without promising they will stay for photographs.",
+        "In 1984, a group named a large reptile Kevin; it promptly moved away. Joel added the anonymity rule; the tour earned its reputation by leaving residents in peace."
+      ],
+      "anecdotes": [
+        "In August 1984, customer Elsie Marr wrote “Kevin” on a card; Joel filed it text-side down to avoid showing the animal.",
+        "In April 1985, Big Lou brought a tape recorder for birds; Mavis insisted he switch off his commentary.",
+        "In June 1986, Dolores Van Pelt inaugurated one landing step and asked when the second began."
+      ],
+      "phrase_signature": "We introduce the scenery, not the reptiles.",
+      "a_savoir": [
+        "The notebook distinguishes birds seen from birds heard.",
+        "The boat has twelve places; anonymity occupies none."
+      ],
+      "voisin": {
+        "id": "ironcoastclub",
+        "texte": "Iron Coast Club is two gates away; Joel trains his arms there without calling it an excursion."
+      }
+    }
+  },
+  "ironcoastclub": {
+    "patron": "Clifford et Ruth Benton",
+    "annee_creation": 1978,
+    "adresse": "634 Palmetto Drive, Everglades",
+    "fr": {
+      "quartier_phrase": "Depuis l’échangeur 9, suivez Palmetto Drive ; les rameurs sont derrière la porte sans canapé.",
+      "horaires": "Lun-sam 5 h–23 h ; dimanche 6 h–20 h, gravité disponible en continu.",
+      "histoire": [
+        "Clifford et Ruth ouvrent en 1978 avec dix haltères et deux vélos. Il montre les gestes ; elle note les progrès en répétitions, jamais en promesses.",
+        "En 1984, un livreur apporte un canapé au lieu d’un rameur. Ruth le fait reprendre avant déballage ; le remboursement paie deux bancs et l’affiche qui interdit désormais le canapé."
+      ],
+      "anecdotes": [
+        "En février 1984, le client Daryl Venn demande un poids plus léger ; Clifford pointe celui posé juste à côté.",
+        "En septembre 1985, Big Lou compte une série trop vite ; Ruth lui fait recommencer sans musique.",
+        "En avril 1986, Dolores Van Pelt inaugure le banc numéro 3, assise sur le numéro 2."
+      ],
+      "phrase_signature": "Vous, la gravité, et encore une répétition.",
+      "a_savoir": [
+        "L’abonnement à 19,99 dollars couvre les machines, jamais leur déplacement à domicile.",
+        "Le coach possède un sifflet neuf ; personne ne l’a entendu."
+      ],
+      "voisin": {
+        "id": "marshrunnertours",
+        "texte": "Marsh Runner Tours est à deux portails ; Ruth y envoie les membres qui réclament une activité assise."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From interchange 9, follow Palmetto Drive; the rowing machines are behind the door without a sofa.",
+      "horaires": "Mon–Sat 5am–11pm; Sunday 6am–8pm, gravity available continuously.",
+      "histoire": [
+        "Clifford and Ruth opened in 1978 with ten dumbbells and two exercise bikes. He demonstrates movements; she records progress in repetitions, never promises.",
+        "In 1984, a driver delivered a sofa instead of a rowing machine. Ruth returned it unopened; the refund paid for two benches and the sign now banning sofas."
+      ],
+      "anecdotes": [
+        "In February 1984, customer Daryl Venn requested a lighter weight; Clifford pointed to the one beside it.",
+        "In September 1985, Big Lou counted a set too fast; Ruth made him repeat it without music.",
+        "In April 1986, Dolores Van Pelt inaugurated bench 3 while sitting on bench 2."
+      ],
+      "phrase_signature": "You, gravity, and one more repetition.",
+      "a_savoir": [
+        "The $19.99 membership covers equipment use, never equipment delivery to your home.",
+        "The coach owns a new whistle; nobody has heard it."
+      ],
+      "voisin": {
+        "id": "marshrunnertours",
+        "texte": "Marsh Runner Tours is two gates away; Ruth sends members there when they request a seated activity."
+      }
+    }
+  },
+  "marshlinesalvage": {
+    "patron": "Vernon et Ada Phelps",
+    "annee_creation": 1959,
+    "adresse": "618 Palmetto Drive, Everglades",
+    "fr": {
+      "quartier_phrase": "Depuis l’échangeur 9, continuez sur Palmetto Drive jusqu’aux portières rangées debout.",
+      "horaires": "Lun-sam 7 h–18 h ; radio en service pendant l’inventaire, visites sans escalader les piles.",
+      "histoire": [
+        "Vernon et Ada ouvrent en 1959 avec trois épaves et une boîte de boulons triés. Il démonte moteurs et portières ; elle classe roues, sièges et rétroviseurs par compatibilité.",
+        "En 1984, une vieille radio restée dehors depuis vingt ans se remet à jouer. Un client propose 300 dollars ; Vernon refuse. Ada l’installe sous un toit, sans la retirer de l’inventaire."
+      ],
+      "anecdotes": [
+        "En juillet 1984, le client Lyle Bost propose ses 300 dollars pendant un solo de jazz ; Vernon attend la fin pour refuser.",
+        "En décembre 1985, Big Lou écoute la radio et traite sa ligne de basse d’insolente ; Ada note « réception correcte ».",
+        "En août 1986, Dolores Van Pelt inaugure le rayon des rétroviseurs et apparaît sur douze photos à la fois."
+      ],
+      "phrase_signature": "Une voiture finit. Ses pièces continuent.",
+      "a_savoir": [
+        "La radio porte une étiquette « non vendue », corrigée en « non vendable par choix ».",
+        "Ada garde les boulons d’une portière dans une boîte séparée, même si elle a déjà vendu la portière."
+      ],
+      "voisin": {
+        "id": "bayoubreakdowngarage",
+        "texte": "Bayou Breakdown Garage est au portail voisin ; Vernon lui met de côté les pièces testées, avec leurs boulons."
+      }
+    },
+    "en": {
+      "quartier_phrase": "From interchange 9, continue on Palmetto Drive to the upright rows of car doors.",
+      "horaires": "Mon–Sat 7am–6pm; radio plays during stocktaking, no climbing the stacks.",
+      "histoire": [
+        "Vernon and Ada opened in 1959 with three wrecks and a box of sorted bolts. He removes engines and doors; she files wheels, seats and mirrors by compatibility.",
+        "In 1984, an old radio left outdoors for twenty years started playing again. A customer offered $300; Vernon refused. Ada moved it under a roof without removing it from inventory."
+      ],
+      "anecdotes": [
+        "In July 1984, customer Lyle Bost offered his $300 during a jazz solo; Vernon waited until it ended to refuse.",
+        "In December 1985, Big Lou heard the radio and called its bass line insolent; Ada recorded “reception correct”.",
+        "In August 1986, Dolores Van Pelt inaugurated the mirror section and appeared in twelve photographs at once."
+      ],
+      "phrase_signature": "A car ends. Its parts continue.",
+      "a_savoir": [
+        "The radio’s “unsold” label has been corrected to “not for sale by choice”.",
+        "Ada keeps a door’s bolts in a separate box even after selling the door."
+      ],
+      "voisin": {
+        "id": "bayoubreakdowngarage",
+        "texte": "Bayou Breakdown Garage is at the next gate; Vernon sets aside tested parts for it, with their bolts."
+      }
+    }
+  }
+}

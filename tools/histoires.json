@@ -1,0 +1,492 @@
+{
+  "tropicana": {
+    "fr": {
+      "titre": "Le premier étage qui a appris à danser",
+      "quartier": "Beach",
+      "adresse": "120 Ocean Drive",
+      "batiment": "Premier étage d’un ancien dépôt de parasols, façade corail et enseigne TROPICANA en lettres turquoise ; baie du studio sur la jetée. Toit plat au goudron cloqué, réparé autour de la trappe ; antenne verticale aux attaches neuves, pied marqué par le sel.",
+      "histoire": [
+        "Avant les cuivres, le 120 Ocean Drive abritait des parasols de location. Au premier étage, on réparait les baleines et on comptait les toiles, toujours une de moins au retour. Le plancher porte encore leurs cercles humides. Quand le dépôt ferme, il laisse une table de découpe, une armoire à clés et cette odeur de toile chaude que le sel rend presque sucrée. La pièce donnant sur la jetée coûte moins cher parce que sa fenêtre refuse de fermer complètement. Pour une radio qui veut faire entrer la baie, cela ressemble à une proposition commerciale.",
+        "Tropicana s’y installe en juin 1984. Une lampe turquoise éclaire la console posée sur la table de découpe ; les anciens casiers deviennent une discothèque, classée selon la largeur des pochettes. La première émission doit durer vingt minutes. Le bâtiment, lui, commence immédiatement une carrière plus longue : des voisins montent une chaise, puis du café, puis demandent si la chaise peut rester. L’armoire conserve ses étiquettes de parasols. La case « grand vent » contient les morceaux les plus calmes, choix dont personne ne souhaite assumer la responsabilité.",
+        "La première difficulté arrive par le toit : une pluie traverse le goudron et tombe exactement entre deux boutons. On déplace la console, puis la fuite, selon un calendrier que seul le couvreur comprend. L’antenne souffre davantage du sel que du vent ; ses attaches sont remplacées une à une, jamais pendant un solo. En août 1985, une balance près de la jetée accompagne involontairement l’inauguration d’un parasol par Dolores Van Pelt. Les commerçants reconnaissent leur station dans les haut-parleurs municipaux. La cassette revient au studio avec du sable dans le boîtier et devient la première archive qu’on range à plat.",
+        "Aujourd’hui, l’escalier sent le café et les cordages séchés. Depuis le siège de régie, on voit les passants hésiter entre la jetée et une dernière glace ; on entend les pièces des jeux voisins lorsque la porte reste ouverte. Le soleil couchant traverse la vitre mal jointe et découpe un rectangle orange sur le fader principal. Un chiffon protège le matériel, une chaise attend près du mur, et les parasols ont laissé leur métier à la musique : fabriquer un peu d’ombre où tout le monde puisse rester."
+      ],
+      "anecdotes": [
+        "Le casier « enfant » contient les grandes pochettes.",
+        "Une baleine de parasol sert de pointeur sur le planning.",
+        "Le sable de la cassette officielle reste dans son boîtier.",
+        "La troisième marche grince en contretemps.",
+        "La chaise des visiteurs porte un numéro de vestiaire."
+      ],
+      "voisins": [
+        {
+          "id": "coconutpalace",
+          "texte": "Coconut Palace, au 112, fait monter des sandwichs dans une boîte réservée aux pochettes vides."
+        },
+        {
+          "id": "pixelpierarcade",
+          "texte": "Pixel Pier Arcade, au 116, prête de la monnaie pour le téléphone du palier."
+        },
+        {
+          "id": "bluewaverentals",
+          "texte": "Bluewave Rentals, au 128, signale les embruns avant que la fenêtre ne les annonce elle-même."
+        }
+      ],
+      "visite": "Au 120 Ocean Drive, cherchez les lettres turquoise au-dessus de l’ancienne vitrine à parasols. Prenez l’escalier latéral et montez au premier étage, jusqu’à la porte au petit soleil peint."
+    },
+    "en": {
+      "titre": "The first floor that learned to dance",
+      "quartier": "Beach",
+      "adresse": "120 Ocean Drive",
+      "batiment": "First floor of a former beach-umbrella depot, with a coral façade and turquoise TROPICANA lettering; the studio window faces the pier. Flat roof with blistered tar, patched around the hatch; vertical aerial with new fastenings and salt marks at its base.",
+      "histoire": [
+        "Before the brass arrived, 120 Ocean Drive stored rental beach umbrellas. Upstairs, people repaired ribs and counted canvas covers, always one short when the stock came back. Their damp circles still mark the floorboards. When the depot closed, it left a cutting table, a key cupboard and the smell of warm canvas that salt makes almost sweet. The room overlooking the pier was cheaper because its window would not quite close. For a radio station hoping to let the bay inside, that sounded like a reasonable business proposition.",
+        "Tropicana moved in during June 1984. A turquoise lamp lit the console on the cutting table; the old compartments became a record library, arranged by sleeve width. The first broadcast was supposed to last twenty minutes. The building immediately began a longer career: neighbours brought up a chair, then coffee, then asked whether the chair could stay. The cupboard kept its umbrella labels. The compartment marked “strong wind” holds the quietest records, a programming decision for which nobody has volunteered to accept responsibility. An empty hook beside it is reserved for anything that cannot be filed.",
+        "The first difficulty came through the roof: rain crossed the tar and landed precisely between two buttons. The console moved, followed by the leak, on a schedule understood only by the roofer. Salt troubled the aerial more than wind; its fastenings were replaced individually, never during a solo. In August 1985, a sound check near the pier accidentally accompanied Dolores Van Pelt’s inauguration of a beach umbrella. Local shopkeepers recognised their station in the municipal loudspeakers. The recording returned upstairs with sand inside its case and became the first archive stored flat rather than upright.",
+        "Today, the stairs smell of coffee and drying rope. From the control chair, you see pedestrians choosing between the pier and one last ice cream; arcade coins can be heard whenever the door stays open. The setting sun crosses the imperfect window and lays an orange rectangle across the main fader. A cloth protects the equipment, a chair waits against the wall, and the umbrellas have passed their trade to the music: making a little patch of shade where everybody can stay for another record."
+      ],
+      "anecdotes": [
+        "The “children” compartment holds oversized sleeves.",
+        "An umbrella rib points to entries on the schedule.",
+        "The official recording keeps its original sand.",
+        "The third stair squeaks off the beat.",
+        "The visitors’ chair still has a cloakroom number."
+      ],
+      "voisins": [
+        {
+          "id": "coconutpalace",
+          "texte": "Coconut Palace at 112 sends sandwiches upstairs in a box reserved for empty record sleeves."
+        },
+        {
+          "id": "pixelpierarcade",
+          "texte": "Pixel Pier Arcade at 116 lends change for the landing telephone."
+        },
+        {
+          "id": "bluewaverentals",
+          "texte": "Bluewave Rentals at 128 reports spray before the window makes its own announcement."
+        }
+      ],
+      "visite": "At 120 Ocean Drive, look for turquoise letters above the former umbrella shopfront. Take the side staircase to the first floor and the door with a small painted sun."
+    }
+  },
+  "dejavu": {
+    "fr": {
+      "titre": "Le salon des silences conservés",
+      "quartier": "Downtown",
+      "adresse": "238 Front Street",
+      "batiment": "Deuxième étage d’un ancien salon d’essayage de rideaux ; plaque DÉJÀ VU en laiton terni, studio sur Front Street et les taxis. Toit de tuiles rapiécé au zinc ; antenne fine sur le pignon, légèrement inclinée mais fixations contrôlées.",
+      "histoire": [
+        "Le 238 Front Street vendait autrefois des rideaux sur mesure. Au deuxième étage, un salon permettait de comparer les tissus devant trois fausses fenêtres, dont une donnait sur un placard. Les clients s’asseyaient pour juger la chute du velours, puis restaient pour la fraîcheur. Après la fermeture, les portants partent mais les doubles tentures demeurent : personne ne peut les descendre sans démonter la rampe. Le propriétaire propose donc la pièce avec son silence inclus. Dans Downtown, où chaque klaxon possède une opinion, cette précision attire immédiatement l’attention de futurs gens de radio.",
+        "Déjà Vu commence ses émissions en décembre 1984, entre deux portants devenus étagères à disques. Les tentures absorbent les bruits de Front Street et les anciens miroirs servent à vérifier la fermeture des portes depuis la console. On conserve le petit podium d’essayage pour les ensembles de chambre ; quatre pieds de chaise y tiennent, à condition de ne pas vouloir aussi un public. La plaque de la station est gravée au dos d’un échantillon de laiton. Son premier règlement interdit seulement de poser une tasse sur une partition, même si la partition semble terminée.",
+        "Le grésillement de février 1985 manque de transformer cette discrétion en spécialité technique. Une connexion fatiguée transmet chaque vibration du monte-charge, lequel ne transporte plus que des cartons vides avec beaucoup de conviction. La plainte qui amène Lucie à la station provoque enfin sa réparation. La vraie fête arrive en septembre : un quatuor joue sur le podium pendant que les ouvriers de la 3e Avenue interrompent leur marteau-piqueur pour remplacer un foret. Les deux événements coïncident exactement pendant huit minutes. Une bande conserve ce concert, classé « extérieur momentanément consentant », et une photographie montre les quatre chaises sans personne debout autour.",
+        "Aujourd’hui, on entre dans une odeur de cire tiède et de thé, avec le froissement des pochettes plutôt que celui des robes. Depuis la vitre réelle, les taxis dessinent une portée jaune sous les stores. Le soleil couchant passe entre les immeubles et dore les anciennes marques d’ourlet, toujours visibles au mur. Le toit tient grâce à ses reprises de zinc ; l’antenne penche juste assez pour susciter des lettres. Dans le placard derrière la fausse fenêtre, un coussin attend encore le client qui souhaitera entendre la différence entre deux velours."
+      ],
+      "anecdotes": [
+        "La fausse fenêtre porte une poignée parfaitement fonctionnelle.",
+        "Le monte-charge affiche « silence en transport ».",
+        "Les chaises du quatuor ont des semelles de feutre numérotées.",
+        "Un échantillon de velours sert de pochette au registre.",
+        "La plaque est astiquée seulement du côté des lettres."
+      ],
+      "voisins": [
+        {
+          "id": "nightshiftfinance",
+          "texte": "Nightshift Finance, au 234, prête une lampe verte pour lire les petites annotations des partitions."
+        },
+        {
+          "id": "goldenpawn",
+          "texte": "Golden Pawn, au 244, réserve ses supports de disques les moins grinçants au studio."
+        },
+        {
+          "id": "silvercabservice",
+          "texte": "Silver Cab Service, au 230, attend les invités sans klaxonner sous les tentures."
+        }
+      ],
+      "visite": "Au 238 Front Street, entrez sous la plaque de laiton et empruntez l’escalier intérieur. Au deuxième étage, suivez le tapis jusqu’à la seule fenêtre qui donne vraiment dehors."
+    },
+    "en": {
+      "titre": "The room where silence is kept",
+      "quartier": "Downtown",
+      "adresse": "238 Front Street",
+      "batiment": "Second floor of a former curtain fitting showroom; tarnished brass DÉJÀ VU plaque, studio overlooking Front Street and its taxis. Tiled roof repaired with zinc; slender aerial on the gable, slightly leaning with inspected fastenings.",
+      "histoire": [
+        "Number 238 Front Street once sold made-to-measure curtains. On the second floor, a fitting room let customers compare fabrics against three false windows, one opening onto a cupboard. People sat down to judge how velvet hung, then stayed for the cool air. When the business closed, the rails left but the heavy curtains remained: nobody could carry them downstairs without removing the banister. The landlord therefore offered the room with its silence included. In Downtown, where every car horn has an opinion, that particular detail immediately interested a few prospective radio people.",
+        "Déjà Vu began broadcasting in December 1984 between two hanging rails converted into record shelves. The curtains absorbed Front Street while old mirrors let the desk operator check the doors without getting up. The fitting platform stayed for chamber ensembles; four chair legs would fit, provided nobody also required an audience. The station plaque was engraved on the back of a brass sample. Its first house rule simply forbade placing a cup on a score, even if the score appeared to be finished. An extra saucer was purchased to remove any possible doubt about where cups belonged.",
+        "A crackle in February 1985 nearly turned this discretion into a technical speciality. A worn connection transmitted every vibration from the goods lift, which now carried empty cartons with considerable determination. The complaint that brought Lucie to the station finally prompted repairs. The real celebration came in September: a quartet played on the platform while workers on the 3e Avenue stopped their jackhammer to change a drill bit. The events coincided for precisely eight minutes. A tape preserves the concert under “temporarily cooperative exterior”; a photograph shows all four chairs with nobody standing around them.",
+        "Today, warm polish and tea greet visitors, with the rustle of sleeves replacing the rustle of dresses. Through the actual window, taxis draw a yellow musical staff beneath the blinds. The setting sun slips between buildings and gilds the old hem marks still visible on the wall. Zinc repairs keep the roof sound; the aerial leans just enough to encourage correspondence. In the cupboard behind the false window, a cushion still waits for the customer who may wish to hear the difference between two kinds of velvet."
+      ],
+      "anecdotes": [
+        "The false window has a fully working handle.",
+        "The lift sign reads “silence in transit”.",
+        "The quartet chairs have numbered felt soles.",
+        "A velvet sample covers the register.",
+        "Only the lettered side of the plaque gets polished."
+      ],
+      "voisins": [
+        {
+          "id": "nightshiftfinance",
+          "texte": "Nightshift Finance at 234 lends a green lamp for the smallest score annotations."
+        },
+        {
+          "id": "goldenpawn",
+          "texte": "Golden Pawn at 244 reserves its least squeaky record stands for the studio."
+        },
+        {
+          "id": "silvercabservice",
+          "texte": "Silver Cab Service at 230 waits for guests without sounding horns beneath the curtains."
+        }
+      ],
+      "visite": "Enter beneath the brass plaque at 238 Front Street and use the indoor staircase. On the second floor, follow the carpet to the only window that really looks outside."
+    }
+  },
+  "vicej": {
+    "fr": {
+      "titre": "La salle de démonstration devenue horizon",
+      "quartier": "Downtown",
+      "adresse": "252 Front Street",
+      "batiment": "Premier étage d’un ancien comptoir d’importation de radios-cassettes ; enseigne VICE J rose sur verre dépoli, fenêtre vers Front Street et le pont est au loin. Toit-terrasse étanchéifié par bandes visibles ; antenne droite, embase repeinte et câble protégé dans une gaine ivoire.",
+      "histoire": [
+        "Au 252 Front Street, les cartons ont précédé les chansons. Le bâtiment abritait un comptoir d’importation de radios-cassettes ; au premier étage, une salle de démonstration possédait six prises et une unique chaise tournée vers la baie. Les clients pouvaient comparer les haut-parleurs en regardant le pont est, dont l’immobilité offrait un excellent sujet de comparaison. En mars 1984, les livraisons occupaient encore le palier. Une cloison conserve leurs marques de hauteur au crayon, graduées en boîtes plutôt qu’en centimètres. Le local sentait le carton neuf, la mousse d’emballage et les câbles sortis du sachet.",
+        "Vice J naît dans cette salle à l’automne 1984, lorsque les démonstrations deviennent plus attendues que les appareils. Le comptoir se replie au rez-de-chaussée ; une console remplace la rangée de magnétophones et les pochettes trouvent place dans les tiroirs à notices. Une cassette rendue avec un conducteur minuté fixe la méthode de la station : préparer avec précision, puis laisser la musique ouvrir les fenêtres. Les anciennes étiquettes « essai » restent sur les boutons inutilisés. Le casier provisoire de Sakura rejoint les installations durables, sans qu’il soit nécessaire de trancher la question de son nom.",
+        "Le premier ennemi est la chaleur emprisonnée derrière le verre dépoli. Les appareils ralentissent, le ventilateur ajoute sa propre percussion et une livraison de mousse transforme involontairement l’entrée en tunnel acoustique. On améliore l’aération, protège le câble du toit et conserve deux panneaux pour isoler la régie. En septembre 1985, la minute enregistrée au pont est devient une émission spéciale : soixante secondes de klaxons entre deux morceaux, présentées sans les raccourcir. Des auditeurs téléphonent pour reconnaître leur voiture. La station garde le relevé des appels, première preuve écrite que son paysage sonore possède lui aussi un public.",
+        "Aujourd’hui, on voit depuis le studio le ruban des taxis, un coin de ciel et le pont toujours levé. Les portes des tiroirs claquent doucement ; l’introduction de Star Child revient toutes les trois pistes. Une odeur de papier tiède monte des notices que personne ne jette. Le soleil couchant colore de rose le verre dépoli et les bandes d’étanchéité du toit deviennent dorées. La chaise de démonstration est encore là, face à la baie : on peut s’y asseoir sans acheter d’appareil, et repartir avec une chanson en tête suffit largement au comptoir."
+      ],
+      "anecdotes": [
+        "Les notices sont rangées par format, les morceaux par humeur.",
+        "Une boîte vide porte « fragile : silence ».",
+        "La chaise garde son ancien prix barré.",
+        "Le ventilateur figure sur une fiche technique de percussion.",
+        "Le tiroir des retours contient des cartes postales."
+      ],
+      "voisins": [
+        {
+          "id": "futurephone",
+          "texte": "Future Phone, au 248, prête des câbles de démonstration que la station étiquette avant de les rendre."
+        },
+        {
+          "id": "goldenpawn",
+          "texte": "Golden Pawn, au 244, met de côté les magnétophones avec leur alimentation complète."
+        },
+        {
+          "id": "nightshiftfinance",
+          "texte": "Nightshift Finance, au 234, conserve au sec une copie papier du budget des réparations."
+        }
+      ],
+      "visite": "Au 252 Front Street, passez la vitrine aux anciens cartons de démonstration. Montez au premier étage jusqu’au verre dépoli portant les lettres roses VICE J."
+    },
+    "en": {
+      "titre": "The demonstration room that became a horizon",
+      "quartier": "Downtown",
+      "adresse": "252 Front Street",
+      "batiment": "First floor of a former radio-cassette import showroom; pink VICE J letters on frosted glass, window facing Front Street with the east bridge in the distance. Terrace roof with visible waterproofing strips; straight aerial, repainted base and cable in an ivory protective sleeve.",
+      "histoire": [
+        "At 252 Front Street, cartons came before songs. The building housed a radio-cassette import counter; upstairs, a demonstration room contained six sockets and one chair facing the bay. Customers could compare loudspeakers while watching the east bridge, whose immobility offered an excellent basis for comparison. In March 1984, deliveries still crowded the landing. One partition retains their pencilled height marks, measured in boxes rather than centimetres. The room smelled of new cardboard, packing foam and cables freshly removed from their bags. Nobody had yet worked out how to put a price on the view.",
+        "Vice J began in that room in autumn 1984, when people started anticipating demonstrations more eagerly than the equipment. The sales counter retreated downstairs; a console replaced the row of tape decks and record sleeves filled the manual drawers. A returned demonstration cassette with a precisely timed running order established the station’s method: prepare carefully, then let the music open the windows. Old “test” labels stayed on unused controls. Sakura’s temporary locker joined the permanent fittings without anyone having to settle the question of its name. The single demonstration chair remained available to listeners who arrived without an appointment.",
+        "Heat trapped behind frosted glass was the first enemy. Machines slowed down, the fan supplied its own percussion, and a foam delivery accidentally turned the entrance into an acoustic tunnel. Ventilation improved, the roof cable received protection, and two panels stayed to insulate the control room. In September 1985, the minute recorded at the east bridge became a special broadcast: sixty seconds of horns between two tracks, presented without shortening them. Listeners called to identify their cars. The station kept the call sheet, its first written proof that the surrounding soundscape also had an audience.",
+        "Today, the studio overlooks a ribbon of taxis, a piece of sky and the bridge still raised. Drawer fronts close with a gentle click; the Star Child introduction returns every three tracks. Warm paper scents the manuals that nobody throws away. The setting sun turns the frosted glass pink and makes the roof’s waterproofing strips shine gold. The demonstration chair remains in position, facing the bay: visitors may sit without buying a machine, and leaving with a song in their heads is now considered a perfectly satisfactory result for the counter."
+      ],
+      "anecdotes": [
+        "Manuals are sorted by size, songs by mood.",
+        "An empty box reads “fragile: silence”.",
+        "The chair retains its crossed-out price.",
+        "The fan appears on a percussion specification sheet.",
+        "The returns drawer holds postcards."
+      ],
+      "voisins": [
+        {
+          "id": "futurephone",
+          "texte": "Future Phone at 248 lends demonstration cables, labelled by the station before their return."
+        },
+        {
+          "id": "goldenpawn",
+          "texte": "Golden Pawn at 244 sets aside tape decks with their complete power supplies."
+        },
+        {
+          "id": "nightshiftfinance",
+          "texte": "Nightshift Finance at 234 keeps a paper copy of the repair budget dry."
+        }
+      ],
+      "visite": "At 252 Front Street, pass the window displaying old demonstration cartons. Climb to the first floor and the frosted glass bearing pink VICE J letters."
+    }
+  },
+  "emotion": {
+    "fr": {
+      "titre": "Le bureau des lettres qui restent",
+      "quartier": "Downtown",
+      "adresse": "216 Front Street",
+      "batiment": "Premier étage d’un ancien bureau de correspondance commerciale ; enseigne ÉMOTION rouge voilée par un abat-jour, studio sur Front Street et les fleurs du 212. Toit en zinc mat, une ancienne soudure reprise ; antenne courte sur un mât solide, câble fixé loin de la gouttière.",
+      "histoire": [
+        "Le premier étage du 216 Front Street était un bureau de correspondance commerciale. On y tapait des devis, des relances et des lettres recommandées sur trois machines dont les housses ne correspondaient jamais. Les clients attendaient dans un couloir étroit, sous une horloge arrêtée à deux heures. Après le départ des dactylographes, restent les casiers, une lampe à abat-jour et un tiroir plein de carbone inutilisé. Le local n’a rien de spectaculaire : sa fenêtre donne sur les fleurs du trottoir voisin, et son calme dépend du passage des taxis. C’est précisément ce qui le rend habitable.",
+        "Émotion s’installe en novembre 1984 pour diffuser des ballades depuis une pièce qui sait déjà attendre une réponse. Les casiers deviennent un classement de dédicaces ; la table centrale reçoit une console sur un rectangle de feutre. On conserve l’horloge, parce que sa réparation coûte davantage que le premier lot de cassettes. La lumière rouge de l’enseigne traverse l’ancien abat-jour posé devant la vitre. Le résultat évoque une veilleuse de couloir. Un technicien propose quelque chose de plus visible ; le premier courrier reçu remercie au contraire la station de ne pas éblouir les appartements d’en face.",
+        "En janvier 1985, une dédicace mal classée entraîne l’appel qui installe Marie au micro. Le bâtiment trouve alors son usage définitif : garder les voix assez longtemps pour qu’elles atteignent quelqu’un. Il faut pourtant combattre une gouttière bavarde, dont chaque goutte résonne dans le conduit de ventilation. La réparation du toit coupe ce solo involontaire sans toucher au reste. Le grand moment arrive en février 1986 : la simple confirmation d’une livraison de fleurs suscite onze réconciliations. Pendant trois jours, le palier reçoit des enveloppes de remerciement et deux bouquets sans destinataire ; on leur ouvre une ligne dans le registre plutôt que de choisir pour eux.",
+        "Aujourd’hui, les sacs de courrier frottent contre la rampe et les bouquets parfument l’air déjà tiède. Depuis la régie, on voit les chauffeurs attendre devant les vitrines, les mains posées sur le volant comme sur une table. Régis préfère les lettres urgentes au coussin prévu pour lui. Le soleil couchant éclaire le zinc réparé puis glisse sous les stores ; dans la pièce, il est toujours deux heures du matin. Une enveloppe vide reste près du téléphone. Elle réserve une place à la réponse, même lorsque personne ne sait encore quelle question poser."
+      ],
+      "anecdotes": [
+        "Le tiroir de carbone est étiqueté « doubles des silences ».",
+        "Une règle maintient les enveloppes à distance du fader.",
+        "Le registre distingue fleurs reçues et fleurs attendues.",
+        "La sonnette porte « une fois suffit ».",
+        "L’horloge est dépoussiérée sans être remontée."
+      ],
+      "voisins": [
+        {
+          "id": "bluerosesflorist",
+          "texte": "Blue Roses Florist, au 212, apporte des bouquets et vérifie les bordereaux avant toute lecture."
+        },
+        {
+          "id": "moonlightcleaners",
+          "texte": "Moonlight Cleaners, au 208, nettoie le rideau de la régie sans faire disparaître son pli central."
+        },
+        {
+          "id": "silvercabservice",
+          "texte": "Silver Cab Service, au 230, ramène les invités après les dédicaces les plus longues."
+        }
+      ],
+      "visite": "Au 216 Front Street, repérez la lueur rouge derrière l’abat-jour de la fenêtre haute. Montez un étage et sonnez une seule fois à la porte aux casiers de courrier."
+    },
+    "en": {
+      "titre": "The office for letters that stay",
+      "quartier": "Downtown",
+      "adresse": "216 Front Street",
+      "batiment": "First floor of a former business correspondence office; red ÉMOTION sign softened by a lampshade, studio overlooking Front Street and the flowers at 212. Dull zinc roof with a repaired old seam; short aerial on a firm mast, cable secured clear of the gutter.",
+      "histoire": [
+        "The first floor of 216 Front Street was once a business correspondence office. Quotations, reminders and registered letters emerged from three typewriters whose covers never matched. Customers waited in a narrow corridor beneath a clock stopped at two. When the typists left, they abandoned pigeonholes, a shaded lamp and a drawer of unused carbon paper. Nothing about the premises was spectacular: its window overlooked flowers on the neighbouring pavement, and its peace depended on passing taxis. That was precisely what made the place habitable. You could imagine waiting there without having to explain why.",
+        "Émotion moved in during November 1984 to broadcast ballads from a room already experienced in waiting for replies. The pigeonholes became a dedication system; the central table received a console on a rectangle of felt. The clock stayed because repairing it cost more than the first batch of tapes. Red light from the sign passed through the old lampshade placed against the window, producing something like a corridor night-light. A technician suggested greater visibility; the first letter received instead thanked the station for sparing the flats opposite a dazzling advertisement. The lampshade immediately became a permanent fitting.",
+        "In January 1985, a misfiled dedication prompted the call that brought Marie to the microphone. The building found its lasting purpose: holding voices long enough for them to reach somebody. A talkative gutter still required attention, each drop resonating through the ventilation duct. Repairing the roof ended this uninvited solo without changing the room. The great moment came in February 1986: an ordinary flower-delivery confirmation prompted eleven reconciliations. For three days, thank-you envelopes and two bouquets without recipients arrived on the landing; the bouquets received their own register entry rather than having a destination chosen for them.",
+        "Today, mailbags brush the banister and flowers scent the already warm air. From the desk, drivers can be seen waiting outside shopfronts, hands resting on steering wheels as though on a table. Régis prefers urgent letters to his designated cushion. The setting sun lights the repaired zinc before slipping beneath the blinds; inside, it remains two in the morning. An empty envelope waits beside the telephone. It keeps a place for the reply, even when nobody yet knows which question to ask, or how long an answer might reasonably take."
+      ],
+      "anecdotes": [
+        "The carbon drawer is labelled “copies of silences”.",
+        "A ruler keeps envelopes away from the fader.",
+        "The register separates flowers received from flowers expected.",
+        "The bell says “once is enough”.",
+        "The clock is dusted without being wound."
+      ],
+      "voisins": [
+        {
+          "id": "bluerosesflorist",
+          "texte": "Blue Roses Florist at 212 delivers bouquets and checks receipts before any reading."
+        },
+        {
+          "id": "moonlightcleaners",
+          "texte": "Moonlight Cleaners at 208 cleans the studio curtain without removing its central fold."
+        },
+        {
+          "id": "silvercabservice",
+          "texte": "Silver Cab Service at 230 takes guests home after the longest dedications."
+        }
+      ],
+      "visite": "At 216 Front Street, look for the red glow behind the lampshade in the upper window. Climb one flight and ring once at the door beside the mail compartments."
+    }
+  },
+  "sunset": {
+    "fr": {
+      "titre": "La cabine qui a gardé la route",
+      "quartier": "Highway",
+      "adresse": "454 Palmetto Drive",
+      "batiment": "Premier étage d’un ancien bureau de pesée routière ; enseigne SUNSET DRIVE orange, vitre panoramique sur Palmetto Drive et la file de l’échangeur 9. Toit de béton plat aux joints repris, auvent cabossé ; antenne haubanée droite, peinture écaillée sur le pied mais câble neuf.",
+      "histoire": [
+        "Au 454 Palmetto Drive, on pesait autrefois des chargements de carrelage. La balance était dans la cour ; le bureau du premier étage donnait au préposé une vue complète sur les camions et une vue partielle sur son déjeuner. Il reste un guichet coulissant, un calendrier périmé et des fiches où le mot « vide » prend des valeurs étonnantes. Lorsque la pesée ferme, la grande vitre devient le principal argument du bail. Elle donne sur la route, sur les voitures arrêtées et sur une portion de ciel assez large pour justifier n’importe quel détour annoncé à l’antenne.",
+        "Sunset Drive commence à émettre en mars 1985. On pose les platines là où reposaient les bordereaux ; le guichet reçoit les cassettes apportées par les conducteurs. Un petit panneau « avancez lentement » reste accroché devant l’escalier, conseil parfaitement adapté aux heures de pointe. Le studio adopte les synthétiseurs parce qu’ils semblent prolonger les lignes de la chaussée jusqu’à la baie. Les premiers auditeurs reconnaissent le bâtiment à son auvent cabossé. Personne ne le redresse : il protège correctement la porte, et le devis de remplacement dépasse le prix de toute la régie réunie.",
+        "En mai 1985, la confusion entre une file au comptoir et un bouchon routier apporte une nouvelle voix au studio. Elle n’arrange pas les difficultés du lieu : chaque camion fait vibrer le guichet et le climatiseur n’accepte de travailler qu’avec un seau dessous. On ajoute des joints, un support souple sous les platines et une fiche de vidange du seau. En octobre, les conducteurs coincés à l’échangeur 9 demandent le même morceau depuis sept voitures différentes. La station le diffuse une fois, puis laisse chacun klaxonner sa mesure, fenêtres fermées au studio. Le relevé des appels devient une carte collective du bouchon.",
+        "Aujourd’hui, la régie sent le café transporté dans des gobelets et le plastique chaud des cassettes. On entend les pneus sur les raccords de chaussée entre deux nappes de synthétiseur. Le soleil couchant se reflète dans les pare-brise et entre par la vitre comme un projecteur sans interrupteur. La route paraît avancer jusque sous la console, même lorsque les voitures restent immobiles. Au guichet, quelqu’un a déposé une carte annotée « presque arrivé ». La station la conserve à côté des anciennes pesées : ici, une attente peut enfin être accompagnée sans avoir besoin d’être raccourcie."
+      ],
+      "anecdotes": [
+        "Le seau du climatiseur possède sa propre fiche de service.",
+        "Le guichet ferme sur un joint orange.",
+        "Une ancienne masse sert de serre-livres.",
+        "Le calendrier périmé indique toujours « départ ».",
+        "Le panneau de pesée compte désormais les cassettes reçues."
+      ],
+      "voisins": [
+        {
+          "id": "highwaydiner",
+          "texte": "Highway Diner, au 450, fournit le café et distingue soigneusement sa file du bouchon routier."
+        },
+        {
+          "id": "sunsetgarage",
+          "texte": "Sunset Garage, au 442, prête les supports souples qui empêchent les platines de suivre les camions."
+        },
+        {
+          "id": "palmettodrivein",
+          "texte": "Palmetto Drive-In, au 468, échange ses programmes papier contre les horaires des émissions."
+        }
+      ],
+      "visite": "Au 454 Palmetto Drive, cherchez l’auvent cabossé sous les lettres orange. Entrez par l’ancienne porte des bordereaux et montez à la grande vitre du premier étage."
+    },
+    "en": {
+      "titre": "The booth that kept the road",
+      "quartier": "Highway",
+      "adresse": "454 Palmetto Drive",
+      "batiment": "First floor of a former freight weighing office; orange SUNSET DRIVE sign, panoramic window facing Palmetto Drive and the interchange 9 queue. Flat concrete roof with repaired joints, dented canopy; straight guyed aerial with flaking base paint but a new cable.",
+      "histoire": [
+        "Number 454 Palmetto Drive once weighed loads of floor tiles. The scale stood in the yard; the first-floor office gave its attendant a complete view of trucks and a partial view of lunch. A sliding service window, an expired calendar and forms assigning surprising values to “empty” remain. When weighing operations closed, the broad window became the lease’s main attraction. It overlooked the road, stationary cars and enough sky to justify almost any scenic diversion announced on air. The abandoned scale stayed outside because moving it required a vehicle considerably larger than anyone wanted to book.",
+        "Sunset Drive began broadcasting in March 1985. Turntables took the place of dispatch forms; drivers handed tapes through the service window. A small “proceed slowly” sign remained beside the staircase, advice ideally suited to rush hour. The studio adopted synthesisers because they seemed to extend the road markings all the way towards the bay. Early listeners recognised the building by its dented canopy. Nobody straightened it: the door stayed dry, and the replacement estimate exceeded the cost of the entire control desk. The old weighing tickets became scrap paper for requests, with the weight column left deliberately blank.",
+        "In May 1985, confusion between a counter queue and a traffic jam brought a new voice upstairs. It did not solve the building’s difficulties: every truck rattled the service window, and the air conditioner would work only with a bucket underneath. New seals, flexible turntable mounts and a bucket-emptying chart followed. In October, drivers stuck at interchange 9 requested the same track from seven different cars. The station played it once, letting everybody honk their measure while keeping the studio windows shut. The call sheet became a collective map of the queue, complete with seven competing estimates of its length.",
+        "Today, the control room smells of takeaway coffee and warm cassette plastic. Tyres crossing road joints can be heard between synthesiser chords. The setting sun reflects from windscreens and enters through the broad glass like a spotlight without a switch. The road seems to continue beneath the console even when every car stays still. Someone has left a map marked “nearly there” at the service window. The station keeps it beside the old weighing forms: here, a wait can finally have company without anybody having to promise that it will become shorter."
+      ],
+      "anecdotes": [
+        "The air-conditioner bucket has its own service chart.",
+        "The service window closes against an orange seal.",
+        "An old scale weight supports the books.",
+        "The expired calendar still says “departure”.",
+        "The weighing board now counts incoming tapes."
+      ],
+      "voisins": [
+        {
+          "id": "highwaydiner",
+          "texte": "Highway Diner at 450 supplies coffee and carefully distinguishes its queue from road traffic."
+        },
+        {
+          "id": "sunsetgarage",
+          "texte": "Sunset Garage at 442 lends flexible mounts that stop the turntables following passing trucks."
+        },
+        {
+          "id": "palmettodrivein",
+          "texte": "Palmetto Drive-In at 468 trades printed programmes for broadcast schedules."
+        }
+      ],
+      "visite": "At 454 Palmetto Drive, find the dented canopy beneath the orange lettering. Enter through the former paperwork door and climb to the broad first-floor window."
+    }
+  },
+  "neon": {
+    "fr": {
+      "titre": "Le quarantième étage en mode démonstration",
+      "quartier": "Skyline",
+      "adresse": "324 Front Street",
+      "batiment": "Quarantième étage d’une tour de bureaux, ancien local de contrôle d’ascenseurs ; enseigne NEON cyan derrière une vitre fumée, vue sur la grue et les terrasses voisines. Toit technique au revêtement fatigué mais sec ; antenne verticale sur socle renforcé, voyant de contrôle intact.",
+      "histoire": [
+        "Le 324 Front Street fut construit avec un local de contrôle beaucoup trop grand au quarantième étage. Les ascenseurs occupaient les gaines, les techniciens occupaient deux chaises, et le reste de la pièce servait à stocker des plans que personne ne pouvait déplier entièrement. Quand le contrôle descend dans un local plus pratique, il reste une vitre fumée, des rangées de passe-câbles et un tableau lumineux qui annonce des étages sans transporter personne. La vue donne sur la grue de Skyline et les terrasses voisines. Le bail décrit l’espace comme « immédiatement disponible », à la différence de l’ascenseur certains jours.",
+        "En octobre 1985, NEON y transforme un essai de haut-parleurs en émission permanente. Une cassette issue des essais techniques du Pixel Palace, à Downtown, fournit les premiers bips et l’annonce de fréquence. Les passe-câbles accueillent la régie ; les vieux plans deviennent des fonds de tiroirs, conservés pour leurs lignes nettes. L’isolation du local convient aux sons courts, aux basses carrées et aux silences mesurés. Le tableau d’étages sert de décor, avec une étiquette précisant qu’il ne donne aucune information utile. Les visiteurs continuent pourtant à le consulter avant de demander si le studio est bien arrivé.",
+        "La hauteur apporte des soucis minuscules et obstinés : un relais claque derrière la cloison, l’antenne capte les vibrations d’un ventilateur et les rouleaux de calcul se déroulent vers la porte. On remplace les attaches, isole le relais et installe un bac à papier profond. En avril 1986, la mesure du bouchon de l’échangeur 9 en parties d’arcade impose un second rouleau. Dolores Van Pelt inaugure son support, au lieu d’inaugurer la grue toujours coincée dans la vue. La photographie officielle montre surtout le bac. La station classe ce moment parmi ses rares événements dont la durée dépasse celle du silence qui les précède.",
+        "Aujourd’hui, les boutons éclairés font des carrés sur le verre et la ventilation sent la poussière chauffée. Les terrasses semblent proches ; leurs conversations n’arrivent jamais jusque-là. On entend seulement les puces sonores, le frottement du papier et le déclic de la porte technique. Le soleil couchant traverse Skyline, transforme la grue en trait noir et dépose une bande cuivrée sur la console. Le tableau affiche encore un étage imaginaire. Ici, personne ne lui demande de mener quelque part : une fréquence stable est déjà une destination suffisamment précise."
+      ],
+      "anecdotes": [
+        "Le tableau d’étages porte « affichage sans déplacement ».",
+        "Le bac à calcul accepte exactement deux rouleaux.",
+        "La vitre conserve une graduation de niveau sonore.",
+        "Une chaise est marquée « opérateur absent ».",
+        "Le bouton sans fonction est le plus propre."
+      ],
+      "voisins": [
+        {
+          "id": "seabreezeterrace",
+          "texte": "Seabreeze Terrace, au 320, prête des pinces pour retenir les feuilles près de la ventilation."
+        },
+        {
+          "id": "laserlounge",
+          "texte": "Laser Lounge, au 328, échange des ampoules contre les vieux schémas de lumière du local."
+        },
+        {
+          "id": "futurephone",
+          "texte": "Future Phone, au 248 dans Downtown, fournit des câbles lors des déplacements entre les deux quartiers de Front Street."
+        }
+      ],
+      "visite": "Au 324 Front Street, prenez l’ascenseur du hall jusqu’au quarantième étage. Suivez les passe-câbles apparents vers la vitre fumée éclairée en cyan, sans suivre le tableau lumineux."
+    },
+    "en": {
+      "titre": "The fortieth floor in demonstration mode",
+      "quartier": "Skyline",
+      "adresse": "324 Front Street",
+      "batiment": "Fortieth floor of an office tower, formerly an oversized lift-control room; cyan NEON sign behind smoked glass, overlooking the crane and neighbouring terraces. Technical roof with worn but dry covering; vertical aerial on a reinforced base, inspection indicator intact.",
+      "histoire": [
+        "Number 324 Front Street was built with a much oversized control room on the fortieth floor. Lifts occupied the shafts, technicians occupied two chairs, and the remaining space held plans nobody could unfold completely. When control operations moved to a more convenient room below, smoked glass, rows of cable channels and a light board announcing floors without transporting anyone remained. The window overlooked the Skyline crane and neighbouring terraces. The lease described the space as “immediately available”, unlike the lift on certain days. Two abandoned chairs were included, although the inventory carefully declined to assess their comfort.",
+        "In October 1985, NEON turned a loudspeaker test there into a permanent broadcast. A cassette from technical trials at Pixel Palace in Downtown supplied the opening beeps and frequency announcement. Cable channels welcomed the desk wiring; old plans became drawer liners, retained for their clean lines. The room’s insulation suited short sounds, square bass and measured silences. The floor board stayed as scenery, with a label explaining that it provided no useful information. Visitors continued checking it before asking whether the studio had arrived. An arrow was eventually added to the actual door, reducing enquiries without improving the board.",
+        "Height brought small, stubborn problems: a relay clicked behind the partition, the aerial picked up a fan’s vibrations, and calculation rolls unwound towards the door. New fastenings, relay insulation and a deep paper tray followed. In April 1986, measuring the interchange 9 queue in arcade games required a second roll. Dolores Van Pelt inaugurated its holder instead of the crane still stuck outside the window. The official photograph mostly shows the tray. The station filed this among its rare events lasting longer than the silence preceding them; the corresponding paper record extends across the back of the photograph.",
+        "Today, illuminated controls cast squares on the glass and the ventilation smells of heated dust. The terraces appear close, but their conversations never reach this height. Only sound chips, sliding paper and the technical door’s latch can be heard. The setting sun passes through Skyline, turns the crane into a black line and places a copper band across the console. The board still displays an imaginary floor. Nobody asks it to lead anywhere here: a steady frequency is already considered a destination precise enough to justify the journey upstairs."
+      ],
+      "anecdotes": [
+        "The floor board says “display without movement”.",
+        "The calculation tray holds exactly two rolls.",
+        "The glass retains a sound-level graduation.",
+        "One chair is marked “operator absent”.",
+        "The functionless button is the cleanest."
+      ],
+      "voisins": [
+        {
+          "id": "seabreezeterrace",
+          "texte": "Seabreeze Terrace at 320 lends clips to hold papers near the ventilation."
+        },
+        {
+          "id": "laserlounge",
+          "texte": "Laser Lounge at 328 trades bulbs for old lighting diagrams from the room."
+        },
+        {
+          "id": "futurephone",
+          "texte": "Future Phone at 248 in Downtown supplies cables during trips between the two Front Street districts."
+        }
+      ],
+      "visite": "At 324 Front Street, take the lobby lift to the fortieth floor. Follow the exposed cable channels towards cyan-lit smoked glass, ignoring the illuminated floor board."
+    }
+  },
+  "volt": {
+    "fr": {
+      "titre": "Un endroit, cuve supérieure",
+      "quartier": "Everglades",
+      "adresse": "622 Palmetto Drive",
+      "batiment": "Ancien réservoir d’eau rectangulaire vidé, sur pilotis, aménagé en pièce au-dessus d’un appentis ; plaque UN ENDROIT vissée de travers, hublot vers le marécage. Toit de tôle bosselée étanche après reprise des joints ; antenne sur bride extérieure, droite malgré son fanion incliné.",
+      "histoire": [
+        "Au 622 Palmetto Drive, un ancien réservoir d’eau sur pilotis domine un appentis de pompage. Sa cuve rectangulaire n’a plus alimenté personne depuis le remplacement des canalisations ; elle conserve une graduation intérieure qui atteint « plein » bien au-dessus d’une tête assise. L’accès se fait par un escalier extérieur ajouté pour l’entretien, avec une rambarde solide et une dernière marche plus large. Autour, le marécage sent la vase chaude et les feuilles froissées. Sur l’inventaire, le réservoir est décrit comme un volume disponible. Personne n’avait imaginé que ce volume serait d’abord celui d’une basse.",
+        "VOLT y branche son montage pirate en décembre 1984. On nettoie la cuve, pose un plancher sec, puis installe une console sur l’ancien support de jauge. Le hublot de visite devient une fenêtre ; l’appentis abrite les caisses vides, en attendant une fonction plus prestigieuse. Le studio reçoit une plaque « UN ENDROIT », suffisamment précise pour les habitués et parfaitement fidèle aux annonces d’antenne. La radio ne prétend pas que l’adresse n’existe pas : elle considère simplement qu’un réservoir ayant perdu son eau mérite de choisir ce qui le remplit désormais. Le funk obtient rapidement l’unanimité des deux chaises.",
+        "Les premières émissions révèlent une réverbération magnifique pour une goutte et épouvantable pour une phrase. Des panneaux amovibles et des tapis réduisent l’écho ; la graduation reste visible pour vérifier qu’on ne dépasse pas le niveau réglementaire d’enthousiasme. Un joint de toiture cède ensuite au-dessus du rangement des pochettes, vite déplacé. En décembre 1985, la vieille radio de Marshline Salvage reçoit parfaitement VOLT pendant qu’on change une attache d’antenne. Ada inscrit « réception correcte » et fait parvenir la note au réservoir. C’est la première attestation technique extérieure de la station. Elle est encadrée dans un vieux hublot, sans être transformée en autorisation de quoi que ce soit.",
+        "Aujourd’hui, les moustiques attendent à l’extérieur de la moustiquaire et les pilotis transmettent un léger grondement de pas. Depuis le siège, on voit le ponton, les herbes et un carré d’eau où le ciel paraît rangé à plat. Les morceaux passent avec du souffle, du boogie et une odeur de câble tiède. Le soleil couchant fait briller les bosses du toit ; l’ombre de l’antenne traverse la graduation « vide ». Le réservoir ne contient toujours pas d’eau. Il contient exactement de quoi accompagner ceux qui en ont autour d’eux."
+      ],
+      "anecdotes": [
+        "La graduation « plein » se trouve au-dessus des archives.",
+        "La jauge indique « réception » au crayon.",
+        "Le hublot encadrant la note ne donne plus dehors.",
+        "L’appentis possède une caisse étiquetée « autre endroit ».",
+        "Le fanion penche ; l’antenne reste droite."
+      ],
+      "voisins": [
+        {
+          "id": "marshlinesalvage",
+          "texte": "Marshline Salvage, au 618, a fourni le hublot d’encadrement et conserve son propre poste à l’abri."
+        },
+        {
+          "id": "marshrunnertours",
+          "texte": "Marsh Runner Tours, au 626, vérifie l’état du ponton voisin sans promettre une visite du studio."
+        },
+        {
+          "id": "bayoubreakdowngarage",
+          "texte": "Bayou Breakdown Garage, au 610, prête des outils et rappelle que ses diagnostics concernent les voitures."
+        }
+      ],
+      "visite": "Au 622 Palmetto Drive, cherchez le réservoir sur pilotis portant la plaque « UN ENDROIT ». L’escalier extérieur mène à la porte du studio ; le ponton reste réservé aux bateaux."
+    },
+    "en": {
+      "titre": "A place, upper tank",
+      "quartier": "Everglades",
+      "adresse": "622 Palmetto Drive",
+      "batiment": "Emptied rectangular water tank on stilts, converted into a room above a pump lean-to; crookedly screwed UN ENDROIT plaque, inspection window facing the marsh. Dented sheet-metal roof watertight after seam repairs; straight aerial on an exterior bracket, despite its leaning pennant.",
+      "histoire": [
+        "At 622 Palmetto Drive, an old water tank on stilts overlooks a pumping lean-to. Its rectangular chamber has supplied nobody since the pipes were replaced; an interior scale still reaches “full” well above a seated person’s head. An exterior maintenance staircase provides access, with a firm handrail and an extra-wide final step. The surrounding marsh smells of warm mud and crumpled leaves. On the inventory, the tank is described as available volume. Nobody had imagined that this volume would first belong to a bass line, or that the empty chamber might acquire regular listeners.",
+        "VOLT connected its pirate setup there in December 1984. The chamber was cleaned, a dry floor installed, and a console placed on the former gauge support. The inspection opening became a window; the lean-to sheltered empty crates while they waited for a more distinguished purpose. A plaque reading “UN ENDROIT” named the studio precisely enough for regular visitors and faithfully matched the on-air phrase “a place”. The station never claimed the address did not exist: it simply felt that a tank deprived of water deserved a say in its new contents. Funk quickly won the unanimous approval of both chairs.",
+        "Early broadcasts revealed reverberation magnificent for a water drop and dreadful for a sentence. Removable panels and rugs reduced the echo; the scale stayed visible to check that enthusiasm did not exceed its regulation level. A roof seam then failed above the record sleeves, which were promptly relocated. In December 1985, the old radio at Marshline Salvage received VOLT perfectly while an aerial fastening was being changed. Ada wrote “reception correct” and sent the note over. It became the station’s first outside technical assessment, framed inside an old inspection window without being mistaken for permission to do anything whatsoever.",
+        "Today, mosquitoes wait outside the insect screen and the stilts transmit a gentle rumble of footsteps. From the chair, the view takes in a landing, reeds and a square of water where the sky appears filed flat. Records arrive with hiss, boogie and the smell of warm cable. The setting sun catches the dents in the roof; the aerial’s shadow crosses the mark labelled “empty”. The tank still contains no water. It contains exactly enough music to keep company with those who have water all around them, without asking them to explain where they are."
+      ],
+      "anecdotes": [
+        "The “full” mark sits above the archives.",
+        "The gauge is pencilled “reception”.",
+        "The window framing the note no longer faces outside.",
+        "A lean-to crate is labelled “another place”.",
+        "The pennant leans; the aerial stays straight."
+      ],
+      "voisins": [
+        {
+          "id": "marshlinesalvage",
+          "texte": "Marshline Salvage at 618 supplied the framing window and keeps its own radio sheltered."
+        },
+        {
+          "id": "marshrunnertours",
+          "texte": "Marsh Runner Tours at 626 checks the neighbouring landing without promising a studio visit."
+        },
+        {
+          "id": "bayoubreakdowngarage",
+          "texte": "Bayou Breakdown Garage at 610 lends tools and points out that its diagnostics cover cars."
+        }
+      ],
+      "visite": "At 622 Palmetto Drive, find the tank on stilts bearing the “UN ENDROIT” plaque. The exterior staircase leads to the studio door; the landing remains for boats."
+    }
+  }
+}

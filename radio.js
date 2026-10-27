@@ -243,12 +243,11 @@ function renderAds(){
   $('ad-grid').innerHTML=ADS.map(a=>{
     const s=S.find(v=>v.id===a.station), q=Q[a.q];
     const show=filter==='all'||filter==='q:'+a.q||filter==='s:'+a.station;
-    return '<button class="ad" type="button" data-ad="'+a.id+'" style="--q:'+q.c+';--c:'+s.c+'"'+(show?'':' hidden')+'>'+
+    return '<a class="ad" href="'+(lang==='fr'?'':'en/')+'pub/'+a.id+'.html" data-ad="'+a.id+'" style="--q:'+q.c+';--c:'+s.c+'"'+(show?'':' hidden')+'>'+
       '<img src="'+a.logo+'" alt="" loading="lazy" width="420" height="420"/>'+
-      '<b>'+esc(a.shop)+'</b><small><i></i>'+esc(s.name)+' '+s.f.toFixed(1)+' · '+esc(q[lang])+'</small></button>';
+      '<b>'+esc(a.shop)+'</b><small><i></i>'+esc(s.name)+' '+s.f.toFixed(1)+' · '+esc(q[lang])+'</small></a>';
   }).join('');
 }
-$('ad-grid').addEventListener('click',e=>{ const b=e.target.closest('[data-ad]'); if(b) openAd(b.dataset.ad); });
 
 function script(t){
   return t.split('\n').map(l=>{
@@ -617,7 +616,7 @@ document.addEventListener('keydown',ev=>{
 fetch('podcast.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).then(j=>{ POD=j; renderPodcast(); }).catch(()=>{ renderPodcast(); });
 
 /* plus de démarrage automatique : la radio ne part que sur un appui explicite (27/10/2026, Gabriel) */
-const fromHash=()=>{ if(location.hash.startsWith('#pub-')) openAd(location.hash.slice(5)); };
+const fromHash=()=>{ if(location.hash.startsWith('#pub-')) location.replace((lang==='fr'?'':'en/')+'pub/'+location.hash.slice(5)+'.html'); };
 window.addEventListener('hashchange',fromHash); fromHash();
 })();
 
