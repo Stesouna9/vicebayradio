@@ -38,6 +38,7 @@ h1{font:900 clamp(38px,8vw,72px)/1 Orbitron,sans-serif;margin:8px 0 6px;color:#f
 .lecteur button.sm{width:42px;height:42px;background:#ffffff14;color:var(--fg)}.lecteur button.sm svg{width:18px;height:18px}
 .lecteur button:focus-visible{outline:2px solid #fff;outline-offset:2px}
 .l-vol{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mu);width:150px}.l-vol span{display:none}
+.badge{display:inline-block;padding:1px 8px;border-radius:999px;background:#ff2e4d;color:#fff;font:700 11px 'Space Mono',monospace;letter-spacing:.1em;margin-right:6px;vertical-align:1px}
 .l-next{font-size:12px;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sub{margin:-6px 0 12px;color:var(--mu);font-size:14px}
 .prog{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
@@ -77,14 +78,11 @@ footer{color:var(--mu);font-size:12px;text-align:center;max-width:640px;margin:2
 <p class="promesse">The sun rises on 88.5.</p><p class="host-l">with <strong>Gabriel</strong></p>
 <div class="lecteur" id="lect">
 <div class="l-top"><img class="l-art" src="../../img/st_tropicana.webp" alt="" width="56" height="56">
-<div class="info"><div class="etat"><span id="etat">Listen TROPICANA</span><span class="eq"><i></i><i></i><i></i></span></div>
+<div class="info"><div class="etat"><span class="badge">LIVE</span> <span id="etat">Listen TROPICANA</span><span class="eq"><i></i><i></i><i></i></span></div>
 <div class="titre" id="titre">LATIN · SALSA · BRASS</div></div></div>
-<div class="l-bar"><time id="cur">0:00</time><input id="seek" type="range" min="0" max="1000" value="0" aria-label="Progression"><time id="dur">0:00</time></div>
-<div class="l-ctl"><button class="sm" id="pv" aria-label="Previous"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
-<button id="pp" class="big" aria-label="Listen TROPICANA"><svg viewBox="0 0 24 24" fill="currentColor"><path id="ico" d="M7 4v16l13-8z"/></svg></button>
-<button class="sm" id="nx" aria-label="Next"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+<div class="l-ctl"><button id="pp" class="big" aria-label="Listen TROPICANA"><svg viewBox="0 0 24 24" fill="currentColor"><path id="ico" d="M7 4v16l13-8z"/></svg></button>
 <label class="l-vol"><span>Volume</span><input id="vol" type="range" min="0" max="100" value="80" aria-label="Volume"></label></div>
-<div class="l-next" id="suivant"></div>
+<div class="l-next">No playlist to pick from: you join the show already in progress, jingles, host voices and ads included.</div>
 </div>
 <a class="sec" href="../../?tune=tropicana">Open in the full player →</a>
 </div>
@@ -92,8 +90,7 @@ footer{color:var(--mu);font-size:12px;text-align:center;max-width:640px;margin:2
 </div>
 <section class="bio"><h2>Who is Gabriel ?</h2><p class="acc">A silhouette, a brass section, and a bay that never learned to turn it down.</p><div class="cols"><div><p>On air, Gabriel comes from the warm end of the dial, where an empty chair is enough to reserve a dance floor. The founder remains a silhouette; his public archive begins with a tape labelled “opening” containing three different openings.</p><p>In June 1984, he sets up Tropicana 88.5 with a turquoise lamp and a volume knob without markings. He promises a twenty-minute first broadcast. By 1986, nobody has found the closing theme.</p><p>He lines up pencils with the brass hits, then lends them out without counting. In August 1985, a sound check near the pier accidentally accompanies Dolores Van Pelt’s inauguration of a beach umbrella. Gabriel keeps the speech on side B: “Excellent rhythm.”</p></div><div><ul class="faits"><h3>GOOD TO KNOW</h3><li>Studio object: a tape labelled “opening, final version 3”.</li><li>Silence is announced as a break for the percussionists.</li><li>His ceremonial umbrella only opens inside the studio.</li></ul><blockquote style="margin-top:16px">« In Vice Bay, even the shade needs to dance. »</blockquote></div></div><p class="lien"><b>On air, between neighbours.</b> He lends Lucie Nonchalante his metronome; she returns it with a letter noting its excessive enthusiasm.</p></section>
 <section><h2>The jingle (in French)</h2><blockquote>« Quatre-vingt-huit virgule cinq, Tropicana. Il fait trente-quatre degrés, j&#x27;ai un sandwich, tout va bien. »</blockquote></section>
-<section><h2>On the air</h2><p class="sub">Tap a track to play it.</p><div id="prog" class="prog"><button type="button" data-i="0"><b>01</b>Beachfront Celebration <span>· Kevin MacLeod</span></button><button type="button" data-i="2"><b>02</b>Blue Ska <span>· Kevin MacLeod</span></button><button type="button" data-i="4"><b>03</b>BossaBossa <span>· Kevin MacLeod</span></button></div>
-<details><summary>Credits and licences (33)</summary><ol><li>Arroz Con Pollo <span>· Kevin MacLeod</span></li><li>Blue Ska <span>· Kevin MacLeod</span></li><li>BossaBossa <span>· Kevin MacLeod</span></li><li>Bumba Crossing <span>· Kevin MacLeod</span></li><li>Carnivale Intrigue <span>· Kevin MacLeod</span></li><li>Casa Bossa Nova <span>· Kevin MacLeod</span></li><li>Kali Ghata Chhaye <span>· Chenard Walcker</span></li><li>Cuban Sandwich <span>· Kevin MacLeod</span></li><li>Del Rio Bravo <span>· Kevin MacLeod</span></li><li>Devonshire Waltz Allegretto <span>· Kevin MacLeod</span></li><li>Digya <span>· Kevin MacLeod</span></li><li>Dubakupado <span>· Kevin MacLeod</span></li><li>No Flowers, No Cry <span>· duckett</span></li><li>Energizing <span>· Kevin MacLeod</span></li><li>Gonna Start <span>· Kevin MacLeod</span></li><li>Hackbeat <span>· Kevin MacLeod</span></li><li>Maccary Bay <span>· Kevin MacLeod</span></li><li>Mandeville <span>· Kevin MacLeod</span></li><li>Slow Heat <span>· Kevin MacLeod</span></li><li>Tafi Maradi no voice <span>· Kevin MacLeod</span></li><li>Trouble with Tribals <span>· Kevin MacLeod</span></li><li>Upbeat Forever <span>· Kevin MacLeod</span></li><li>Verano Sensual <span>· Kevin MacLeod</span></li><li>Wepa <span>· Kevin MacLeod</span></li><li>Conquistador <span>· Jeris</span></li><li>Ol&#x27; Man Clothes <span>· Jeris</span></li><li>Journey To Ascend <span>· Kevin MacLeod</span></li><li>Tanto Ruido (Bossa Nova Remix) <span>· Klaus_N</span></li><li>tangos-rhythm-in-e-phrygian <span>· megamuse</span></li><li>Penso...Logo Desisto <span>· Nethis</span></li><li>Myxtery <span>· Pitx</span></li><li>Estoy Nervioso <span>· Sr. Privado</span></li><li>Tiki Bar Mixer <span>· Kevin MacLeod</span></li></ol></details></section>
+<section><h2>Playlist</h2><details><summary>33 tracks, see the list</summary><ol><li>Arroz Con Pollo <span>· Kevin MacLeod</span></li><li>Blue Ska <span>· Kevin MacLeod</span></li><li>BossaBossa <span>· Kevin MacLeod</span></li><li>Bumba Crossing <span>· Kevin MacLeod</span></li><li>Carnivale Intrigue <span>· Kevin MacLeod</span></li><li>Casa Bossa Nova <span>· Kevin MacLeod</span></li><li>Kali Ghata Chhaye <span>· Chenard Walcker</span></li><li>Cuban Sandwich <span>· Kevin MacLeod</span></li><li>Del Rio Bravo <span>· Kevin MacLeod</span></li><li>Devonshire Waltz Allegretto <span>· Kevin MacLeod</span></li><li>Digya <span>· Kevin MacLeod</span></li><li>Dubakupado <span>· Kevin MacLeod</span></li><li>No Flowers, No Cry <span>· duckett</span></li><li>Energizing <span>· Kevin MacLeod</span></li><li>Gonna Start <span>· Kevin MacLeod</span></li><li>Hackbeat <span>· Kevin MacLeod</span></li><li>Maccary Bay <span>· Kevin MacLeod</span></li><li>Mandeville <span>· Kevin MacLeod</span></li><li>Slow Heat <span>· Kevin MacLeod</span></li><li>Tafi Maradi no voice <span>· Kevin MacLeod</span></li><li>Trouble with Tribals <span>· Kevin MacLeod</span></li><li>Upbeat Forever <span>· Kevin MacLeod</span></li><li>Verano Sensual <span>· Kevin MacLeod</span></li><li>Wepa <span>· Kevin MacLeod</span></li><li>Conquistador <span>· Jeris</span></li><li>Ol&#x27; Man Clothes <span>· Jeris</span></li><li>Journey To Ascend <span>· Kevin MacLeod</span></li><li>Tanto Ruido (Bossa Nova Remix) <span>· Klaus_N</span></li><li>tangos-rhythm-in-e-phrygian <span>· megamuse</span></li><li>Penso...Logo Desisto <span>· Nethis</span></li><li>Myxtery <span>· Pitx</span></li><li>Estoy Nervioso <span>· Sr. Privado</span></li><li>Tiki Bar Mixer <span>· Kevin MacLeod</span></li></ol></details></section>
 <section><h2>Station ads</h2><p class="sub">Vice Bay shops advertising on TROPICANA.</p><div class="pubs"><a href="../../#pub-sunshinemotors"><img src="../../img/logo_sunshinemotors.webp" alt="" loading="lazy" width="72" height="72">Sunshine Motors</a><a href="../../#pub-coconutpalace"><img src="../../img/logo_coconutpalace.webp" alt="" loading="lazy" width="72" height="72">Coconut Palace</a><a href="../../#pub-bluewaverentals"><img src="../../img/logo_bluewaverentals.webp" alt="" loading="lazy" width="72" height="72">Bluewave Rentals</a><a href="../../#pub-palmsidebarbershop"><img src="../../img/logo_palmsidebarbershop.webp" alt="" loading="lazy" width="72" height="72">Palmside Barber Shop</a><a href="../../#pub-marinamoon"><img src="../../img/logo_marinamoon.webp" alt="" loading="lazy" width="72" height="72">Marina Moon</a></div></section>
 <section class="gta"><div><h2 style="margin:0">Waiting for GTA VI?</h2><p>Verified news, countdown and guides on GTA VI France.</p></div><a class="btn" id="gta" href="https://gtavifrance.com/en/?utm_source=vicebayradio&utm_medium=station&utm_campaign=tropicana">Visit gtavifrance.com →</a></section>
 <section><h2>More Vice Bay stations</h2><div class="autres"><a href="dejavu.html" style="color:#D9C9A3">DÉJÀ VU 90.9</a><a href="vicej.html" style="color:#FF8FD8">VICE J 95.5</a><a href="emotion.html" style="color:#4DD0E1">EMOTION 98.3</a><a href="sunset.html" style="color:#F2B33D">SUNSET DRIVE 102.7</a><a href="neon.html" style="color:#FF2E88">NEON 103.5</a><a href="volt.html" style="color:#FF7A3D">VOLT 107.3</a></div></section>
@@ -101,67 +98,57 @@ footer{color:var(--mu);font-size:12px;text-align:center;max-width:640px;margin:2
 </main>
 <script>
 (()=>{
-const L=[{"src": "https://okalamstudio.com/audio/vb_tropicana_more_beachfront_celebration.m4a", "title": "Beachfront Celebration", "artist": "Kevin MacLeod", "type": "track"}, {"src": "https://okalamstudio.com/audio/vb_tropicana_link_beachfront_celebration_blue_ska.m4a", "title": "Vice Bay DJ", "artist": "", "type": "link"}, {"src": "https://okalamstudio.com/audio/vb_dubwise_blue_ska.m4a", "title": "Blue Ska", "artist": "Kevin MacLeod", "type": "track"}, {"src": "https://okalamstudio.com/audio/vb_tropicana_link_blue_ska_bossabossa.m4a", "title": "Vice Bay DJ", "artist": "", "type": "link"}, {"src": "https://okalamstudio.com/audio/vb_tropicana_bossabossa.m4a", "title": "BossaBossa", "artist": "Kevin MacLeod", "type": "track"}],id="tropicana",T={"c": "Connecting…", "on": "On air", "p": "Paused", "r": "Retry", "dj": "Vice Bay DJ", "nx": "Up next"};
+const id="tropicana",T={"c": "Connecting…", "on": "On air", "p": "Paused", "r": "Retry", "live": "LIVE"},FLUX="https://live.2-29-41-109.sslip.io/";
 const $=x=>document.getElementById(x);
 const ev=n=>{try{window.goatcounter&&goatcounter.count&&goatcounter.count({path:"ecoute/"+n+"/"+id,title:n,event:true})}catch(e){}};
-const a=new Audio();a.preload="auto";a.setAttribute("playsinline","");
-const isT=t=>t.type!=="link";
-let i=Math.max(0,L.findIndex(isT)),ok=false,cumul=0,t0=0,c30=false,fails=0,want=false,wd=0,fade=0;
-const fmt=s=>{if(!isFinite(s)||s<0)return"0:00";s=Math.floor(s);return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
+const a=new Audio();a.preload="none";a.setAttribute("playsinline","");
+let want=false,ok=false,cumul=0,t0=0,c30=false,tries=0,wd=0,fade=0,np="";
+const dec=s=>{const t=document.createElement("textarea");t.innerHTML=s;return t.value};
 const ico=p=>$("ico").setAttribute("d",p?"M6 4h4v16H6zM14 4h4v16h-4z":"M7 4v16l13-8z");
-const lbl=t=>t.type==="link"?T.dj:(t.title+(t.artist?" · "+t.artist:""));
-const nextTrack=n=>{for(let k=1;k<=L.length;k++){const j=(n+k)%L.length;if(isT(L[j]))return j}return n};
-const prevTrack=n=>{for(let k=1;k<=L.length;k++){const j=(n-k+L.length)%L.length;if(isT(L[j]))return j}return n};
-function mark(){document.querySelectorAll("#prog button").forEach(b=>b.classList.toggle("now",+b.dataset.i===i))}
-function charge(n){
-  i=(n+L.length)%L.length;const t=L[i];a.src=t.src;a.load();
-  $("titre").textContent=lbl(t);$("seek").value=0;$("cur").textContent="0:00";$("dur").textContent="0:00";
-  const nx=L[nextTrack(i)];$("suivant").textContent=T.nx+" : "+(nx.title||"")+(nx.artist?" · "+nx.artist:"");
-  mark();
-  if("mediaSession"in navigator&&isT(t))try{navigator.mediaSession.metadata=new MediaMetadata({title:t.title||"",artist:t.artist||"Vice Bay Radio",album:"TROPICANA 88.5 FM",artwork:[{src:"https://vicebayradio.com/img/hostL_tropicana.jpg",sizes:"600x600",type:"image/jpeg"}]})}catch(e){}
+const setNp=t=>{np=t;$("titre").textContent=t||T.live;
+  if("mediaSession"in navigator)try{navigator.mediaSession.metadata=new MediaMetadata({title:t||"TROPICANA 88.5 FM",artist:"TROPICANA 88.5 FM · Vice Bay Radio",artwork:[{src:"https://vicebayradio.com/img/hostL_tropicana.jpg",sizes:"600x600",type:"image/jpeg"}]})}catch(e){}};
+async function poll(){
+  try{const r=await fetch(FLUX+"status-json.xsl",{cache:"no-store"});const j=await r.json();let s=j.icestats.source;s=Array.isArray(s)?s:[s];
+    const m=s.find(x=>(x.listenurl||"").endsWith("/"+id));if(m){const t=dec(m.title||"").trim();if(t&&t!==np)setNp(t)}}catch(e){}
 }
-function arm(){clearTimeout(wd);wd=setTimeout(()=>{if(want&&a.paused===false&&a.readyState<3)skip()},12000)}
-function skip(){
-  fails++;clearTimeout(wd);
-  if(fails>L.length){want=false;ico(false);$("etat").textContent=T.r;$("lect").classList.remove("joue");return}
-  charge(i+1);go()
+function arm(){clearTimeout(wd);wd=setTimeout(()=>{if(want&&a.readyState<3)retry()},10000)}
+function retry(){
+  clearTimeout(wd);tries++;
+  if(tries>4){want=false;ico(false);$("etat").textContent=T.r;$("lect").classList.remove("joue");a.removeAttribute("src");return}
+  $("etat").textContent=T.c;setTimeout(()=>{if(want)start()},Math.min(1500*tries,6000))
 }
-function go(){
-  want=true;if(!a.src)charge(i);
-  $("etat").textContent=T.c;ico(true);arm();
+function start(){
+  /* direct : on se reconnecte toujours au flux en cours, jamais à un tampon ancien */
+  a.src=FLUX+id+"?t="+Date.now();$("etat").textContent=T.c;ico(true);arm();
   const p=a.play();
   if(p&&p.catch)p.catch(err=>{
     if(err&&err.name==="AbortError")return;
     if(err&&err.name==="NotAllowedError"){want=false;ico(false);$("etat").textContent=T.r;return}
-    if(want)skip()
+    if(want)retry()
   })
 }
-function stop(){want=false;clearTimeout(wd);a.pause()}
+function go(){want=true;tries=0;start();poll()}
+function stop(){want=false;clearTimeout(wd);a.pause();a.removeAttribute("src");a.load();$("lect").classList.remove("joue");if(t0){cumul+=Date.now()-t0;t0=0}$("etat").textContent=T.p;ico(false)}
 a.addEventListener("playing",()=>{
-  fails=0;clearTimeout(wd);$("etat").textContent=T.on;$("lect").classList.add("joue");ico(true);t0=t0||Date.now();
+  tries=0;clearTimeout(wd);$("etat").textContent=T.on;$("lect").classList.add("joue");ico(true);t0=t0||Date.now();
   if(!ok){ok=true;ev("play")}
   clearInterval(fade);const v=$("vol").value/100;let k=0;a.volume=0;fade=setInterval(()=>{k++;a.volume=Math.min(v,v*k/8);if(k>=8)clearInterval(fade)},60)
 });
-a.addEventListener("pause",()=>{$("lect").classList.remove("joue");if(t0){cumul+=Date.now()-t0;t0=0}if(!want||a.ended)return;$("etat").textContent=T.p;ico(false)});
+a.addEventListener("pause",()=>{if(want)stop()});
 a.addEventListener("waiting",()=>{if(want){$("etat").textContent=T.c;arm()}});
 a.addEventListener("stalled",()=>{if(want)arm()});
-a.addEventListener("ended",()=>{charge(i+1);go()});
-a.addEventListener("error",()=>{if(want)skip()});
-a.addEventListener("loadedmetadata",()=>{$("dur").textContent=fmt(a.duration)});
-a.addEventListener("timeupdate",()=>{if(a.duration){$("seek").value=Math.round(a.currentTime/a.duration*1000)}$("cur").textContent=fmt(a.currentTime)});
+a.addEventListener("error",()=>{if(want)retry()});
+a.addEventListener("ended",()=>{if(want)retry()});
 setInterval(()=>{if(!c30&&cumul+(t0?Date.now()-t0:0)>30000){c30=true;ev("30s")}},5000);
-$("pp").onclick=()=>{if(want&&!a.paused){stop();$("etat").textContent=T.p;ico(false)}else go()};
-$("nx").onclick=()=>{charge(nextTrack(i));go()};
-$("pv").onclick=()=>{if(a.currentTime>4){a.currentTime=0}else{charge(prevTrack(i))}go()};
-$("seek").oninput=e=>{if(a.duration)a.currentTime=a.duration*e.target.value/1000};
+setInterval(poll,15000);
+$("pp").onclick=()=>{if(want)stop();else go()};
 $("vol").oninput=e=>{a.volume=e.target.value/100;try{localStorage.setItem("vbr_vol",e.target.value)}catch(_){}};
 try{const v=localStorage.getItem("vbr_vol");if(v!==null)$("vol").value=v}catch(_){}
-document.querySelectorAll("#prog button").forEach(b=>b.onclick=()=>{charge(+b.dataset.i);go()});
 $("gta").addEventListener("click",()=>ev("gtavifrance"));
-charge(i);
+setNp("");poll();
 if("mediaSession"in navigator){
   const m=(k,f)=>{try{navigator.mediaSession.setActionHandler(k,f)}catch(e){}};
-  m("play",go);m("pause",()=>{stop();ico(false);$("etat").textContent=T.p});m("nexttrack",()=>{charge(nextTrack(i));go()});m("previoustrack",()=>{charge(prevTrack(i));go()})
+  m("play",go);m("pause",stop);m("stop",stop)
 }
 })();
 

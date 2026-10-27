@@ -17,12 +17,12 @@ TXT = {
                ouvrir="Ouvrir dans le lecteur complet", antenne="À l'antenne", jingle="Le jingle", programme="Au programme", morceaux="morceaux, voir la liste",
                autres="Les autres stations de Vice Bay", gta_t="Tu attends GTA VI ?", gta_p="Actus vérifiées, compte à rebours et guides en français sur GTA VI France.",
                gta_b="Aller sur gtavifrance.com", pied="Vice Bay Radio, les radios de Vice Bay, 1986. Univers fictif et indépendant, sans lien avec Rockstar Games. Une création OKALAM Studio, musiques sous licence libre, auteurs crédités.",
-               desc="{name} {f} FM : {genre}, avec {host} au micro. {slogan} Écoute gratuite en direct sur Vice Bay Radio.", avec="avec", vol="Volume", dj="Vice Bay DJ", nx="À suivre", prec="Précédent", suiv="Suivant", prog_t="Sur l'antenne", prog_sub="Touche un titre pour l'écouter.", cred_t="Crédits et licences", bio_t="Qui est", a_savoir="À savoir", lien_t="À l'antenne, entre voisins", pubs_t="Les pubs de la station", pubs_sub="Les commerçants de Vice Bay qui passent sur {name}."),
+               desc="{name} {f} FM : {genre}, avec {host} au micro. {slogan} Écoute gratuite en direct sur Vice Bay Radio.", avec="avec", vol="Volume", live="EN DIRECT", direct_t="En direct, comme à la radio", direct_p="Pas de playlist à choisir : tu arrives au milieu de l'émission, jingles, voix des animateurs et pubs compris.", nx="À suivre", prec="Précédent", suiv="Suivant", prog_t="Sur l'antenne", prog_sub="Touche un titre pour l'écouter.", cred_t="Crédits et licences", bio_t="Qui est", a_savoir="À savoir", lien_t="À l'antenne, entre voisins", pubs_t="Les pubs de la station", pubs_sub="Les commerçants de Vice Bay qui passent sur {name}."),
     "en": dict(retour="← All stations", ecouter="Listen", connexion="Connecting…", en_ecoute="On air", pause="Paused", reessayer="Retry",
                ouvrir="Open in the full player", antenne="On air", jingle="The jingle (in French)", programme="Playlist", morceaux="tracks, see the list",
                autres="More Vice Bay stations", gta_t="Waiting for GTA VI?", gta_p="Verified news, countdown and guides on GTA VI France.",
                gta_b="Visit gtavifrance.com", pied="Vice Bay Radio, the radio stations of Vice Bay, 1986. A fictional, independent universe, not affiliated with Rockstar Games. Made by OKALAM Studio, royalty-free music, artists credited.",
-               desc="{name} {f} FM: {genre}, hosted by {host}. {slogan} Free live radio on Vice Bay Radio.", avec="with", vol="Volume", dj="Vice Bay DJ", nx="Up next", prec="Previous", suiv="Next", prog_t="On the air", prog_sub="Tap a track to play it.", cred_t="Credits and licences", bio_t="Who is", a_savoir="Good to know", lien_t="On air, between neighbours", pubs_t="Station ads", pubs_sub="Vice Bay shops advertising on {name}."),
+               desc="{name} {f} FM: {genre}, hosted by {host}. {slogan} Free live radio on Vice Bay Radio.", avec="with", vol="Volume", live="LIVE", direct_t="Live, like real radio", direct_p="No playlist to pick from: you join the show already in progress, jingles, host voices and ads included.", nx="Up next", prec="Previous", suiv="Next", prog_t="On the air", prog_sub="Tap a track to play it.", cred_t="Credits and licences", bio_t="Who is", a_savoir="Good to know", lien_t="On air, between neighbours", pubs_t="Station ads", pubs_sub="Vice Bay shops advertising on {name}."),
 }
 
 BIOS = {}
@@ -43,6 +43,7 @@ EXTRA_CSS = r"""
 .lecteur button.sm{width:42px;height:42px;background:#ffffff14;color:var(--fg)}.lecteur button.sm svg{width:18px;height:18px}
 .lecteur button:focus-visible{outline:2px solid #fff;outline-offset:2px}
 .l-vol{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mu);width:150px}.l-vol span{display:none}
+.badge{display:inline-block;padding:1px 8px;border-radius:999px;background:#ff2e4d;color:#fff;font:700 11px 'Space Mono',monospace;letter-spacing:.1em;margin-right:6px;vertical-align:1px}
 .l-next{font-size:12px;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sub{margin:-6px 0 12px;color:var(--mu);font-size:14px}
 .prog{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
@@ -112,14 +113,11 @@ footer{{color:var(--mu);font-size:12px;text-align:center;max-width:640px;margin:
 <p class="promesse">{slogan}</p><p class="host-l">{avec} <strong>{host}</strong></p>
 <div class="lecteur" id="lect">
 <div class="l-top"><img class="l-art" src="{rel}{logo}" alt="" width="56" height="56">
-<div class="info"><div class="etat"><span id="etat">{ecouter} {name}</span><span class="eq"><i></i><i></i><i></i></span></div>
+<div class="info"><div class="etat"><span class="badge">{live}</span> <span id="etat">{ecouter} {name}</span><span class="eq"><i></i><i></i><i></i></span></div>
 <div class="titre" id="titre">{genre}</div></div></div>
-<div class="l-bar"><time id="cur">0:00</time><input id="seek" type="range" min="0" max="1000" value="0" aria-label="Progression"><time id="dur">0:00</time></div>
-<div class="l-ctl"><button class="sm" id="pv" aria-label="{prec}"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
-<button id="pp" class="big" aria-label="{ecouter} {name}"><svg viewBox="0 0 24 24" fill="currentColor"><path id="ico" d="M7 4v16l13-8z"/></svg></button>
-<button class="sm" id="nx" aria-label="{suiv}"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+<div class="l-ctl"><button id="pp" class="big" aria-label="{ecouter} {name}"><svg viewBox="0 0 24 24" fill="currentColor"><path id="ico" d="M7 4v16l13-8z"/></svg></button>
 <label class="l-vol"><span>{vol}</span><input id="vol" type="range" min="0" max="100" value="80" aria-label="{vol}"></label></div>
-<div class="l-next" id="suivant"></div>
+<div class="l-next">{direct_p}</div>
 </div>
 <a class="sec" href="{rel}?tune={id}">{ouvrir} →</a>
 </div>
@@ -127,8 +125,7 @@ footer{{color:var(--mu);font-size:12px;text-align:center;max-width:640px;margin:
 </div>
 {bio_html}
 <section><h2>{jingle}</h2><blockquote>« {jingle_txt} »</blockquote></section>
-<section><h2>{prog_t}</h2><p class="sub">{prog_sub}</p><div id="prog" class="prog">{prog_l}</div>
-<details><summary>{cred_t} ({n})</summary><ol>{titres}</ol></details></section>
+<section><h2>{programme}</h2><details><summary>{n} {morceaux}</summary><ol>{titres}</ol></details></section>
 {pubs_html}
 <section class="gta"><div><h2 style="margin:0">{gta_t}</h2><p>{gta_p}</p></div><a class="btn" id="gta" href="https://gtavifrance.com/{gta_lg}?utm_source=vicebayradio&utm_medium=station&utm_campaign={id}">{gta_b} →</a></section>
 <section><h2>{autres}</h2><div class="autres">{autres_l}</div></section>
@@ -159,7 +156,7 @@ def main():
             live = [{"src": abs_src(x["src"]), "title": x.get("title", ""), "artist": x.get("artist", ""), "type": x.get("type", "track")} for x in s.get("live", [])]
             prog_l = "".join(f'<button type="button" data-i="{k}"><b>{n_:02d}</b>{e(x["title"])} <span>{("· " + e(x["artist"])) if x["artist"] else ""}</span></button>'
                              for n_, (k, x) in enumerate(((k, x) for k, x in enumerate(live) if x["type"] != "link"), 1))
-            tj = json.dumps({"c": t["connexion"], "on": t["en_ecoute"], "p": t["pause"], "r": t["reessayer"], "dj": t["dj"], "nx": t["nx"]}, ensure_ascii=False)
+            tj = json.dumps({"c": t["connexion"], "on": t["en_ecoute"], "p": t["pause"], "r": t["reessayer"], "live": t["live"]}, ensure_ascii=False)
             player = (PLAYER_JS.replace("%%LIVE%%", json.dumps(live, ensure_ascii=False)).replace("%%ID%%", s["id"]).replace("%%T%%", tj)
                       .replace("%%NAME%%", s["name"]).replace("%%F%%", str(s["f"])).replace("%%ART%%", f"{SITE}/img/hostL_{s['id']}.jpg"))
             b = (BIOS.get(s["id"]) or {}).get(lg)
