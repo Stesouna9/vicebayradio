@@ -12,7 +12,7 @@ hero_lead:"Les radios d'une ville qui n'existe pas. Des animateurs qui parlent t
 cta_listen:'▶ Allumer la radio',cta_ads:'📺 Les fausses pubs',pick:'Choisis une station',pick_hint:"tourne le bouton ou appuie sur une touche",
 off:'RADIO COUPÉE',onair:"À L'ANTENNE",pause:'EN PAUSE',soon_badge:'BIENTÔT',soon_prog:'Nouvelle programmation · bientôt à l\'antenne',jingle:'🎙 Jingle Vice Bay',
 st_label:'Le cadran',st_title:'Sept stations, <em>sept nuits différentes</em>',st_sub:'Chaque station a sa couleur, son quartier, son animateur et ses annonceurs. Musique 100 % libre, voix originales écrites pour Vice Bay.',
-st_listen:'▶ ÉCOUTER',st_playing:'❚❚ PAUSE',st_tracks:'titres au programme',st_host:'Animé par',
+st_listen:'▶ ÉCOUTER',st_page:'Voir la station →',st_playing:'❚❚ PAUSE',st_tracks:'titres au programme',st_host:'Animé par',
 ads_label:'Pages de pub',ads_title:"Les 25 commerces <em>qui paient l'antenne</em>",
 ads_sub:"Garages des marais, fleuristes de nuit, motels d'autoroute : chaque commerce de Vice Bay a sa pub, lue par l'animateur de sa station. Aucun n'existe. Tous sont ouverts tard.",
 all:'Tout',ad_on:'Sur',ad_note:"Texte de l'antenne, version originale. La pub audio arrive bientôt, avec la voix de l'animateur.",ad_listen:'▶ Écouter la station',ad_share:'🔗 Copier le lien',ad_copied:'✓ Lien copié',
@@ -36,7 +36,7 @@ hero_lead:"The radio of a city that doesn't exist. Hosts who talk too much, jing
 cta_listen:'▶ Turn the radio on',cta_ads:'📺 The fake ads',pick:'Pick a station',pick_hint:'turn the knob or press a preset',
 off:'RADIO OFF',onair:'ON AIR',pause:'PAUSED',soon_badge:'SOON',soon_prog:'New programming · on air soon',jingle:'🎙 Vice Bay jingle',
 st_label:'The dial',st_title:'Seven stations, <em>seven different nights</em>',st_sub:'Every station has its own colour, neighbourhood, host and advertisers. 100 % free music, original voices written for Vice Bay.',
-st_listen:'▶ LISTEN',st_playing:'❚❚ PAUSE',st_tracks:'tracks in rotation',st_host:'Hosted by',
+st_listen:'▶ LISTEN',st_page:'View the station →',st_playing:'❚❚ PAUSE',st_tracks:'tracks in rotation',st_host:'Hosted by',
 ads_label:'Commercial break',ads_title:'The 25 businesses <em>paying for airtime</em>',
 ads_sub:'Swamp garages, late-night florists, highway motels: every business in Vice Bay has its ad, read by the host of its station. None of them exist. All of them are open late.',
 all:'All',ad_on:'On',ad_note:'On-air script, original French broadcast. The audio ad is coming soon, voiced by the host.',ad_listen:'▶ Listen to the station',ad_share:'🔗 Copy link',ad_copied:'✓ Link copied',
@@ -219,15 +219,16 @@ function renderCredits(){
 /* ---------- STATIONS ---------- */
 function renderStations(){
   $('st-grid').innerHTML=S.map(s=>{
-    const n=Math.max(s.catalog.length,s.live.filter(t=>t.type==='track').length);
+    const href=(lang==='fr'?'':'en/')+'station/'+s.id+'.html';
     return '<article class="st" data-id="'+s.id+'" style="--c:'+s.c+'">'+
-      '<img src="'+s.logo+'" alt="'+esc(s.name)+' '+s.f+' FM" loading="lazy" width="360" height="360"/>'+
-      '<div class="st-body"><span class="st-f">'+s.f.toFixed(1)+' FM · '+esc(lang==='fr'?s.genre:s.genre_en)+'</span>'+
-      '<h3>'+esc(s.name)+'</h3><p class="st-slogan">« '+esc(lang==='fr'?s.slogan:s.slogan_en)+' »</p>'+
-      '<p class="st-host">'+(s.host?tr('st_host')+' <b>'+esc(s.host)+'</b>. ':'')+esc(lang==='fr'?s.bio:s.bio_en)+'</p>'+
-      (s.jingles[0]?'<p class="st-jingle">'+esc(s.jingles[0])+'</p>':'')+
+      '<a class="st-img" href="'+href+'" tabindex="-1" aria-hidden="true"><img src="'+s.logo+'" alt="" loading="lazy" width="360" height="360"/></a>'+
+      '<div class="st-body"><span class="st-f">'+s.f.toFixed(1)+' FM</span>'+
+      '<h3><a href="'+href+'">'+esc(s.name)+'</a></h3>'+
+      '<span class="st-genre">'+esc(lang==='fr'?s.genre:s.genre_en)+'</span>'+
+      '<p class="st-slogan">« '+esc(lang==='fr'?s.slogan:s.slogan_en)+' »</p>'+
+      (s.host?'<p class="st-host">'+tr('st_host')+' <b>'+esc(s.host)+'</b></p>':'')+
       '<div class="st-foot"><button class="st-play" type="button" data-tune="'+s.id+'">'+tr('st_listen')+'</button>'+
-      '<span class="st-count">'+n+' '+tr('st_tracks')+'</span></div></div></article>';
+      '<a class="st-more" href="'+href+'">'+tr('st_page')+'</a></div></div></article>';
   }).join('');
 }
 
