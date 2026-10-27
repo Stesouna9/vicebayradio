@@ -214,7 +214,9 @@ h2{font-size:clamp(1.6rem,4vw,2.6rem);margin-bottom:14px;}
 
 /* multivers : pubs maison */
 .sec-mv .sub{color:var(--muted);max-width:60ch;margin:6px 0 22px;}
-.mv{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;}
+.mv{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;}
+.mv-card{flex:1 1 230px;max-width:380px;}
+.mv-card.mv-main{flex:1 1 100%;max-width:none;}
 .mv-card{position:relative;display:flex;flex-direction:column;gap:8px;padding:24px 20px 20px;border-radius:20px;border:1px solid var(--line);background:var(--card);text-decoration:none;transition:transform .2s,border-color .2s;}
 .mv-card:hover{transform:translateY(-3px);border-color:rgba(245,227,195,.4);}
 .mv-card b{font-family:'Orbitron',sans-serif;color:#fff;letter-spacing:.08em;font-size:1rem;}

@@ -89,7 +89,7 @@ const needle=$('needle'), scale=$('scale'), marks=$('marks'), chips=$('chips'), 
 
 S.forEach((s,i)=>{
   const d=document.createElement('div'); d.style.left=x(s.f); d.style.setProperty('--c',s.c); d.dataset.id=s.id; d.innerHTML='<i></i><span>'+s.f.toFixed(1)+'</span>'; marks.appendChild(d); if(i&&s.f-S[i-1].f<1.2) d.classList.add('up');
-  const b=document.createElement('button'); b.type='button'; b.dataset.id=s.id; b.style.setProperty('--c',s.c); b.innerHTML='<i></i>'+esc(s.name); b.addEventListener('click',()=>tune(s.id)); chips.appendChild(b);
+  const b=document.createElement('button'); b.type='button'; b.dataset.id=s.id; b.style.setProperty('--c',s.c); b.innerHTML='<i></i><img src="'+s.logo+'" alt="" width="44" height="44" decoding="async">'+esc(s.name); b.addEventListener('click',()=>tune(s.id)); chips.appendChild(b);
 });
 chips.style.setProperty('--n',S.length); chips.style.setProperty('--m',Math.ceil(S.length/2));
 
