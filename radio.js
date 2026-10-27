@@ -616,15 +616,7 @@ document.addEventListener('keydown',ev=>{
 });
 fetch('podcast.json',{cache:'no-cache'}).then(r=>r.ok?r.json():Promise.reject()).then(j=>{ POD=j; renderPodcast(); }).catch(()=>{ renderPodcast(); });
 
-(function autostart(){
-  const go=()=>{ try{ if(podEl&&!podEl.paused) return; if(!cur) tune('tropicana'); else if(audio.paused) play(); }catch(e){} };
-  const evs=['click','keydown','touchend'];
-  const off=()=>evs.forEach(t=>document.removeEventListener(t,once));
-  const once=ev=>{ if(ev&&ev.target&&ev.target.closest&&ev.target.closest('#podcast')) return; off(); setTimeout(()=>{ if(audio.paused){ slowStart=true; go(); } },0); };
-  evs.forEach(t=>document.addEventListener(t,once));
-  audio.addEventListener('playing',off,{once:true});
-  slowStart=true; go();
-})();
+/* plus de démarrage automatique : la radio ne part que sur un appui explicite (27/10/2026, Gabriel) */
 const fromHash=()=>{ if(location.hash.startsWith('#pub-')) openAd(location.hash.slice(5)); };
 window.addEventListener('hashchange',fromHash); fromHash();
 })();
