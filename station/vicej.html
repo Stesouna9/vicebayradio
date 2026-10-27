@@ -25,11 +25,36 @@ a{color:var(--c)}main{max-width:980px;margin:0 auto;padding:16px 16px 48px}
 .k{letter-spacing:.14em;font-size:12px;color:var(--mu);text-transform:uppercase}
 h1{font:900 clamp(38px,8vw,72px)/1 Orbitron,sans-serif;margin:8px 0 6px;color:#fff}
 .f{font:700 26px Orbitron,sans-serif;color:var(--c)}.promesse{font-size:20px;margin:14px 0 4px}.host-l{color:var(--mu);margin:0 0 18px}
-.lecteur{background:var(--ca);border:1px solid #ffffff14;border-radius:18px;padding:14px;display:flex;gap:14px;align-items:center}
-.lecteur button{flex:none;width:64px;height:64px;border-radius:50%;border:0;background:var(--c);color:#0b0b14;cursor:pointer;display:grid;place-items:center}
-.lecteur button svg{width:26px;height:26px}.lecteur .info{flex:1;min-width:0}
 .etat{font-weight:700}.titre{color:var(--mu);font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.lecteur input{width:100%;accent-color:var(--c);margin-top:6px}
+
+.lecteur{background:var(--ca);border:1px solid color-mix(in srgb,var(--c) 30%,#ffffff14);border-radius:20px;padding:16px;display:flex;flex-direction:column;gap:12px;box-shadow:0 10px 40px color-mix(in srgb,var(--c) 14%,transparent)}
+.l-top{display:flex;gap:12px;align-items:center}.l-art{width:56px;height:56px;border-radius:12px;background:#000a;padding:3px;flex:none}
+.lecteur .info{flex:1;min-width:0}
+.l-bar{display:flex;align-items:center;gap:10px;font:12px 'DM Sans',sans-serif;color:var(--mu)}.l-bar time{min-width:34px;font-variant-numeric:tabular-nums}
+.lecteur input[type=range]{width:100%;accent-color:var(--c);margin:0}
+.l-ctl{display:flex;align-items:center;gap:14px}
+.lecteur button{border:0;cursor:pointer;display:grid;place-items:center;color:#0b0b14;background:var(--c);border-radius:50%}
+.lecteur button.big{width:64px;height:64px}.lecteur button.big svg{width:28px;height:28px}
+.lecteur button.sm{width:42px;height:42px;background:#ffffff14;color:var(--fg)}.lecteur button.sm svg{width:18px;height:18px}
+.lecteur button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.l-vol{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mu);width:150px}.l-vol span{display:none}
+.l-next{font-size:12px;color:var(--mu);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sub{margin:-6px 0 12px;color:var(--mu);font-size:14px}
+.prog{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
+.prog button{all:unset;box-sizing:border-box;cursor:pointer;display:flex;gap:10px;align-items:baseline;padding:8px 10px;border-radius:10px;font-size:14px;color:var(--fg)}
+.prog button:hover,.prog button:focus-visible{background:#ffffff10}
+.prog button b{flex:none;width:22px;color:var(--c);font:700 12px 'Space Mono',monospace}
+.prog button span{color:var(--mu)}.prog button.now{background:color-mix(in srgb,var(--c) 18%,transparent)}.prog button.now b::before{content:"\25B6\00a0"}
+.bio .acc{font:700 clamp(20px,3vw,26px)/1.25 'DM Sans',sans-serif;color:#fff;margin:0 0 14px}
+.bio p{margin:0 0 12px;max-width:68ch}.bio .cols{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;margin-top:8px}
+.faits{list-style:none;margin:0;padding:14px 16px;background:#ffffff08;border-radius:14px;border:1px solid #ffffff10}.faits li{font-size:14px;padding:6px 0;break-inside:auto}
+.faits li+li{border-top:1px dashed #ffffff1c}.faits h3{margin:0 0 6px;font:700 12px Orbitron,sans-serif;color:var(--c);letter-spacing:.08em}
+.bio .lien{font-size:14px;color:var(--mu);margin-top:14px}.bio .lien b{color:var(--fg)}
+.pubs{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:12px}
+.pubs a{display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px;border-radius:14px;background:#ffffff08;border:1px solid #ffffff10;text-decoration:none;color:var(--fg);font-size:12px;text-align:center}
+.pubs a:hover{border-color:var(--c)}.pubs img{width:72px;height:72px;object-fit:contain;border-radius:10px}
+@media(max-width:760px){.prog{grid-template-columns:1fr}.bio .cols{grid-template-columns:1fr}.l-vol{width:110px}}
+
 .eq{display:none;gap:3px;align-items:flex-end;height:16px;margin-left:8px}.joue .eq{display:inline-flex}
 .eq i{width:3px;background:var(--c);animation:b 1s infinite ease-in-out}.eq i:nth-child(2){animation-delay:-.4s}.eq i:nth-child(3){animation-delay:-.7s}
 @keyframes b{0%,100%{height:4px}50%{height:16px}}
@@ -51,39 +76,93 @@ footer{color:var(--mu);font-size:12px;text-align:center;max-width:640px;margin:2
 <h1>VICE J</h1><div class="f">95.5 FM</div>
 <p class="promesse">95.5, tout est kawaii. Même les embouteillages.</p><p class="host-l">avec <strong>Sakura</strong></p>
 <div class="lecteur" id="lect">
-<button id="pp" aria-label="Écouter VICE J"><svg viewBox="0 0 24 24" fill="currentColor"><path id="ico" d="M7 4v16l13-8z"/></svg></button>
+<div class="l-top"><img class="l-art" src="../img/st_vicej.webp" alt="" width="56" height="56">
 <div class="info"><div class="etat"><span id="etat">Écouter VICE J</span><span class="eq"><i></i><i></i><i></i></span></div>
-<div class="titre" id="titre">J-POP · KAWAII · CITY POP</div>
-<input id="vol" type="range" min="0" max="100" value="80" aria-label="Volume"></div>
+<div class="titre" id="titre">J-POP · KAWAII · CITY POP</div></div></div>
+<div class="l-bar"><time id="cur">0:00</time><input id="seek" type="range" min="0" max="1000" value="0" aria-label="Progression"><time id="dur">0:00</time></div>
+<div class="l-ctl"><button class="sm" id="pv" aria-label="Précédent"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+<button id="pp" class="big" aria-label="Écouter VICE J"><svg viewBox="0 0 24 24" fill="currentColor"><path id="ico" d="M7 4v16l13-8z"/></svg></button>
+<button class="sm" id="nx" aria-label="Suivant"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+<label class="l-vol"><span>Volume</span><input id="vol" type="range" min="0" max="100" value="80" aria-label="Volume"></label></div>
+<div class="l-next" id="suivant"></div>
 </div>
 <a class="sec" href="../?tune=vicej">Ouvrir dans le lecteur complet →</a>
 </div>
 <div class="portrait"><img src="../img/hostL_vicej.jpg" alt="Sakura, VICE J 95.5 FM" width="600" height="600"><img class="logo" src="../img/st_vicej.webp" alt="Logo VICE J"></div>
 </div>
-<div class="duo">
 <section><h2>À l'antenne</h2><strong>Sakura</strong><br><span style="color:var(--mu)">22 ans, d&#x27;Osaka, arrivée à Vice Bay en 1984 « pour trois mois » et jamais repartie. Elle anime la seule station J-pop et city pop de la côte : le kawaii en surface, la précision au fond.</span></section>
 <section><h2>Le jingle</h2><blockquote>« VICE J, 95.5. Kawaii, ne ? »</blockquote></section>
-</div>
-<section><h2>Au programme</h2><details><summary>33 morceaux, voir la liste</summary><ol><li>Kira Kira Tomorrow <span>· Sakura (OKALAM Studio)</span></li><li>Saku, Kawaii Pour Toujours <span>· Sakura (OKALAM Studio)</span></li><li>Second Life with You <span>· Oliea ft. Sonna</span></li><li>Hīrō <span>· Free&#x27;quency</span></li><li>Those Days We Were Young <span>· Oliea ft. Sam J</span></li><li>Star Child (スターチャイルドの) <span>· Estussy Studio</span></li><li>Ao <span>· Free&#x27;quency</span></li><li>I Choose You <span>· Oliea ft. Sonna</span></li><li>Tell Me Something (教えてくれ) <span>· Estussy Studio</span></li><li>Take Me Out From The Sorrow <span>· Oliea ft. Sam J</span></li><li>My Love Never Die <span>· Oliea</span></li><li>Ashita no Hikari <span>· Oliea ft. Sonna</span></li><li>Neon Reverie (ネオンレヴェリー) <span>· Estussy Studio</span></li><li>永遠の約束 (Eternal Promise) <span>· Oliea</span></li><li>今日を抱きしめて (Embrace Today) <span>· Oliea ft. Sonna</span></li><li>Shining Star (輝く星) <span>· Estussy Studio</span></li><li>End of Summer with You <span>· Oliea</span></li><li>From the Ashes I Will Rise <span>· Estussy Studio</span></li><li>美しい罪 (Beautiful Sin) <span>· Oliea</span></li><li>Unforgettable (忘れられない) <span>· Estussy Studio</span></li><li>Neon Fantasy (ネオンの空想) <span>· Estussy Studio</span></li><li>Moment of Love (愛の瞬間) <span>· Estussy Studio</span></li><li>Always Yours (いつもあなたの) <span>· Estussy Studio</span></li><li>You&#x27;re The Reason (君が理由) <span>· Estussy Studio</span></li><li>To Be Honest (正直なところ) <span>· Estussy Studio</span></li><li>Dreams of a Starry City (星降る街の夢) <span>· Estussy Studio</span></li><li>Poem of a Solo Traveler (ひとり旅の詩) <span>· Estussy Studio</span></li><li>Next Girl (次のガール) <span>· Estussy Studio</span></li><li>Maze of Dawn (夜明けの迷路) <span>· Estussy Studio</span></li><li>Without You (あなたなしで) <span>· Estussy Studio</span></li><li>I&#x27;ll Be With You (あなたと一緒にいます) <span>· Estussy Studio</span></li><li>Shadow Of You (影のあなた) <span>· Estussy Studio</span></li><li>Moonlit City (月明かりの街) <span>· Estussy Studio</span></li></ol></details></section>
+<section><h2>Sur l'antenne</h2><p class="sub">Touche un titre pour l'écouter.</p><div id="prog" class="prog"><button type="button" data-i="0"><b>01</b>Kira Kira Tomorrow <span>· Sakura (OKALAM Studio)</span></button><button type="button" data-i="1"><b>02</b>Saku, Kawaii Pour Toujours <span>· Sakura (OKALAM Studio)</span></button><button type="button" data-i="2"><b>03</b>Star Child (スターチャイルドの) <span>· Estussy Studio</span></button><button type="button" data-i="3"><b>04</b>Ao <span>· Free&#x27;quency</span></button><button type="button" data-i="4"><b>05</b>Ashita no Hikari <span>· Oliea ft. Sonna</span></button><button type="button" data-i="5"><b>06</b>Neon Reverie (ネオンレヴェリー) <span>· Estussy Studio</span></button></div>
+<details><summary>Crédits et licences (33)</summary><ol><li>Kira Kira Tomorrow <span>· Sakura (OKALAM Studio)</span></li><li>Saku, Kawaii Pour Toujours <span>· Sakura (OKALAM Studio)</span></li><li>Second Life with You <span>· Oliea ft. Sonna</span></li><li>Hīrō <span>· Free&#x27;quency</span></li><li>Those Days We Were Young <span>· Oliea ft. Sam J</span></li><li>Star Child (スターチャイルドの) <span>· Estussy Studio</span></li><li>Ao <span>· Free&#x27;quency</span></li><li>I Choose You <span>· Oliea ft. Sonna</span></li><li>Tell Me Something (教えてくれ) <span>· Estussy Studio</span></li><li>Take Me Out From The Sorrow <span>· Oliea ft. Sam J</span></li><li>My Love Never Die <span>· Oliea</span></li><li>Ashita no Hikari <span>· Oliea ft. Sonna</span></li><li>Neon Reverie (ネオンレヴェリー) <span>· Estussy Studio</span></li><li>永遠の約束 (Eternal Promise) <span>· Oliea</span></li><li>今日を抱きしめて (Embrace Today) <span>· Oliea ft. Sonna</span></li><li>Shining Star (輝く星) <span>· Estussy Studio</span></li><li>End of Summer with You <span>· Oliea</span></li><li>From the Ashes I Will Rise <span>· Estussy Studio</span></li><li>美しい罪 (Beautiful Sin) <span>· Oliea</span></li><li>Unforgettable (忘れられない) <span>· Estussy Studio</span></li><li>Neon Fantasy (ネオンの空想) <span>· Estussy Studio</span></li><li>Moment of Love (愛の瞬間) <span>· Estussy Studio</span></li><li>Always Yours (いつもあなたの) <span>· Estussy Studio</span></li><li>You&#x27;re The Reason (君が理由) <span>· Estussy Studio</span></li><li>To Be Honest (正直なところ) <span>· Estussy Studio</span></li><li>Dreams of a Starry City (星降る街の夢) <span>· Estussy Studio</span></li><li>Poem of a Solo Traveler (ひとり旅の詩) <span>· Estussy Studio</span></li><li>Next Girl (次のガール) <span>· Estussy Studio</span></li><li>Maze of Dawn (夜明けの迷路) <span>· Estussy Studio</span></li><li>Without You (あなたなしで) <span>· Estussy Studio</span></li><li>I&#x27;ll Be With You (あなたと一緒にいます) <span>· Estussy Studio</span></li><li>Shadow Of You (影のあなた) <span>· Estussy Studio</span></li><li>Moonlit City (月明かりの街) <span>· Estussy Studio</span></li></ol></details></section>
+
 <section class="gta"><div><h2 style="margin:0">Tu attends GTA VI ?</h2><p>Actus vérifiées, compte à rebours et guides en français sur GTA VI France.</p></div><a class="btn" id="gta" href="https://gtavifrance.com/?utm_source=vicebayradio&utm_medium=station&utm_campaign=vicej">Aller sur gtavifrance.com →</a></section>
 <section><h2>Les autres stations de Vice Bay</h2><div class="autres"><a href="tropicana.html" style="color:#2BB3A3">TROPICANA 88.5</a><a href="dejavu.html" style="color:#D9C9A3">DÉJÀ VU 90.9</a><a href="emotion.html" style="color:#4DD0E1">EMOTION 98.3</a><a href="sunset.html" style="color:#F2B33D">SUNSET DRIVE 102.7</a><a href="neon.html" style="color:#FF2E88">NEON 103.5</a><a href="volt.html" style="color:#FF7A3D">VOLT 107.3</a></div></section>
 <footer>Vice Bay Radio, les radios de Vice Bay, 1986. Univers fictif et indépendant, sans lien avec Rockstar Games. Une création OKALAM Studio, musiques sous licence libre, auteurs crédités.</footer>
 </main>
 <script>
-(()=>{const L=[{"src": "audio/vicej_kira_kira_tomorrow.m4a", "title": "Kira Kira Tomorrow", "artist": "Sakura (OKALAM Studio)", "type": "track"}, {"src": "audio/vicej_saku_kawaii_pour_toujours.m4a", "title": "Saku, Kawaii Pour Toujours", "artist": "Sakura (OKALAM Studio)", "type": "track"}, {"src": "audio/vicej_estussy_studio_star_child.m4a", "title": "Star Child (スターチャイルドの)", "artist": "Estussy Studio", "type": "track"}, {"src": "audio/vicej_free_quency_ao.m4a", "title": "Ao", "artist": "Free'quency", "type": "track"}, {"src": "audio/vicej_oliea_ft_sonna_ashita_no_hikari.m4a", "title": "Ashita no Hikari", "artist": "Oliea ft. Sonna", "type": "track"}, {"src": "audio/vicej_estussy_studio_neon_reverie.m4a", "title": "Neon Reverie (ネオンレヴェリー)", "artist": "Estussy Studio", "type": "track"}],id="vicej",T={c:"Connexion…",on:"En écoute",p:"En pause",r:"Réessayer"};
-const a=new Audio();a.preload="none";let i=Math.max(0,L.findIndex(t=>t.type!=="link")),ok=false,cumul=0,t0=0,compte30=false;
-const $=x=>document.getElementById(x),ev=n=>{try{window.goatcounter&&goatcounter.count&&goatcounter.count({path:"ecoute/"+n+"/"+id,title:n,event:true})}catch(e){}};
+(()=>{
+const L=[{"src": "https://vicebayradio.com/audio/vicej_kira_kira_tomorrow.m4a", "title": "Kira Kira Tomorrow", "artist": "Sakura (OKALAM Studio)", "type": "track"}, {"src": "https://vicebayradio.com/audio/vicej_saku_kawaii_pour_toujours.m4a", "title": "Saku, Kawaii Pour Toujours", "artist": "Sakura (OKALAM Studio)", "type": "track"}, {"src": "https://vicebayradio.com/audio/vicej_estussy_studio_star_child.m4a", "title": "Star Child (スターチャイルドの)", "artist": "Estussy Studio", "type": "track"}, {"src": "https://vicebayradio.com/audio/vicej_free_quency_ao.m4a", "title": "Ao", "artist": "Free'quency", "type": "track"}, {"src": "https://vicebayradio.com/audio/vicej_oliea_ft_sonna_ashita_no_hikari.m4a", "title": "Ashita no Hikari", "artist": "Oliea ft. Sonna", "type": "track"}, {"src": "https://vicebayradio.com/audio/vicej_estussy_studio_neon_reverie.m4a", "title": "Neon Reverie (ネオンレヴェリー)", "artist": "Estussy Studio", "type": "track"}],id="vicej",T={"c": "Connexion…", "on": "En écoute", "p": "En pause", "r": "Réessayer", "dj": "Vice Bay DJ", "nx": "À suivre"};
+const $=x=>document.getElementById(x);
+const ev=n=>{try{window.goatcounter&&goatcounter.count&&goatcounter.count({path:"ecoute/"+n+"/"+id,title:n,event:true})}catch(e){}};
+const a=new Audio();a.preload="auto";a.setAttribute("playsinline","");
+const isT=t=>t.type!=="link";
+let i=Math.max(0,L.findIndex(isT)),ok=false,cumul=0,t0=0,c30=false,fails=0,want=false,wd=0,fade=0;
+const fmt=s=>{if(!isFinite(s)||s<0)return"0:00";s=Math.floor(s);return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
 const ico=p=>$("ico").setAttribute("d",p?"M6 4h4v16H6zM14 4h4v16h-4z":"M7 4v16l13-8z");
-const charge=()=>{const t=L[i];a.src=t.src;$("titre").textContent=t.type==="link"?"Vice Bay DJ":(t.title+(t.artist?" · "+t.artist:""))};
-const joue=()=>{if(!a.src)charge();a.volume=0;$("etat").textContent=T.c;a.play().catch(()=>{$("etat").textContent=T.r;ico(false)});ico(true)};
-a.addEventListener("playing",()=>{$("etat").textContent=T.on;$("lect").classList.add("joue");t0=Date.now();if(!ok){ok=true;ev("play")};
- const v=$("vol").value/100;let k=0;const f=setInterval(()=>{k++;a.volume=Math.min(v,v*k/8);if(k>=8)clearInterval(f)},60)});
-a.addEventListener("pause",()=>{$("lect").classList.remove("joue");if(t0){cumul+=Date.now()-t0;t0=0};$("etat").textContent=T.p;ico(false)});
-a.addEventListener("ended",()=>{i=(i+1)%L.length;charge();a.play()});
-a.addEventListener("error",()=>{$("etat").textContent=T.r;ico(false)});
-setInterval(()=>{if(!compte30&&cumul+(t0?Date.now()-t0:0)>30000){compte30=true;ev("30s")}},5000);
-$("pp").onclick=()=>a.paused?joue():a.pause();$("vol").oninput=e=>a.volume=e.target.value/100;
+const lbl=t=>t.type==="link"?T.dj:(t.title+(t.artist?" · "+t.artist:""));
+const nextTrack=n=>{for(let k=1;k<=L.length;k++){const j=(n+k)%L.length;if(isT(L[j]))return j}return n};
+const prevTrack=n=>{for(let k=1;k<=L.length;k++){const j=(n-k+L.length)%L.length;if(isT(L[j]))return j}return n};
+function mark(){document.querySelectorAll("#prog button").forEach(b=>b.classList.toggle("now",+b.dataset.i===i))}
+function charge(n){
+  i=(n+L.length)%L.length;const t=L[i];a.src=t.src;a.load();
+  $("titre").textContent=lbl(t);$("seek").value=0;$("cur").textContent="0:00";$("dur").textContent="0:00";
+  const nx=L[nextTrack(i)];$("suivant").textContent=T.nx+" : "+(nx.title||"")+(nx.artist?" · "+nx.artist:"");
+  mark();
+  if("mediaSession"in navigator&&isT(t))try{navigator.mediaSession.metadata=new MediaMetadata({title:t.title||"",artist:t.artist||"Vice Bay Radio",album:"VICE J 95.5 FM",artwork:[{src:"https://vicebayradio.com/img/hostL_vicej.jpg",sizes:"600x600",type:"image/jpeg"}]})}catch(e){}
+}
+function arm(){clearTimeout(wd);wd=setTimeout(()=>{if(want&&a.paused===false&&a.readyState<3)skip()},12000)}
+function skip(){
+  fails++;clearTimeout(wd);
+  if(fails>L.length){want=false;ico(false);$("etat").textContent=T.r;$("lect").classList.remove("joue");return}
+  charge(i+1);go()
+}
+function go(){
+  want=true;if(!a.src)charge(i);
+  $("etat").textContent=T.c;ico(true);arm();
+  const p=a.play();
+  if(p&&p.catch)p.catch(err=>{
+    if(err&&err.name==="AbortError")return;
+    if(err&&err.name==="NotAllowedError"){want=false;ico(false);$("etat").textContent=T.r;return}
+    if(want)skip()
+  })
+}
+function stop(){want=false;clearTimeout(wd);a.pause()}
+a.addEventListener("playing",()=>{
+  fails=0;clearTimeout(wd);$("etat").textContent=T.on;$("lect").classList.add("joue");ico(true);t0=t0||Date.now();
+  if(!ok){ok=true;ev("play")}
+  clearInterval(fade);const v=$("vol").value/100;let k=0;a.volume=0;fade=setInterval(()=>{k++;a.volume=Math.min(v,v*k/8);if(k>=8)clearInterval(fade)},60)
+});
+a.addEventListener("pause",()=>{$("lect").classList.remove("joue");if(t0){cumul+=Date.now()-t0;t0=0}if(!want||a.ended)return;$("etat").textContent=T.p;ico(false)});
+a.addEventListener("waiting",()=>{if(want){$("etat").textContent=T.c;arm()}});
+a.addEventListener("stalled",()=>{if(want)arm()});
+a.addEventListener("ended",()=>{charge(i+1);go()});
+a.addEventListener("error",()=>{if(want)skip()});
+a.addEventListener("loadedmetadata",()=>{$("dur").textContent=fmt(a.duration)});
+a.addEventListener("timeupdate",()=>{if(a.duration){$("seek").value=Math.round(a.currentTime/a.duration*1000)}$("cur").textContent=fmt(a.currentTime)});
+setInterval(()=>{if(!c30&&cumul+(t0?Date.now()-t0:0)>30000){c30=true;ev("30s")}},5000);
+$("pp").onclick=()=>{if(want&&!a.paused){stop();$("etat").textContent=T.p;ico(false)}else go()};
+$("nx").onclick=()=>{charge(nextTrack(i));go()};
+$("pv").onclick=()=>{if(a.currentTime>4){a.currentTime=0}else{charge(prevTrack(i))}go()};
+$("seek").oninput=e=>{if(a.duration)a.currentTime=a.duration*e.target.value/1000};
+$("vol").oninput=e=>{a.volume=e.target.value/100;try{localStorage.setItem("vbr_vol",e.target.value)}catch(_){}};
+try{const v=localStorage.getItem("vbr_vol");if(v!==null)$("vol").value=v}catch(_){}
+document.querySelectorAll("#prog button").forEach(b=>b.onclick=()=>{charge(+b.dataset.i);go()});
 $("gta").addEventListener("click",()=>ev("gtavifrance"));
-if("mediaSession" in navigator)navigator.mediaSession.metadata=new MediaMetadata({title:"VICE J 95.5 FM",artist:"Vice Bay Radio",artwork:[{src:"../img/hostL_vicej.jpg",sizes:"600x600",type:"image/jpeg"}]});
+charge(i);
+if("mediaSession"in navigator){
+  const m=(k,f)=>{try{navigator.mediaSession.setActionHandler(k,f)}catch(e){}};
+  m("play",go);m("pause",()=>{stop();ico(false);$("etat").textContent=T.p});m("nexttrack",()=>{charge(nextTrack(i));go()});m("previoustrack",()=>{charge(prevTrack(i));go()})
+}
 })();
+
 </script></body></html>
